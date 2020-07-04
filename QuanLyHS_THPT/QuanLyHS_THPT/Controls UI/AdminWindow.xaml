@@ -1,0 +1,180 @@
+﻿<Window x:Class="QuanLyHS_THPT.Controls_UI.AdminWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:QuanLyHS_THPT.Controls_UI"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        mc:Ignorable="d"
+        xmlns:fw="clr-namespace:SourceChord.FluentWPF;assembly=FluentWPF" 
+        fw:AcrylicWindow.Enabled="True" 
+        FontSize="15" 
+        Height="630" Width="975" MinHeight="630" MinWidth="975"
+        WindowStyle="None" ResizeMode="CanResize" 
+        AllowsTransparency="True" 
+        WindowStartupLocation="CenterScreen"        
+        fw:AcrylicWindow.AcrylicWindowStyle="None"
+        fw:AcrylicWindow.ExtendViewIntoTitleBar="True">
+
+    <Window.Resources>
+        <Storyboard x:Key="OpenMenu">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="GridMenu">
+                <EasingDoubleKeyFrame KeyTime="0" Value="45"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="200"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="CloseMenu">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="GridMenu">
+                <EasingDoubleKeyFrame KeyTime="0" Value="200"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="45"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+    </Window.Resources>
+    <Window.Triggers>
+        <EventTrigger RoutedEvent="ButtonBase.Click" SourceName="ButtonOpenMenu">
+            <BeginStoryboard Storyboard="{StaticResource OpenMenu}"/>
+        </EventTrigger>
+        <EventTrigger RoutedEvent="ButtonBase.Click" SourceName="ButtonCloseMenu">
+            <BeginStoryboard Storyboard="{StaticResource CloseMenu}"/>
+        </EventTrigger>
+    </Window.Triggers>
+
+    <DockPanel fw:PointerTracker.Enabled="True" Background="#01FFFFFF">
+       <Grid x:Name="GridMenu" Width="46" HorizontalAlignment="Left" fw:PointerTracker.Enabled="True" Background="#01FFFFFF">
+            <StackPanel>
+                <Grid RenderTransformOrigin="0.5,0.5">
+                    <Grid.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Grid.RenderTransform>
+                    <Button x:Name="ButtonOpenMenu" Height="45" Width="45" HorizontalAlignment="Right" VerticalAlignment="Top" Style="{StaticResource MaterialDesignFloatingActionMiniAccentButton}" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF31577E" Click="ButtonOpenMenu_Click">
+                        <materialDesign:PackIcon Kind="Menu" Width="30" Height="30" Foreground="Black"/>
+                    </Button>
+                    <Button x:Name="ButtonCloseMenu" Visibility="Collapsed" Height="45" Width="45" HorizontalAlignment="Right" VerticalAlignment="Top" Style="{StaticResource MaterialDesignFloatingActionMiniAccentButton}" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF31577E" Click="ButtonCloseMenu_Click">
+                        <materialDesign:PackIcon Kind="ArrowLeft" Width="25" Height="25" Foreground="Black"/>
+                    </Button>
+                </Grid>
+                <ListViewItem Padding="0">
+                    <StackPanel Orientation="Horizontal">
+                        <materialDesign:PackIcon Kind="Home" Margin="10" Width="25" Height="25"/>
+                        <TextBlock Text="Home" VerticalAlignment="Center"/>
+                    </StackPanel>
+                </ListViewItem>
+                <TextBlock Text="Nhân Viên" Margin="45,5,0,5" FontWeight="DemiBold"/>
+                <ListView FontSize="15" ScrollViewer.HorizontalScrollBarVisibility="Disabled" SelectionChanged="ListView_SelectionChanged">
+                    <ListViewItem Padding="1" Name="btn_ThongTinHS">
+                        <StackPanel Orientation="Horizontal">
+                            <materialDesign:PackIcon Kind="CardAccountDetailsOutline" Margin="10" Width="25" Height="25"/>
+                            <TextBlock Text="Học Sinh" VerticalAlignment="Center"/>
+                        </StackPanel>
+                    </ListViewItem>
+                    <ListViewItem Padding="1" Name="btn_NhapDiem">
+                        <StackPanel Orientation="Horizontal">
+                            <materialDesign:PackIcon Kind="TableLarge" Margin="10" Width="25" Height="25"/>
+                            <TextBlock Text="Nhập Điểm" VerticalAlignment="Center"/>
+                        </StackPanel>
+                    </ListViewItem>                    
+                </ListView>
+                
+                <!--<TextBlock Text="Giáo Vụ" Margin="45,5,0,5" FontWeight="DemiBold"/>-->
+                <ListView FontSize="15" ScrollViewer.HorizontalScrollBarVisibility="Disabled" SelectionChanged="ListView_SelectionChanged">
+                    <ListViewItem Padding="1" Name="btn_TaoHoSo">
+                        <StackPanel Orientation="Horizontal">
+                            <materialDesign:PackIcon Kind="ChartBar" Margin="10" Width="25" Height="25"/>
+                            <TextBlock Text="Thống Kê" VerticalAlignment="Center"/>
+                        </StackPanel>
+                    </ListViewItem>
+                    <ListViewItem Padding="1" Name="btn_PhanLopHoc">
+                        <StackPanel Orientation="Horizontal">
+                            <materialDesign:PackIcon Kind="GoogleClassroom" Margin="10" Width="25" Height="25"/>
+                            <TextBlock Text="Lớp Học" VerticalAlignment="Center"/>
+                        </StackPanel>
+                    </ListViewItem>
+                    <ListViewItem Padding="1" Name="btn_CapNhatThongTin">
+                        <StackPanel Orientation="Horizontal">
+                            <materialDesign:PackIcon Kind="Cached" Margin="10" Width="25" Height="25"/>
+                            <TextBlock Text="Cập Nhật " VerticalAlignment="Center"/>
+                        </StackPanel>
+                    </ListViewItem>
+                </ListView>
+                
+                <TextBlock Text="Quản Trị Viên" Margin="45,5,0,5" FontWeight="DemiBold"/>
+                <ListView FontSize="15" ScrollViewer.HorizontalScrollBarVisibility="Disabled" SelectionChanged="ListView_SelectionChanged">
+                    <ListViewItem Padding="1" Name="btn_QuyDinh">
+                        <StackPanel Orientation="Horizontal">
+                            <materialDesign:PackIcon Kind="CogSyncOutline" Margin="10" Width="25" Height="25"/>
+                            <TextBlock Text="Thay Đổi Quy Định" VerticalAlignment="Center"/>
+                        </StackPanel>
+                    </ListViewItem>
+                    <ListViewItem Padding="1" Name="btn_GiaoVien">
+                        <StackPanel Orientation="Horizontal">
+                            <materialDesign:PackIcon Kind="Teacher" Margin="10" Width="25" Height="25"/>
+                            <TextBlock Text="Giáo Viên" VerticalAlignment="Center"/>
+                        </StackPanel>
+                    </ListViewItem>
+                    <ListViewItem Padding="1" Name="btn_BaoCao">
+                        <StackPanel Orientation="Horizontal">
+                            <materialDesign:PackIcon Kind="FileChart" Margin="10" Width="25" Height="25"/>
+                            <TextBlock Text="Báo Cáo" VerticalAlignment="Center"/>
+                        </StackPanel>
+                    </ListViewItem>                   
+                </ListView>
+                <ListViewItem Padding="0" Name="btn_HuongDan">
+                    <StackPanel Orientation="Horizontal" MouseDown="btn_HuongDan_MouseDown">
+                        <materialDesign:PackIcon Kind="HelpRhombusOutline" Margin="10" Width="25" Height="25"/>
+                        <TextBlock Text="Hướng Dẫn" VerticalAlignment="Center"/>
+                    </StackPanel>
+                </ListViewItem>
+            </StackPanel>
+        </Grid>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="35"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid Background="AliceBlue" MouseDown="Grid_MouseDown" MouseLeftButtonDown="Grid_MouseLeftButtonDown">
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                    <TextBlock Text="Nguyen Hoang Duong" VerticalAlignment="Center" Margin="0,0,10,0"/>
+                    <Button  
+                        Width="30" Height="30" Background="{x:Null}" Margin="0,0,10,0"
+                        Style="{StaticResource MaterialDesignFloatingActionButton}"  
+                        materialDesign:ButtonProgressAssist.IsIndicatorVisible="True" 
+                        materialDesign:ButtonProgressAssist.IsIndeterminate="True">                        
+                        <Image Source="/Icons/icons8_male_user_128px.png"/>                        
+                    </Button>
+
+                    <materialDesign:PopupBox      
+                        DockPanel.Dock="Right"      
+                        PlacementMode="BottomAndAlignRightEdges">
+                        <ListBox>
+                            <ListBoxItem>
+                                <StackPanel Orientation="Horizontal">
+                                    <materialDesign:PackIcon Kind="KeyChange"/>
+                                    <TextBlock Text="Đổi mật khẩu" Margin="10,0,0,0" VerticalAlignment="Top" />
+                                </StackPanel>
+                            </ListBoxItem>
+                        </ListBox>
+                    </materialDesign:PopupBox>
+
+                    <Button x:Name="btn_Min" Width="40" Height="30" Background="{x:Null}" Padding="0" BorderThickness="0" Click="Button_Click">
+                        <materialDesign:PackIcon Kind="ArrowBottomLeft" Foreground="Black" Width="25" Height="25"/>
+                    </Button>
+                    <Button x:Name="btn_Max" Width="40" Height="30" Background="{x:Null}" Padding="0" BorderThickness="0" Click="Button_Click">
+                        <materialDesign:PackIcon Kind="ArrowExpand" Foreground="Black" Width="25" Height="25"/>
+                    </Button>
+                    <Button x:Name="btn_Close" Width="50" Height="30" Background="{x:Null}" Padding="0" BorderThickness="0" Click="Button_Click">
+                        <materialDesign:PackIcon Kind="PowerStandby" Foreground="Black" Width="25" Height="25"/>
+                    </Button>
+                </StackPanel>
+            </Grid>
+            <Grid Grid.Row="1" x:Name="Grid_PersonControls" Background="AliceBlue">
+               
+            </Grid>
+
+        </Grid>
+    </DockPanel>
+</Window>
