@@ -1,0 +1,141 @@
+﻿<Window x:Class="QuanLyHS_THPT.Controls_UI.ThemGiaoVien_Window"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:QuanLyHS_THPT.Controls_UI"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        mc:Ignorable="d"
+        ResizeMode="NoResize"
+        WindowStyle="None"
+        WindowStartupLocation="CenterScreen"
+        Title="QuyDinh_Window" Height="445" Width="352">
+    <Border BorderBrush="DodgerBlue" BorderThickness="1,1,1,1" CornerRadius="10">
+        <Grid>
+            <StackPanel Height="370" VerticalAlignment="Top">
+                <Label Content="Thêm Giảng Viên"  HorizontalAlignment="Center" 
+                   FontSize="18" FontWeight="Bold" Margin="0,10,0,10"/>
+                <TextBox
+                Style="{StaticResource MaterialDesignFloatingHintTextBox}"  
+                VerticalAlignment="Center"
+                materialDesign:TextFieldAssist.HasClearButton="True"
+                materialDesign:TextFieldAssist.SuffixText=""
+                Width="200">
+                    <materialDesign:HintAssist.Hint>
+                        <StackPanel
+                        Orientation="Horizontal"
+                        Margin="-2 0 0 0">
+                            <materialDesign:PackIcon
+                            Kind="Barcode" />
+                            <TextBlock Text="Mã giáo viên"/>
+                        </StackPanel>
+                    </materialDesign:HintAssist.Hint>
+                </TextBox>
+                <TextBox
+                Style="{StaticResource MaterialDesignFloatingHintTextBox}"  
+                VerticalAlignment="Center"
+                materialDesign:TextFieldAssist.HasClearButton="True"
+                materialDesign:TextFieldAssist.SuffixText=""
+                Width="200">
+                    <materialDesign:HintAssist.Hint>
+                        <StackPanel
+                        Orientation="Horizontal"
+                        Margin="-2 0 0 0">
+                            <materialDesign:PackIcon
+                            Kind="CardAccountDetailsOutline" />
+                            <TextBlock Text="Tên giáo viên"/>
+                        </StackPanel>
+                    </materialDesign:HintAssist.Hint>
+                </TextBox>
+                <TextBox
+                Style="{StaticResource MaterialDesignFloatingHintTextBox}"  
+                VerticalAlignment="Center"
+                materialDesign:TextFieldAssist.HasClearButton="True"
+                materialDesign:TextFieldAssist.SuffixText=""
+                Width="200">
+                    <materialDesign:HintAssist.Hint>
+                        <StackPanel
+                        Orientation="Horizontal"
+                        Margin="-2 0 0 0">
+                            <materialDesign:PackIcon
+                            Kind="User" />
+                            <TextBlock Text="Tên đăng nhập"/>
+                        </StackPanel>
+                    </materialDesign:HintAssist.Hint>
+                </TextBox>
+                <TextBox
+                Style="{StaticResource MaterialDesignFloatingHintTextBox}"  
+                VerticalAlignment="Center"
+                materialDesign:TextFieldAssist.HasClearButton="True"
+                materialDesign:TextFieldAssist.SuffixText=""
+                Width="200">
+                    <materialDesign:HintAssist.Hint>
+                        <StackPanel
+                        Orientation="Horizontal"
+                        Margin="-2 0 0 0">
+                            <materialDesign:PackIcon
+                            Kind="Key" />
+                            <TextBlock Text="Mật khẩu"/>
+                        </StackPanel>
+                    </materialDesign:HintAssist.Hint>
+                </TextBox>
+                <TextBox
+                Style="{StaticResource MaterialDesignFloatingHintTextBox}"  
+                VerticalAlignment="Center"
+                materialDesign:TextFieldAssist.HasClearButton="True"
+                materialDesign:TextFieldAssist.SuffixText=""
+                Width="200">
+                    <materialDesign:HintAssist.Hint>
+                        <StackPanel
+                        Orientation="Horizontal"
+                        Margin="-2 0 0 0">
+                            <materialDesign:PackIcon
+                            Kind="Location" />
+                            <TextBlock Text="Địa chỉ"/>
+                        </StackPanel>
+                    </materialDesign:HintAssist.Hint>
+                </TextBox>
+                <TextBox
+                Style="{StaticResource MaterialDesignFloatingHintTextBox}"  
+                VerticalAlignment="Center"
+                materialDesign:TextFieldAssist.HasClearButton="True"
+                materialDesign:TextFieldAssist.SuffixText=""
+                Width="200">
+                    <materialDesign:HintAssist.Hint>
+                        <StackPanel
+                        Orientation="Horizontal"
+                        Margin="-2 0 0 0">
+                            <materialDesign:PackIcon
+                            Kind="Phone" />
+                            <TextBlock Text="Số điện thoại"/>
+                        </StackPanel>
+                    </materialDesign:HintAssist.Hint>
+                </TextBox>
+                <ComboBox  
+                    Style="{StaticResource MaterialDesignFloatingHintComboBox}"  
+                    materialDesign:TextFieldAssist.HasClearButton="True" 
+                    materialDesign:TextFieldAssist.UnderlineBrush="{DynamicResource SecondaryAccentBrush}"
+                    materialDesign:ColorZoneAssist.Mode="Inverted"  
+                    materialDesign:HintAssist.Hint="Chuyên môn"  
+                    Width="200">
+                </ComboBox>
+            </StackPanel>
+            <materialDesign:Chip Width="112" Margin="55,382,0,29" 
+                    Content="Thêm"
+                    IconBackground="{DynamicResource PrimaryHueDarkBrush}"
+                    IconForeground="{DynamicResource PrimaryHueDarkForegroundBrush}">
+                <materialDesign:Chip.Icon>
+                    <materialDesign:PackIcon Kind="Add" Foreground="White"/>
+                </materialDesign:Chip.Icon>
+            </materialDesign:Chip>
+            <materialDesign:Chip Width="112" Margin="185,382,0,29"
+                    Content="Thoát" Click="Chip_Click"
+                    IconBackground="{DynamicResource PrimaryHueDarkBrush}"
+                    IconForeground="{DynamicResource PrimaryHueDarkForegroundBrush}">
+                <materialDesign:Chip.Icon>
+                    <materialDesign:PackIcon Kind="Edit" Foreground="White"/>
+                </materialDesign:Chip.Icon>
+            </materialDesign:Chip>
+        </Grid>
+    </Border>
+</Window>
