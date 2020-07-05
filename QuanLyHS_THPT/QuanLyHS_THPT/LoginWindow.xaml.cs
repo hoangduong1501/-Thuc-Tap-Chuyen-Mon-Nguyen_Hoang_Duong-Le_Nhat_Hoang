@@ -41,11 +41,25 @@ namespace QuanLyHS_THPT
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            Controls_UI.AdminWindow adminWindow = new Controls_UI.AdminWindow();
-            this.Visibility = Visibility.Collapsed;
-            adminWindow.ShowDialog();
-            this.Visibility = Visibility.Visible;
+        {            
+            models.NguoiDung_Class nguoiDung = new models.NguoiDung_Class()
+            {
+                tenDangNhap = txt_TenDangNhap.Text,
+                matKhauDangNhap = txt_MatKhau.Password.Trim()
+            };
+
+            if (nguoiDung.LayThongTin())
+            {
+                Controls_UI.AdminWindow adminWindow = new Controls_UI.AdminWindow();
+                this.Visibility = Visibility.Collapsed;
+                adminWindow.ShowDialog();
+                this.Visibility = Visibility.Visible;
+            }
+            else
+            {
+                MessageBox.Show("Sai");
+                this.status.Text="Tai khoan mat khau khong dung"
+            }
         }
     }
 }

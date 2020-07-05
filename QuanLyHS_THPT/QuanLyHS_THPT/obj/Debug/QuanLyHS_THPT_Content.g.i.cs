@@ -8,6 +8,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("icons8_male_user_128px.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("usercontrols%20ui/images.jpg")]
 
 

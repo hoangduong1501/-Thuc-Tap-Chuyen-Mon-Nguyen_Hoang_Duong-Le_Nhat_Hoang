@@ -49,3 +49,54 @@ C:\Users\Black-Sky\source\repos\QuanLyHS_THPT\QuanLyHS_THPT\obj\Debug\UserContro
 C:\Users\Black-Sky\source\repos\QuanLyHS_THPT\QuanLyHS_THPT\obj\Debug\UserControls UI\QuanLyLop_UserControl.g.cs
 C:\Users\Black-Sky\source\repos\QuanLyHS_THPT\QuanLyHS_THPT\obj\Debug\UserControls UI\PhanLop_UserControl.baml
 C:\Users\Black-Sky\source\repos\QuanLyHS_THPT\QuanLyHS_THPT\obj\Debug\UserControls UI\QuanLyLop_UserControl.baml
+C:\Users\Black-Sky\Documents\GitHub\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\bin\Debug\QuanLyHS_THPT.exe.config
+C:\Users\Black-Sky\Documents\GitHub\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\bin\Debug\QuanLyHS_THPT.exe
+C:\Users\Black-Sky\Documents\GitHub\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\bin\Debug\QuanLyHS_THPT.pdb
+C:\Users\Black-Sky\Documents\GitHub\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\bin\Debug\FluentWPF.dll
+C:\Users\Black-Sky\Documents\GitHub\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\bin\Debug\MaterialDesignColors.dll
+C:\Users\Black-Sky\Documents\GitHub\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\Black-Sky\Documents\GitHub\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\bin\Debug\MaterialDesignColors.pdb
+C:\Users\Black-Sky\Documents\GitHub\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\Black-Sky\Documents\GitHub\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\Black-Sky\Documents\GitHub\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\obj\Debug\QuanLyHS_THPT.csprojAssemblyReference.cache
+C:\Users\Black-Sky\Documents\GitHub\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\obj\Debug\Controls UI\AdminWindow.g.cs
+C:\Users\Black-Sky\Documents\GitHub\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\obj\Debug\Controls UI\SuaGiaoVien_Window.g.cs
+C:\Users\Black-Sky\Documents\GitHub\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\obj\Debug\Controls UI\ThemGiaoVien_Window.g.cs
+C:\Users\Black-Sky\Documents\GitHub\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\obj\Debug\UserControls UI\CapNhatLopHoc_UserControl.g.cs
+C:\Users\Black-Sky\Documents\GitHub\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\obj\Debug\UserControls UI\CapNhat_UserControl.g.cs
+C:\Users\Black-Sky\Documents\GitHub\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\obj\Debug\UserControls UI\GiaoVien_UserControl.g.cs
+C:\Users\Black-Sky\Documents\GitHub\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\obj\Debug\Controls UI\QuyDinh_Window.g.cs
+C:\Users\Black-Sky\Documents\GitHub\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\obj\Debug\LoginWindow.g.cs
+C:\Users\Black-Sky\Documents\GitHub\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\obj\Debug\UserControls UI\BangDiem_UserControl.g.cs
+C:\Users\Black-Sky\Documents\GitHub\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\obj\Debug\UserControls UI\NamHoc_UserControl.g.cs
+C:\Users\Black-Sky\Documents\GitHub\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\obj\Debug\UserControls UI\PhanLop_UserControl.g.cs
+C:\Users\Black-Sky\Documents\GitHub\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\obj\Debug\UserControls UI\QuanLyHS_UserControl.g.cs
+C:\Users\Black-Sky\Documents\GitHub\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\obj\Debug\UserControls UI\QuanLyLop_UserControl.g.cs
+C:\Users\Black-Sky\Documents\GitHub\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\obj\Debug\UserControls UI\ThemGiaoVien_UserControl.g.cs
+C:\Users\Black-Sky\Documents\GitHub\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\obj\Debug\UserControls UI\ThongTinHS_UserControl.g.cs
+C:\Users\Black-Sky\Documents\GitHub\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\obj\Debug\App.g.cs
+C:\Users\Black-Sky\Documents\GitHub\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\obj\Debug\QuanLyHS_THPT_MarkupCompile.cache
+C:\Users\Black-Sky\Documents\GitHub\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\obj\Debug\QuanLyHS_THPT_MarkupCompile.lref
+C:\Users\Black-Sky\Documents\GitHub\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\obj\Debug\App.baml
+C:\Users\Black-Sky\Documents\GitHub\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\obj\Debug\Controls UI\AdminWindow.baml
+C:\Users\Black-Sky\Documents\GitHub\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\obj\Debug\Controls UI\SuaGiaoVien_Window.baml
+C:\Users\Black-Sky\Documents\GitHub\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\obj\Debug\Controls UI\ThemGiaoVien_Window.baml
+C:\Users\Black-Sky\Documents\GitHub\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\obj\Debug\UserControls UI\CapNhatLopHoc_UserControl.baml
+C:\Users\Black-Sky\Documents\GitHub\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\obj\Debug\UserControls UI\CapNhat_UserControl.baml
+C:\Users\Black-Sky\Documents\GitHub\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\obj\Debug\UserControls UI\GiaoVien_UserControl.baml
+C:\Users\Black-Sky\Documents\GitHub\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\obj\Debug\Controls UI\QuyDinh_Window.baml
+C:\Users\Black-Sky\Documents\GitHub\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\obj\Debug\LoginWindow.baml
+C:\Users\Black-Sky\Documents\GitHub\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\obj\Debug\UserControls UI\BangDiem_UserControl.baml
+C:\Users\Black-Sky\Documents\GitHub\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\obj\Debug\UserControls UI\NamHoc_UserControl.baml
+C:\Users\Black-Sky\Documents\GitHub\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\obj\Debug\UserControls UI\PhanLop_UserControl.baml
+C:\Users\Black-Sky\Documents\GitHub\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\obj\Debug\UserControls UI\QuanLyHS_UserControl.baml
+C:\Users\Black-Sky\Documents\GitHub\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\obj\Debug\UserControls UI\QuanLyLop_UserControl.baml
+C:\Users\Black-Sky\Documents\GitHub\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\obj\Debug\UserControls UI\ThemGiaoVien_UserControl.baml
+C:\Users\Black-Sky\Documents\GitHub\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\obj\Debug\UserControls UI\ThongTinHS_UserControl.baml
+C:\Users\Black-Sky\Documents\GitHub\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\obj\Debug\QuanLyHS_THPT.g.resources
+C:\Users\Black-Sky\Documents\GitHub\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\obj\Debug\QuanLyHS_THPT.Properties.Resources.resources
+C:\Users\Black-Sky\Documents\GitHub\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\obj\Debug\QuanLyHS_THPT.csproj.GenerateResource.cache
+C:\Users\Black-Sky\Documents\GitHub\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\obj\Debug\QuanLyHS_THPT.csproj.CoreCompileInputs.cache
+C:\Users\Black-Sky\Documents\GitHub\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\obj\Debug\QuanLyHS_THPT.csproj.CopyComplete
+C:\Users\Black-Sky\Documents\GitHub\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\obj\Debug\QuanLyHS_THPT.exe
+C:\Users\Black-Sky\Documents\GitHub\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\obj\Debug\QuanLyHS_THPT.pdb
