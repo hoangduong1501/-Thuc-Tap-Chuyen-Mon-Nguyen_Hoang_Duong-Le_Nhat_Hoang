@@ -21,9 +21,17 @@ namespace QuanLyHS_THPT.Controls_UI
     public partial class AdminWindow : Window
     {
         private bool style_Maximaze = false;
+        public string str_TenNguoiDung { get; set; }
+        public string str_TenDangNhap { get; set; }
+
         public AdminWindow()
         {
             InitializeComponent();
+        }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            this.box_TenNguoiDung.Text = "Xin chào: " + this.str_TenNguoiDung;
         }
 
         private void ButtonOpenMenu_Click(object sender, RoutedEventArgs e)
@@ -103,8 +111,8 @@ namespace QuanLyHS_THPT.Controls_UI
                     quyDinh_Window.ShowDialog();
                     break;
                 case "btn_GiaoVien":
-                    UserControls_UI.GiaoVien_UserControl giaoVien_UserControl = new UserControls_UI.GiaoVien_UserControl();
-                    this.Grid_PersonControls.Children.Add(giaoVien_UserControl);
+                    NguoiDung_UserControl nguoiDung_UserControl = new NguoiDung_UserControl();
+                    this.Grid_PersonControls.Children.Add(nguoiDung_UserControl);
                     break;
                 case "btn_BaoCao":
                     MessageBox.Show("BaoCao");
@@ -116,6 +124,15 @@ namespace QuanLyHS_THPT.Controls_UI
         private void btn_HuongDan_MouseDown(object sender, MouseButtonEventArgs e)
         {
             MessageBox.Show("HuongDan");
+        }
+
+        private void ListBoxItem_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            Controls_UI.DoiMatKhau_Window doiMatKhau_Window = new DoiMatKhau_Window()
+            {
+                ten_DangNhap = this.str_TenDangNhap
+            };
+            doiMatKhau_Window.ShowDialog();
         }
     }
 }

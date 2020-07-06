@@ -13,30 +13,12 @@
     <Border BorderBrush="DodgerBlue" BorderThickness="1,1,1,1" CornerRadius="10">
         <Grid>
             <StackPanel Height="370" VerticalAlignment="Top">
-                <Label Content="Thêm Giảng Viên"  HorizontalAlignment="Center" 
+                <Label Content="Thêm Giáo Viên"  HorizontalAlignment="Center" 
                    FontSize="18" FontWeight="Bold" Margin="0,10,0,10"/>
                 <TextBox
                 Style="{StaticResource MaterialDesignFloatingHintTextBox}"  
-                VerticalAlignment="Center"
-                materialDesign:TextFieldAssist.HasClearButton="True"
-                materialDesign:TextFieldAssist.SuffixText=""
-                Width="200">
-                    <materialDesign:HintAssist.Hint>
-                        <StackPanel
-                        Orientation="Horizontal"
-                        Margin="-2 0 0 0">
-                            <materialDesign:PackIcon
-                            Kind="Barcode" />
-                            <TextBlock Text="Mã giáo viên"/>
-                        </StackPanel>
-                    </materialDesign:HintAssist.Hint>
-                </TextBox>
-                <TextBox
-                Style="{StaticResource MaterialDesignFloatingHintTextBox}"  
-                VerticalAlignment="Center"
-                materialDesign:TextFieldAssist.HasClearButton="True"
-                materialDesign:TextFieldAssist.SuffixText=""
-                Width="200">
+                VerticalAlignment="Center" x:Name="txt_TenGiaoVien"
+                materialDesign:TextFieldAssist.HasClearButton="True" Width="200">
                     <materialDesign:HintAssist.Hint>
                         <StackPanel
                         Orientation="Horizontal"
@@ -49,7 +31,7 @@
                 </TextBox>
                 <TextBox
                 Style="{StaticResource MaterialDesignFloatingHintTextBox}"  
-                VerticalAlignment="Center"
+                VerticalAlignment="Center" x:Name="txt_TenDangNhap"
                 materialDesign:TextFieldAssist.HasClearButton="True"
                 materialDesign:TextFieldAssist.SuffixText=""
                 Width="200">
@@ -65,7 +47,7 @@
                 </TextBox>
                 <TextBox
                 Style="{StaticResource MaterialDesignFloatingHintTextBox}"  
-                VerticalAlignment="Center"
+                VerticalAlignment="Center" x:Name="txt_MatKhau"
                 materialDesign:TextFieldAssist.HasClearButton="True"
                 materialDesign:TextFieldAssist.SuffixText=""
                 Width="200">
@@ -81,7 +63,7 @@
                 </TextBox>
                 <TextBox
                 Style="{StaticResource MaterialDesignFloatingHintTextBox}"  
-                VerticalAlignment="Center"
+                VerticalAlignment="Center" x:Name="txt_DiaChi"
                 materialDesign:TextFieldAssist.HasClearButton="True"
                 materialDesign:TextFieldAssist.SuffixText=""
                 Width="200">
@@ -97,7 +79,7 @@
                 </TextBox>
                 <TextBox
                 Style="{StaticResource MaterialDesignFloatingHintTextBox}"  
-                VerticalAlignment="Center"
+                VerticalAlignment="Center" x:Name="txt_SoDienThoai"
                 materialDesign:TextFieldAssist.HasClearButton="True"
                 materialDesign:TextFieldAssist.SuffixText=""
                 Width="200">
@@ -117,11 +99,18 @@
                     materialDesign:TextFieldAssist.UnderlineBrush="{DynamicResource SecondaryAccentBrush}"
                     materialDesign:ColorZoneAssist.Mode="Inverted"  
                     materialDesign:HintAssist.Hint="Chuyên môn"  
-                    Width="200">
+                    Width="200" x:Name="cbb_ChuyenMon">
                 </ComboBox>
+                <ComboBox  
+                    Style="{StaticResource MaterialDesignFloatingHintComboBox}"  
+                    materialDesign:TextFieldAssist.HasClearButton="True" 
+                    materialDesign:TextFieldAssist.UnderlineBrush="{DynamicResource SecondaryAccentBrush}"
+                    materialDesign:ColorZoneAssist.Mode="Inverted"  
+                    materialDesign:HintAssist.Hint="Loại người dùng"  
+                    Width="200" x:Name="cbb_LoaiNguoiDung" Margin="75,0"/>
             </StackPanel>
             <materialDesign:Chip Width="112" Margin="55,382,0,29" 
-                    Content="Thêm"
+                    Content="Thêm" Click="Chip_Click" x:Name="btn_Them"
                     IconBackground="{DynamicResource PrimaryHueDarkBrush}"
                     IconForeground="{DynamicResource PrimaryHueDarkForegroundBrush}">
                 <materialDesign:Chip.Icon>
@@ -129,7 +118,7 @@
                 </materialDesign:Chip.Icon>
             </materialDesign:Chip>
             <materialDesign:Chip Width="112" Margin="185,382,0,29"
-                    Content="Thoát" Click="Chip_Click"
+                    Content="Thoát" Click="Chip_Click" x:Name="btn_Thoat"
                     IconBackground="{DynamicResource PrimaryHueDarkBrush}"
                     IconForeground="{DynamicResource PrimaryHueDarkForegroundBrush}">
                 <materialDesign:Chip.Icon>

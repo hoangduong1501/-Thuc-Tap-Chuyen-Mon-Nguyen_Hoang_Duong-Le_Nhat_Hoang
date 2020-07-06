@@ -6,186 +6,9 @@
              xmlns:local="clr-namespace:QuanLyHS_THPT.UserControls_UI"
              xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
              mc:Ignorable="d" 
-             d:DesignHeight="524" d:DesignWidth="925">
+             d:DesignHeight="524" d:DesignWidth="1016">
     <Grid Background="White">
-        <Border Grid.Column="0" BorderBrush="#bdbdbd" BorderThickness="0,0,1,0"></Border>
-        <!--<StackPanel>
-            <Label Content="Thêm Giảng Viên"  HorizontalAlignment="Center" 
-                   FontSize="18" FontWeight="Bold" Margin="0,10,0,10"/>
-            <TextBox
-                Style="{StaticResource MaterialDesignFloatingHintTextBox}"  
-                VerticalAlignment="Center"
-                materialDesign:TextFieldAssist.HasClearButton="True"
-                materialDesign:TextFieldAssist.SuffixText=""
-                Width="200">
-                <materialDesign:HintAssist.Hint>
-                    <StackPanel
-                        Orientation="Horizontal"
-                        Margin="-2 0 0 0">
-                        <materialDesign:PackIcon
-                            Kind="Barcode" />
-                        <TextBlock Text="Mã giáo viên"/>
-                    </StackPanel>
-                </materialDesign:HintAssist.Hint>
-            </TextBox>
-            <TextBox
-                Style="{StaticResource MaterialDesignFloatingHintTextBox}"  
-                VerticalAlignment="Center"
-                materialDesign:TextFieldAssist.HasClearButton="True"
-                materialDesign:TextFieldAssist.SuffixText=""
-                Width="200">
-                <materialDesign:HintAssist.Hint>
-                    <StackPanel
-                        Orientation="Horizontal"
-                        Margin="-2 0 0 0">
-                        <materialDesign:PackIcon
-                            Kind="CardAccountDetailsOutline" />
-                        <TextBlock Text="Tên giáo viên"/>
-                    </StackPanel>
-                </materialDesign:HintAssist.Hint>
-            </TextBox>
-            <TextBox
-                Style="{StaticResource MaterialDesignFloatingHintTextBox}"  
-                VerticalAlignment="Center"
-                materialDesign:TextFieldAssist.HasClearButton="True"
-                materialDesign:TextFieldAssist.SuffixText=""
-                Width="200">
-                <materialDesign:HintAssist.Hint>
-                    <StackPanel
-                        Orientation="Horizontal"
-                        Margin="-2 0 0 0">
-                        <materialDesign:PackIcon
-                            Kind="User" />
-                        <TextBlock Text="Tên đăng nhập"/>
-                    </StackPanel>
-                </materialDesign:HintAssist.Hint>
-            </TextBox>
-            <TextBox
-                Style="{StaticResource MaterialDesignFloatingHintTextBox}"  
-                VerticalAlignment="Center"
-                materialDesign:TextFieldAssist.HasClearButton="True"
-                materialDesign:TextFieldAssist.SuffixText=""
-                Width="200">
-                <materialDesign:HintAssist.Hint>
-                    <StackPanel
-                        Orientation="Horizontal"
-                        Margin="-2 0 0 0">
-                        <materialDesign:PackIcon
-                            Kind="Key" />
-                        <TextBlock Text="Mật khẩu"/>
-                    </StackPanel>
-                </materialDesign:HintAssist.Hint>
-            </TextBox>
-            <TextBox
-                Style="{StaticResource MaterialDesignFloatingHintTextBox}"  
-                VerticalAlignment="Center"
-                materialDesign:TextFieldAssist.HasClearButton="True"
-                materialDesign:TextFieldAssist.SuffixText=""
-                Width="200">
-                <materialDesign:HintAssist.Hint>
-                    <StackPanel
-                        Orientation="Horizontal"
-                        Margin="-2 0 0 0">
-                        <materialDesign:PackIcon
-                            Kind="Location" />
-                        <TextBlock Text="Địa chỉ"/>
-                    </StackPanel>
-                </materialDesign:HintAssist.Hint>
-            </TextBox>
-            <TextBox
-                Style="{StaticResource MaterialDesignFloatingHintTextBox}"  
-                VerticalAlignment="Center"
-                materialDesign:TextFieldAssist.HasClearButton="True"
-                materialDesign:TextFieldAssist.SuffixText=""
-                Width="200">
-                <materialDesign:HintAssist.Hint>
-                    <StackPanel
-                        Orientation="Horizontal"
-                        Margin="-2 0 0 0">
-                        <materialDesign:PackIcon
-                            Kind="Phone" />
-                        <TextBlock Text="Số điện thoại"/>
-                    </StackPanel>
-                </materialDesign:HintAssist.Hint>
-            </TextBox>
-            <ComboBox  
-                Style="{StaticResource MaterialDesignFloatingHintComboBox}"  
-                materialDesign:TextFieldAssist.HasClearButton="True" 
-                materialDesign:TextFieldAssist.UnderlineBrush="{DynamicResource SecondaryAccentBrush}"
-                materialDesign:ColorZoneAssist.Mode="Inverted"  
-                materialDesign:HintAssist.Hint="Chuyên môn"  
-                Width="200">
-            </ComboBox>
-            <materialDesign:Chip Width="112" Margin="60,20,0,0"
-                    Content="Thêm"
-                    IconBackground="{DynamicResource PrimaryHueDarkBrush}"
-                    IconForeground="{DynamicResource PrimaryHueDarkForegroundBrush}">
-                <materialDesign:Chip.Icon>
-                    <materialDesign:PackIcon Kind="Add" Foreground="White"/>
-                </materialDesign:Chip.Icon>
-            </materialDesign:Chip>
-            <materialDesign:Chip Width="112" Margin="60,10,0,0"
-                    Content="Sửa"
-                    IconBackground="{DynamicResource PrimaryHueDarkBrush}"
-                    IconForeground="{DynamicResource PrimaryHueDarkForegroundBrush}">
-                <materialDesign:Chip.Icon>
-                    <materialDesign:PackIcon Kind="Edit" Foreground="White"/>
-                </materialDesign:Chip.Icon>
-            </materialDesign:Chip>
-            <materialDesign:Chip Width="112" Margin="60,10,0,0"
-                    Content="Xóa"
-                    IconBackground="{DynamicResource PrimaryHueDarkBrush}"
-                    IconForeground="{DynamicResource PrimaryHueDarkForegroundBrush}">
-                <materialDesign:Chip.Icon>
-                    <materialDesign:PackIcon Kind="Delete" Foreground="White"/>
-                </materialDesign:Chip.Icon>
-            </materialDesign:Chip>
-        </StackPanel>-->
-        <!--<StackPanel Grid.Column="1">
-            <Label Content="Phân Công Giảng Dạy" HorizontalAlignment="Center" 
-                   FontSize="18" FontWeight="Bold" Margin="0,10,0,10"/>
-            <ComboBox  
-                Style="{StaticResource MaterialDesignFloatingHintComboBox}"  
-                materialDesign:TextFieldAssist.HasClearButton="True" 
-                materialDesign:TextFieldAssist.UnderlineBrush="{DynamicResource SecondaryAccentBrush}"
-                materialDesign:ColorZoneAssist.Mode="Inverted"  
-                materialDesign:HintAssist.Hint="Năm học"  
-                Width="120">
-            </ComboBox>
-            <ComboBox  
-                Style="{StaticResource MaterialDesignFloatingHintComboBox}"  
-                materialDesign:TextFieldAssist.HasClearButton="True" 
-                materialDesign:TextFieldAssist.UnderlineBrush="{DynamicResource SecondaryAccentBrush}"
-                materialDesign:ColorZoneAssist.Mode="Inverted"  
-                materialDesign:HintAssist.Hint="Lớp học"  
-                Width="120">
-            </ComboBox>
-            <ComboBox  
-                Style="{StaticResource MaterialDesignFloatingHintComboBox}"  
-                materialDesign:TextFieldAssist.HasClearButton="True" 
-                materialDesign:TextFieldAssist.UnderlineBrush="{DynamicResource SecondaryAccentBrush}"
-                materialDesign:ColorZoneAssist.Mode="Inverted"  
-                materialDesign:HintAssist.Hint="Môn học"  
-                Width="120">
-            </ComboBox>
-            <ComboBox  
-                Style="{StaticResource MaterialDesignFloatingHintComboBox}"  
-                materialDesign:TextFieldAssist.HasClearButton="True" 
-                materialDesign:TextFieldAssist.UnderlineBrush="{DynamicResource SecondaryAccentBrush}"
-                materialDesign:ColorZoneAssist.Mode="Inverted"  
-                materialDesign:HintAssist.Hint="Giáo viên dạy"  
-                Width="120">
-            </ComboBox> 
-            <materialDesign:Chip Width="112" Margin="44,20,0,0"
-                    Content="Phân công"
-                    IconBackground="{DynamicResource PrimaryHueDarkBrush}"
-                    IconForeground="{DynamicResource PrimaryHueDarkForegroundBrush}">
-                <materialDesign:Chip.Icon>
-                    <materialDesign:PackIcon Kind="Add" Foreground="White"/>
-                </materialDesign:Chip.Icon>
-            </materialDesign:Chip>
-        </StackPanel>-->
-        <materialDesign:Chip Width="112" Margin="50,20,0,0" VerticalAlignment="Top" Content="Thêm" 
+        <materialDesign:Chip Width="112" Margin="50,10,0,0" VerticalAlignment="Top" Content="Thêm" 
             Click="Chip_Click" x:Name="btn_Them"
             IconBackground="{DynamicResource PrimaryHueDarkBrush}"
             IconForeground="{DynamicResource PrimaryHueDarkForegroundBrush}">
@@ -193,78 +16,51 @@
                 <materialDesign:PackIcon Kind="Add" Foreground="White"/>
             </materialDesign:Chip.Icon>
         </materialDesign:Chip>
-         <materialDesign:Chip Width="112" Margin="206,20,0,0" VerticalAlignment="Top" Content="Sửa"
-            Click="Chip_Click" x:Name="btn_Sua"
-            IconBackground="{DynamicResource PrimaryHueDarkBrush}"
-            IconForeground="{DynamicResource PrimaryHueDarkForegroundBrush}">
-            <materialDesign:Chip.Icon>
-                <materialDesign:PackIcon Kind="Edit" Foreground="White"/>
-            </materialDesign:Chip.Icon>
-        </materialDesign:Chip>
-        <materialDesign:Chip Width="112" Margin="362,20,0,0" VerticalAlignment="Top"
-            Content="Xóa"
-            IconBackground="{DynamicResource PrimaryHueDarkBrush}"
-            IconForeground="{DynamicResource PrimaryHueDarkForegroundBrush}">
-            <materialDesign:Chip.Icon>
-                <materialDesign:PackIcon Kind="Delete" Foreground="White"/>
-            </materialDesign:Chip.Icon>
-        </materialDesign:Chip>
-        <!--<Expander HorizontalAlignment="Left" ExpandDirection="Right" x:Name="grp_GiaoVien">
-            <Expander.Header>
-                <TextBlock
-                    Text="Thông tin"
-                    RenderTransformOrigin=".5,.5">
-                    <TextBlock.LayoutTransform>
-                        <RotateTransform Angle="90" />
-                    </TextBlock.LayoutTransform>
-                </TextBlock>
-            </Expander.Header>
-            <StackPanel Orientation="Vertical" Margin="0,0,8,0" Width="200"
-                TextBlock.Foreground="{DynamicResource MaterialDesignBody}">
-                <Label Content="Phân Công Giảng Dạy" HorizontalAlignment="Center" 
-                   FontSize="18" FontWeight="Bold" Margin="0,10,0,10"/>
-                <ComboBox  
-                Style="{StaticResource MaterialDesignFloatingHintComboBox}"  
-                materialDesign:TextFieldAssist.HasClearButton="True" 
-                materialDesign:TextFieldAssist.UnderlineBrush="{DynamicResource SecondaryAccentBrush}"
-                materialDesign:ColorZoneAssist.Mode="Inverted"  
-                materialDesign:HintAssist.Hint="Năm học"  
-                Width="120">
-                </ComboBox>
-                <ComboBox  
-                Style="{StaticResource MaterialDesignFloatingHintComboBox}"  
-                materialDesign:TextFieldAssist.HasClearButton="True" 
-                materialDesign:TextFieldAssist.UnderlineBrush="{DynamicResource SecondaryAccentBrush}"
-                materialDesign:ColorZoneAssist.Mode="Inverted"  
-                materialDesign:HintAssist.Hint="Lớp học"  
-                Width="120">
-                </ComboBox>
-                <ComboBox  
-                Style="{StaticResource MaterialDesignFloatingHintComboBox}"  
-                materialDesign:TextFieldAssist.HasClearButton="True" 
-                materialDesign:TextFieldAssist.UnderlineBrush="{DynamicResource SecondaryAccentBrush}"
-                materialDesign:ColorZoneAssist.Mode="Inverted"  
-                materialDesign:HintAssist.Hint="Môn học"  
-                Width="120">
-                </ComboBox>
-                <ComboBox  
-                Style="{StaticResource MaterialDesignFloatingHintComboBox}"  
-                materialDesign:TextFieldAssist.HasClearButton="True" 
-                materialDesign:TextFieldAssist.UnderlineBrush="{DynamicResource SecondaryAccentBrush}"
-                materialDesign:ColorZoneAssist.Mode="Inverted"  
-                materialDesign:HintAssist.Hint="Giáo viên dạy"  
-                Width="120">
-                </ComboBox>
-                <materialDesign:Chip Width="112" Margin="44,20,0,0"
-                    Content="Phân công"
-                    IconBackground="{DynamicResource PrimaryHueDarkBrush}"
-                    IconForeground="{DynamicResource PrimaryHueDarkForegroundBrush}">
-                    <materialDesign:Chip.Icon>
-                        <materialDesign:PackIcon Kind="Add" Foreground="White"/>
-                    </materialDesign:Chip.Icon>
-                </materialDesign:Chip>
-            </StackPanel>
-        </Expander>-->
+        <Grid HorizontalAlignment="Left" Width="750" Margin="10,55,0,10">
+            <ListView Name="lvDS_GiaoVien">               
+                <ListView.Resources>
+                    <Style TargetType="ListViewItem">
+                        <Style.Triggers>
+                            <Trigger Property="IsKeyboardFocusWithin" Value="True">
+                                <Setter Property="IsSelected" Value="True"/>
+                            </Trigger>
+                        </Style.Triggers>
+                        <EventSetter Event="PreviewGotKeyboardFocus" Handler="SelectCurrentItem"/>
+                    </Style>
+                </ListView.Resources>
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn Header="Mã" Width="60" DisplayMemberBinding="{Binding ma_GiaoVien}" />
+                        <GridViewColumn Header="Họ Tên" Width="165" DisplayMemberBinding="{Binding ten_GiaoVien}" />
+                        <GridViewColumn Header="Địa Chỉ" Width="200" DisplayMemberBinding="{Binding diachi_GiaoVien}" />
+                        <GridViewColumn Header="Điện thoại" Width="95" DisplayMemberBinding="{Binding dienthoai_GiaoVien}" />
+                        <GridViewColumn Header="Môn" Width="90" DisplayMemberBinding="{Binding ten_MonHoc}" />
+                        <GridViewColumn>
+                            <GridViewColumn.CellTemplate>
+                                <DataTemplate>
+                                    <Button Width="20" Height="20" Click="Button_Click" x:Name="btn_Sua"
+                                        Style="{StaticResource MaterialDesignIconButton}" Padding="0"
+                                        ToolTip="Chỉnh sửa">
+                                        <materialDesign:PackIcon Kind="Edit" />
+                                    </Button>
+                                </DataTemplate>
+                            </GridViewColumn.CellTemplate>
+                        </GridViewColumn>
+                        <GridViewColumn>
+                            <GridViewColumn.CellTemplate>
+                                <DataTemplate>
+                                    <Button Width="23" Height="23" Click="Button_Click" x:Name="btn_Xoa"
+                                        Style="{StaticResource MaterialDesignIconButton}" Padding="0"
+                                        ToolTip="Xóa">
+                                        <materialDesign:PackIcon Kind="Delete" />
+                                    </Button>
+                                </DataTemplate>
+                            </GridViewColumn.CellTemplate>
+                        </GridViewColumn>
+                    </GridView>
+                </ListView.View>                
+            </ListView>
+        </Grid>
         <Expander HorizontalAlignment="Right"
             ExpandDirection="Left">
             <Expander.Header>
@@ -281,36 +77,36 @@
                 <Label Content="Phân Công Giảng Dạy" HorizontalAlignment="Center" 
                    FontSize="18" FontWeight="Bold" Margin="0,10,0,10"/>
                 <ComboBox  
-                Style="{StaticResource MaterialDesignFloatingHintComboBox}"  
-                materialDesign:TextFieldAssist.HasClearButton="True" 
-                materialDesign:TextFieldAssist.UnderlineBrush="{DynamicResource SecondaryAccentBrush}"
-                materialDesign:ColorZoneAssist.Mode="Inverted"  
-                materialDesign:HintAssist.Hint="Năm học"  
-                Width="120">
+                    Style="{StaticResource MaterialDesignFloatingHintComboBox}"  
+                    materialDesign:TextFieldAssist.HasClearButton="True" 
+                    materialDesign:TextFieldAssist.UnderlineBrush="{DynamicResource SecondaryAccentBrush}"
+                    materialDesign:ColorZoneAssist.Mode="Inverted"  
+                    materialDesign:HintAssist.Hint="Năm học"  
+                    Width="120">
                 </ComboBox>
                 <ComboBox  
-                Style="{StaticResource MaterialDesignFloatingHintComboBox}"  
-                materialDesign:TextFieldAssist.HasClearButton="True" 
-                materialDesign:TextFieldAssist.UnderlineBrush="{DynamicResource SecondaryAccentBrush}"
-                materialDesign:ColorZoneAssist.Mode="Inverted"  
-                materialDesign:HintAssist.Hint="Lớp học"  
-                Width="120">
+                    Style="{StaticResource MaterialDesignFloatingHintComboBox}"  
+                    materialDesign:TextFieldAssist.HasClearButton="True" 
+                    materialDesign:TextFieldAssist.UnderlineBrush="{DynamicResource SecondaryAccentBrush}"
+                    materialDesign:ColorZoneAssist.Mode="Inverted"  
+                    materialDesign:HintAssist.Hint="Lớp học"  
+                    Width="120">
                 </ComboBox>
                 <ComboBox  
-                Style="{StaticResource MaterialDesignFloatingHintComboBox}"  
-                materialDesign:TextFieldAssist.HasClearButton="True" 
-                materialDesign:TextFieldAssist.UnderlineBrush="{DynamicResource SecondaryAccentBrush}"
-                materialDesign:ColorZoneAssist.Mode="Inverted"  
-                materialDesign:HintAssist.Hint="Môn học"  
-                Width="120">
+                    Style="{StaticResource MaterialDesignFloatingHintComboBox}"  
+                    materialDesign:TextFieldAssist.HasClearButton="True" 
+                    materialDesign:TextFieldAssist.UnderlineBrush="{DynamicResource SecondaryAccentBrush}"
+                    materialDesign:ColorZoneAssist.Mode="Inverted"  
+                    materialDesign:HintAssist.Hint="Môn học"  
+                    Width="120">
                 </ComboBox>
                 <ComboBox  
-                Style="{StaticResource MaterialDesignFloatingHintComboBox}"  
-                materialDesign:TextFieldAssist.HasClearButton="True" 
-                materialDesign:TextFieldAssist.UnderlineBrush="{DynamicResource SecondaryAccentBrush}"
-                materialDesign:ColorZoneAssist.Mode="Inverted"  
-                materialDesign:HintAssist.Hint="Giáo viên dạy"  
-                Width="120">
+                    Style="{StaticResource MaterialDesignFloatingHintComboBox}"  
+                    materialDesign:TextFieldAssist.HasClearButton="True" 
+                    materialDesign:TextFieldAssist.UnderlineBrush="{DynamicResource SecondaryAccentBrush}"
+                    materialDesign:ColorZoneAssist.Mode="Inverted"  
+                    materialDesign:HintAssist.Hint="Giáo viên dạy"  
+                    Width="120">
                 </ComboBox>
                 <materialDesign:Chip Width="112" Margin="44,20,0,0"
                     Content="Phân công"

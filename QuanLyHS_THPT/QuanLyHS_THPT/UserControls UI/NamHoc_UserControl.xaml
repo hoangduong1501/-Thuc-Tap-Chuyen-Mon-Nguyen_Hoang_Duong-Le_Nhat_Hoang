@@ -23,7 +23,7 @@
                         </TextBlock.LayoutTransform>
                     </TextBlock>
                 </Expander.Header>
-                <StackPanel                    
+                <StackPanel                   
                     Orientation="Vertical" Margin="0,24,16,24" Width="180"
                     TextBlock.Foreground="{DynamicResource MaterialDesignBody}">
                     <TextBox
@@ -43,7 +43,7 @@
                         </materialDesign:HintAssist.Hint>
                     </TextBox>
                     <materialDesign:Chip Width="112" Margin="30,20,0,0"
-                    Content="Thêm" x:Name="btn_ThemNamHoc"
+                    Content="Thêm" x:Name="btn_ThemNamHoc" Click="btn_Event_Click"
                     IconBackground="{DynamicResource PrimaryHueDarkBrush}"
                     IconForeground="{DynamicResource PrimaryHueDarkForegroundBrush}">
                         <materialDesign:Chip.Icon>
@@ -53,13 +53,33 @@
                 </StackPanel>
             </Expander>
             <materialDesign:Chip Width="112" VerticalAlignment="Top" HorizontalAlignment="Right"
-                    Content="Xóa" x:Name="btn_XoaNamHoc" 
+                    Content="Xóa" x:Name="btn_XoaNamHoc" Click="btn_Event_Click"
                     IconBackground="{DynamicResource PrimaryHueDarkBrush}"
-                    IconForeground="{DynamicResource PrimaryHueDarkForegroundBrush}" Margin="0,28,28,0">
+                    IconForeground="{DynamicResource PrimaryHueDarkForegroundBrush}" Margin="0,15,28,0">
                 <materialDesign:Chip.Icon>
                     <materialDesign:PackIcon Kind="Add" Foreground="White"/>
                 </materialDesign:Chip.Icon>
             </materialDesign:Chip>
+            <Grid HorizontalAlignment="Left" Width="390" Margin="60,55,0,10">
+                <ListView Name="lvDS_NamHoc">
+                    <!--<ListView.Resources>
+                        <Style TargetType="ListViewItem">
+                            <Style.Triggers>
+                                <Trigger Property="IsKeyboardFocusWithin" Value="True">
+                                    <Setter Property="IsSelected" Value="True"/>
+                                </Trigger>
+                            </Style.Triggers>
+                            <EventSetter Event="PreviewGotKeyboardFocus" Handler="SelectCurrentItem"/>
+                        </Style>
+                    </ListView.Resources>-->
+                    <ListView.View>
+                        <GridView>
+                            <GridViewColumn Header="Mã năm" Width="150" DisplayMemberBinding="{Binding ma_NamHoc}" />
+                            <GridViewColumn Header="Tên năm" Width="200" DisplayMemberBinding="{Binding ten_NamHoc}" />
+                        </GridView>
+                    </ListView.View>
+                </ListView>
+            </Grid>
         </Grid>
         <Grid Grid.Column="1">
             <Expander
@@ -93,7 +113,7 @@
                         </materialDesign:HintAssist.Hint>
                     </TextBox>
                     <materialDesign:Chip Width="112" Margin="30,20,0,0"
-                    Content="Thêm" x:Name="btn_ThemHocKy"
+                    Content="Thêm" x:Name="btn_ThemHocKy" Click="btn_Event_Click"
                     IconBackground="{DynamicResource PrimaryHueDarkBrush}"
                     IconForeground="{DynamicResource PrimaryHueDarkForegroundBrush}">
                         <materialDesign:Chip.Icon>
@@ -103,9 +123,9 @@
                 </StackPanel>
             </Expander>
             <materialDesign:Chip Width="112" VerticalAlignment="Top" HorizontalAlignment="Right"
-                    Content="Xóa" x:Name="btn_XoaHocKy"
+                    Content="Xóa" x:Name="btn_XoaHocKy" Click="btn_Event_Click"
                     IconBackground="{DynamicResource PrimaryHueDarkBrush}"
-                    IconForeground="{DynamicResource PrimaryHueDarkForegroundBrush}" Margin="0,28,28,0">
+                    IconForeground="{DynamicResource PrimaryHueDarkForegroundBrush}" Margin="0,15,28,0">
                 <materialDesign:Chip.Icon>
                     <materialDesign:PackIcon Kind="Add" Foreground="White"/>
                 </materialDesign:Chip.Icon>

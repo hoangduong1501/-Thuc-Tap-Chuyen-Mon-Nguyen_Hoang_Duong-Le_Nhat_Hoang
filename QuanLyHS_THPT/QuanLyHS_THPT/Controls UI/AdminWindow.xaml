@@ -14,7 +14,7 @@
         AllowsTransparency="True" 
         WindowStartupLocation="CenterScreen"        
         fw:AcrylicWindow.AcrylicWindowStyle="None"
-        fw:AcrylicWindow.ExtendViewIntoTitleBar="True">
+        fw:AcrylicWindow.ExtendViewIntoTitleBar="True" Loaded="Window_Loaded" Icon="/QuanLyHS_THPT;component/Icons/icons8_ios_photos_500px.png">
 
     <Window.Resources>
         <Storyboard x:Key="OpenMenu">
@@ -138,7 +138,7 @@
             </Grid.RowDefinitions>
             <Grid Background="AliceBlue" MouseDown="Grid_MouseDown" MouseLeftButtonDown="Grid_MouseLeftButtonDown">
                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
-                    <TextBlock Text="Nguyen Hoang Duong" VerticalAlignment="Center" Margin="0,0,10,0"/>
+                    <TextBlock x:Name="box_TenNguoiDung" VerticalAlignment="Center" Margin="0,0,10,0"/>
                     <Button  
                         Width="30" Height="30" Background="{x:Null}" Margin="0,0,10,0"
                         Style="{StaticResource MaterialDesignFloatingActionButton}"  
@@ -152,7 +152,7 @@
                         PlacementMode="BottomAndAlignRightEdges">
                         <ListBox>
                             <ListBoxItem>
-                                <StackPanel Orientation="Horizontal">
+                                <StackPanel Orientation="Horizontal" MouseDown="ListBoxItem_MouseDown">
                                     <materialDesign:PackIcon Kind="KeyChange"/>
                                     <TextBlock Text="Đổi mật khẩu" Margin="10,0,0,0" VerticalAlignment="Top" />
                                 </StackPanel>

@@ -13,7 +13,7 @@ namespace QuanLyHS_THPT.Data
         private static string connect_String = @"Data Source=DESKTOP-RGEGQ1F\SQLEXPRESS;Initial Catalog=QLHocSinhTHPT;Integrated Security=True";
 
         //thuc hien cac cau try van insert, delete, update
-        public static void QueryData(SqlCommand sqlCommand)
+        public static bool QueryData(SqlCommand sqlCommand)
         {
             using(SqlConnection sqlConnection = new SqlConnection(connect_String))
             {
@@ -24,8 +24,13 @@ namespace QuanLyHS_THPT.Data
                     sqlCommand.CommandType = System.Data.CommandType.Text;
                     sqlCommand.ExecuteNonQuery();
                     sqlConnection.Close();
+
+                    return true;
                 }
-                catch (Exception) { }
+                catch (Exception)
+                {
+                    return false;
+                }
             }
         }
 

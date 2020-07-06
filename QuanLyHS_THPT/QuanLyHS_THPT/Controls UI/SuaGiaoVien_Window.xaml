@@ -9,16 +9,16 @@
         ResizeMode="NoResize"
         WindowStyle="None"
         WindowStartupLocation="CenterScreen"
-        Title="QuyDinh_Window" Height="445" Width="352">
+        Title="QuyDinh_Window" Height="381" Width="352">
     <Border BorderBrush="DodgerBlue" BorderThickness="1,1,1,1" CornerRadius="10">
         <Grid>
-            <StackPanel Height="370" VerticalAlignment="Top">
+            <StackPanel Height="291" VerticalAlignment="Top" Loaded="StackPanel_Loaded">
                 <Label Content="Sửa Thông Tin"  HorizontalAlignment="Center" 
-                   FontSize="18" FontWeight="Bold" Margin="0,10,0,10"/>
+                   FontSize="18" FontWeight="Bold" Margin="110,10"/>
                 <TextBox
                     Style="{StaticResource MaterialDesignFloatingHintTextBox}"  
-                    VerticalAlignment="Center"  Width="200"
-                    materialDesign:TextFieldAssist.HasClearButton="True">
+                    VerticalAlignment="Center" Width="200" x:Name="txt_MaGiaoVien"
+                    materialDesign:TextFieldAssist.HasClearButton="True" IsReadOnly="True" IsEnabled="False">
                     <materialDesign:HintAssist.Hint>
                         <StackPanel
                         Orientation="Horizontal"
@@ -31,7 +31,7 @@
                 </TextBox>
                 <TextBox
                 Style="{StaticResource MaterialDesignFloatingHintTextBox}"  
-                VerticalAlignment="Center" Width="200"
+                VerticalAlignment="Center" Width="200" x:Name="txt_TenGiaoVien"
                 materialDesign:TextFieldAssist.HasClearButton="True">
                     <materialDesign:HintAssist.Hint>
                         <StackPanel
@@ -45,42 +45,8 @@
                 </TextBox>
                 <TextBox
                 Style="{StaticResource MaterialDesignFloatingHintTextBox}"  
-                VerticalAlignment="Center"
-                materialDesign:TextFieldAssist.HasClearButton="True"
-                materialDesign:TextFieldAssist.SuffixText=""
-                Width="200">
-                    <materialDesign:HintAssist.Hint>
-                        <StackPanel
-                        Orientation="Horizontal"
-                        Margin="-2 0 0 0">
-                            <materialDesign:PackIcon
-                            Kind="User" />
-                            <TextBlock Text="Tên đăng nhập"/>
-                        </StackPanel>
-                    </materialDesign:HintAssist.Hint>
-                </TextBox>
-                <TextBox
-                Style="{StaticResource MaterialDesignFloatingHintTextBox}"  
-                VerticalAlignment="Center"
-                materialDesign:TextFieldAssist.HasClearButton="True"
-                materialDesign:TextFieldAssist.SuffixText=""
-                Width="200">
-                    <materialDesign:HintAssist.Hint>
-                        <StackPanel
-                        Orientation="Horizontal"
-                        Margin="-2 0 0 0">
-                            <materialDesign:PackIcon
-                            Kind="Key" />
-                            <TextBlock Text="Mật khẩu"/>
-                        </StackPanel>
-                    </materialDesign:HintAssist.Hint>
-                </TextBox>
-                <TextBox
-                Style="{StaticResource MaterialDesignFloatingHintTextBox}"  
-                VerticalAlignment="Center"
-                materialDesign:TextFieldAssist.HasClearButton="True"
-                materialDesign:TextFieldAssist.SuffixText=""
-                Width="200">
+                VerticalAlignment="Center" Width="200" x:Name="txt_DiaChi"
+                materialDesign:TextFieldAssist.HasClearButton="True">
                     <materialDesign:HintAssist.Hint>
                         <StackPanel
                         Orientation="Horizontal"
@@ -93,10 +59,9 @@
                 </TextBox>
                 <TextBox
                 Style="{StaticResource MaterialDesignFloatingHintTextBox}"  
-                VerticalAlignment="Center"
+                VerticalAlignment="Center" Width="200" x:Name="txt_DienThoai"
                 materialDesign:TextFieldAssist.HasClearButton="True"
-                materialDesign:TextFieldAssist.SuffixText=""
-                Width="200">
+                materialDesign:TextFieldAssist.SuffixText="">
                     <materialDesign:HintAssist.Hint>
                         <StackPanel
                         Orientation="Horizontal"
@@ -113,21 +78,20 @@
                 materialDesign:TextFieldAssist.UnderlineBrush="{DynamicResource SecondaryAccentBrush}"
                 materialDesign:ColorZoneAssist.Mode="Inverted"  
                 materialDesign:HintAssist.Hint="Chuyên môn"  
-                Width="200">
-                </ComboBox>
+                Width="200" x:Name="cbb_ChuyenMon"/>
             </StackPanel>
-            <materialDesign:Chip Width="112" Margin="55,382,0,29" 
-                    Content="Cập nhật"
-                    IconBackground="{DynamicResource PrimaryHueDarkBrush}"
-                    IconForeground="{DynamicResource PrimaryHueDarkForegroundBrush}">
+            <materialDesign:Chip Width="112" Margin="55,305,0,42"  
+                Content="Cập nhật" Click="Chip_Click" x:Name="btn_CapNhat"
+                IconBackground="{DynamicResource PrimaryHueDarkBrush}"
+                IconForeground="{DynamicResource PrimaryHueDarkForegroundBrush}">
                 <materialDesign:Chip.Icon>
                     <materialDesign:PackIcon Kind="Add" Foreground="White"/>
                 </materialDesign:Chip.Icon>
             </materialDesign:Chip>
-            <materialDesign:Chip Width="112" Margin="185,382,0,29"
-                    Content="Thoát" Click="Chip_Click"
-                    IconBackground="{DynamicResource PrimaryHueDarkBrush}"
-                    IconForeground="{DynamicResource PrimaryHueDarkForegroundBrush}">
+            <materialDesign:Chip Width="112" Margin="185,305,0,42"
+                Content="Thoát" Click="Chip_Click" x:Name="btn_Thoat"
+                IconBackground="{DynamicResource PrimaryHueDarkBrush}"
+                IconForeground="{DynamicResource PrimaryHueDarkForegroundBrush}">
                 <materialDesign:Chip.Icon>
                     <materialDesign:PackIcon Kind="Edit" Foreground="White"/>
                 </materialDesign:Chip.Icon>

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using QuanLyHS_THPT.View_Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -41,24 +42,29 @@ namespace QuanLyHS_THPT
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
-        {            
-            models.NguoiDung_Class nguoiDung = new models.NguoiDung_Class()
+        {
+            if (txt_TenDangNhap.Text.Trim() != "" && txt_MatKhau.ToString().Trim() != "")
             {
-                tenDangNhap = txt_TenDangNhap.Text,
-                matKhauDangNhap = txt_MatKhau.Password.Trim()
-            };
-
-            if (nguoiDung.LayThongTin())
-            {
-                Controls_UI.AdminWindow adminWindow = new Controls_UI.AdminWindow();
-                this.Visibility = Visibility.Collapsed;
-                adminWindow.ShowDialog();
-                this.Visibility = Visibility.Visible;
+                VM_NguoiDung vM_NguoiDung = new VM_NguoiDung();
+                if (vM_NguoiDung.KiemTra_DangNhap(txt_TenDangNhap.Text.Trim(), txt_MatKhau.Password.Trim()))
+                {
+                    Controls_UI.AdminWindow adminWindow = new Controls_UI.AdminWindow()
+                    {
+                        str_TenNguoiDung = vM_NguoiDung.Lay_TenNguoiDung(),
+                        str_TenDangNhap = txt_TenDangNhap.Text.Trim()
+                    };
+                    this.Visibility = Visibility.Collapsed;
+                    adminWindow.ShowDialog();
+                    this.Visibility = Visibility.Visible;
+                }
+                else
+                {
+                    this.status.Text = "Tài khoản hoặc mật khẩu không đúng!";
+                }
             }
             else
             {
-                MessageBox.Show("Sai");
-                this.status.Text="Tai khoan mat khau khong dung"
+                this.status.Text = "Hãy nhập tài khoản!";
             }
         }
     }
