@@ -9,7 +9,7 @@
         xmlns:fw="clr-namespace:SourceChord.FluentWPF;assembly=FluentWPF" 
         fw:AcrylicWindow.Enabled="True" 
         FontSize="15" 
-        Height="630" Width="975" MinHeight="630" MinWidth="1080"
+        Height="630" Width="975" MinHeight="630" MinWidth="975"
         WindowStyle="None" ResizeMode="CanResize" 
         AllowsTransparency="True" 
         WindowStartupLocation="CenterScreen"        
