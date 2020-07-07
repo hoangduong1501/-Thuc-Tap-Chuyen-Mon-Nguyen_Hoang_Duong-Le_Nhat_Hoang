@@ -79,6 +79,7 @@
     <Compile Include="models\GiaoVien_Class.cs" />
     <Compile Include="models\HocKy_Class.cs" />
     <Compile Include="models\HocSinh_Class.cs" />
+    <Compile Include="models\KhoiLop_Class.cs" />
     <Compile Include="models\LoaiNguoiDung_Class.cs" />
     <Compile Include="models\Lop_Class.cs" />
     <Compile Include="models\MonHoc_Class.cs" />

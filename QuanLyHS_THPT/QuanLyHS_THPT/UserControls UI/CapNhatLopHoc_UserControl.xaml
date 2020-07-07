@@ -6,17 +6,12 @@
              xmlns:local="clr-namespace:QuanLyHS_THPT.UserControls_UI"
              xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
              mc:Ignorable="d" 
-             d:DesignHeight="524" d:DesignWidth="925">
-    <Grid Background="White">
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="250"/>
-            <ColumnDefinition Width="60"/>
-            <ColumnDefinition Width="*"/>
-        </Grid.ColumnDefinitions>
-        <StackPanel x:Name="grp_Input">
+             d:DesignHeight="524" d:DesignWidth="1034">
+    <StackPanel Background="White" Orientation="Horizontal">        
+        <StackPanel x:Name="grp_Input" Margin="30,0,0,0">
             <TextBox
                 Style="{StaticResource MaterialDesignFloatingHintTextBox}"  
-                VerticalAlignment="Center" 
+                VerticalAlignment="Center" x:Name="txt_MaLopHoc"
                 materialDesign:TextFieldAssist.HasClearButton="True"
                 Width="200">
                 <materialDesign:HintAssist.Hint>
@@ -30,7 +25,7 @@
             </TextBox>
             <TextBox
                 Style="{StaticResource MaterialDesignFloatingHintTextBox}"  
-                VerticalAlignment="Center"
+                VerticalAlignment="Center" x:Name="txt_TenLopHoc"
                 materialDesign:TextFieldAssist.HasClearButton="True"
                 Width="200">
                 <materialDesign:HintAssist.Hint>
@@ -47,35 +42,31 @@
                 materialDesign:TextFieldAssist.HasClearButton="True" 
                 materialDesign:TextFieldAssist.UnderlineBrush="{DynamicResource SecondaryAccentBrush}"
                 materialDesign:ColorZoneAssist.Mode="Inverted"  
-                materialDesign:HintAssist.Hint="Khối lớp"  
-                Width="200">
+                materialDesign:HintAssist.Hint="Khối lớp" x:Name="cbb_KhoiLop" Width="200">
             </ComboBox>
             <ComboBox  
                 Style="{StaticResource MaterialDesignFloatingHintComboBox}"  
                 materialDesign:TextFieldAssist.HasClearButton="True" 
                 materialDesign:TextFieldAssist.UnderlineBrush="{DynamicResource SecondaryAccentBrush}"
                 materialDesign:ColorZoneAssist.Mode="Inverted"  
-                materialDesign:HintAssist.Hint="Năm học"  
-                Width="200">
+                materialDesign:HintAssist.Hint="Năm học" x:Name="cbb_NamHoc" Width="200">
             </ComboBox>
             <ComboBox  
                 Style="{StaticResource MaterialDesignFloatingHintComboBox}"  
                 materialDesign:TextFieldAssist.HasClearButton="True" 
                 materialDesign:TextFieldAssist.UnderlineBrush="{DynamicResource SecondaryAccentBrush}"
                 materialDesign:ColorZoneAssist.Mode="Inverted"  
-                materialDesign:HintAssist.Hint="Sỉ số"  
-                Width="200">
+                materialDesign:HintAssist.Hint="Sỉ số" x:Name="cbb_SiSo" Width="200">
             </ComboBox>
             <ComboBox  
                 Style="{StaticResource MaterialDesignFloatingHintComboBox}"  
                 materialDesign:TextFieldAssist.HasClearButton="True" 
                 materialDesign:TextFieldAssist.UnderlineBrush="{DynamicResource SecondaryAccentBrush}"
                 materialDesign:ColorZoneAssist.Mode="Inverted"  
-                materialDesign:HintAssist.Hint="Giáo viên chủ nhiệm"  
-                Width="200">
+                materialDesign:HintAssist.Hint="Giáo viên chủ nhiệm" x:Name="cbb_GiaoVien" Width="200">
             </ComboBox>
-            <materialDesign:Chip Width="112" Margin="70,20,0,0"
-                Content="Cập nhập"
+            <materialDesign:Chip Width="112" Margin="45,20,0,0"
+                Content="Cập nhập" x:Name="btn_CapNhat" Click="btn_CapNhat_Click"
                 IconBackground="{DynamicResource PrimaryHueDarkBrush}"
                 IconForeground="{DynamicResource PrimaryHueDarkForegroundBrush}">
                 <materialDesign:Chip.Icon>
@@ -83,7 +74,7 @@
                 </materialDesign:Chip.Icon>
             </materialDesign:Chip>
         </StackPanel>
-        <StackPanel Grid.Column="1" Height="200" VerticalAlignment="Top" Margin="0,50,0,0">
+        <StackPanel Grid.Column="1" Height="200" VerticalAlignment="Top" Margin="30,50,0,0">
             <Button 
                 Style="{StaticResource MaterialDesignFloatingActionMiniAccentButton}"
                 ToolTip="Thêm" x:Name="btn_Them" Click="btn_Event_Click">
@@ -91,30 +82,30 @@
             </Button>
             <Button Margin="0,10,0,0"
                 Style="{StaticResource MaterialDesignFloatingActionMiniAccentButton}"
-                ToolTip="Sửa">
+                ToolTip="Sửa" x:Name="btn_Sua" Click="btn_Event_Click">
                 <materialDesign:PackIcon Kind="Edit" Height="24" Width="24" />
             </Button>
             <Button Margin="0,10,0,0"
                 Style="{StaticResource MaterialDesignFloatingActionMiniAccentButton}"
-                ToolTip="Xóa">
+                ToolTip="Xóa" x:Name="btn_Xoa" Click="btn_Event_Click">
                 <materialDesign:PackIcon Kind="Delete" Height="24" Width="24" />
             </Button>
             <Button Margin="0,10,0,0"
                 Style="{StaticResource MaterialDesignFloatingActionMiniAccentButton}"
-                ToolTip="Làm mới">
+                ToolTip="Làm mới" x:Name="btn_LamMoi" Click="btn_Event_Click">
                 <materialDesign:PackIcon Kind="Refresh" Height="24" Width="24" />
             </Button>
         </StackPanel>
-        <Grid Grid.Column="2">
+        <Grid Margin="30,0,0,0">
             <Grid.RowDefinitions>
                 <RowDefinition Height="45" />
                 <RowDefinition Height="*" />
             </Grid.RowDefinitions>
             <Grid>
-                <TextBox 
+                <TextBox KeyDown="txt_TimKiem_KeyDown"
                     Margin="50,0,0,0" HorizontalAlignment="Left"
                     Style="{StaticResource MaterialDesignFloatingHintTextBox}"   
-                    VerticalAlignment="Top" Width="200"
+                    VerticalAlignment="Top" Width="200" x:Name="txt_TimKiem"
                     materialDesign:TextFieldAssist.HasClearButton="True">
                     <materialDesign:HintAssist.Hint>
                         <StackPanel      
@@ -129,7 +120,7 @@
             </Grid>
             <Grid Grid.Row="1">
                 <ListView Name="lvDS_Lop">
-                    <!--<ListView.Resources>
+                    <ListView.Resources>
                         <Style TargetType="ListViewItem">
                             <Style.Triggers>
                                 <Trigger Property="IsKeyboardFocusWithin" Value="True">
@@ -138,7 +129,7 @@
                             </Style.Triggers>
                             <EventSetter Event="PreviewGotKeyboardFocus" Handler="SelectCurrentItem"/>
                         </Style>
-                    </ListView.Resources>-->
+                    </ListView.Resources>
                     <ListView.View>
                         <GridView>
                             <GridViewColumn Header="Mã" Width="100" DisplayMemberBinding="{Binding ma_Lop}" />
@@ -152,5 +143,5 @@
                 </ListView>
             </Grid>
         </Grid>
-    </Grid>
+    </StackPanel>
 </UserControl>
