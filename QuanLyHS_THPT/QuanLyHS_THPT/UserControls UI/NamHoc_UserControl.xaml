@@ -13,56 +13,39 @@
             <ColumnDefinition Width="460"/>
         </Grid.ColumnDefinitions>
         <Grid>
-            <Expander ExpandDirection="Right" HorizontalAlignment="Left" x:Name="grp_NamHoc">
-                <Expander.Header>
-                    <TextBlock
-                        Text="Thêm Năm Học"
-                         RenderTransformOrigin=".5,.5">
-                        <TextBlock.LayoutTransform>
-                            <RotateTransform Angle="90" />
-                        </TextBlock.LayoutTransform>
-                    </TextBlock>
-                </Expander.Header>
-                <StackPanel                   
-                    Orientation="Vertical" Margin="0,24,16,24" Width="180"
-                    TextBlock.Foreground="{DynamicResource MaterialDesignBody}">
-                    <TextBox
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <StackPanel Orientation="Horizontal">
+                <TextBox Margin="50,0,0,0"
                         Style="{StaticResource MaterialDesignFloatingHintTextBox}"  
-                        VerticalAlignment="Center"
+                        VerticalAlignment="Center" x:Name="txt_NamHoc"
                         materialDesign:TextFieldAssist.HasClearButton="True"
                         materialDesign:TextFieldAssist.SuffixText=""
                         Width="180">
-                        <materialDesign:HintAssist.Hint>
-                            <StackPanel
+                    <materialDesign:HintAssist.Hint>
+                        <StackPanel
                                 Orientation="Horizontal"
                                 Margin="-2 0 0 0">
-                                <materialDesign:PackIcon
+                            <materialDesign:PackIcon   
                                     Kind="TimerSand" />
-                                <TextBlock Text="Năm học"/>
-                            </StackPanel>
-                        </materialDesign:HintAssist.Hint>
-                    </TextBox>
-                    <materialDesign:Chip Width="112" Margin="30,20,0,0"
-                    Content="Thêm" x:Name="btn_ThemNamHoc" Click="btn_Event_Click"
+                            <TextBlock Text="Năm học"/>
+                        </StackPanel>
+                    </materialDesign:HintAssist.Hint>
+                </TextBox>
+                <materialDesign:Chip Width="112" Margin="30,0,0,0"
+                    Content="Thêm" x:Name="btn_ThemNamHoc" Click="btn_ThemNamHoc_Click" 
                     IconBackground="{DynamicResource PrimaryHueDarkBrush}"
                     IconForeground="{DynamicResource PrimaryHueDarkForegroundBrush}">
-                        <materialDesign:Chip.Icon>
-                            <materialDesign:PackIcon Kind="Add" Foreground="White"/>
-                        </materialDesign:Chip.Icon>
-                    </materialDesign:Chip>
-                </StackPanel>
-            </Expander>
-            <materialDesign:Chip Width="112" VerticalAlignment="Top" HorizontalAlignment="Right"
-                    Content="Xóa" x:Name="btn_XoaNamHoc" Click="btn_Event_Click"
-                    IconBackground="{DynamicResource PrimaryHueDarkBrush}"
-                    IconForeground="{DynamicResource PrimaryHueDarkForegroundBrush}" Margin="0,15,28,0">
-                <materialDesign:Chip.Icon>
-                    <materialDesign:PackIcon Kind="Add" Foreground="White"/>
-                </materialDesign:Chip.Icon>
-            </materialDesign:Chip>
-            <Grid HorizontalAlignment="Left" Width="390" Margin="60,55,0,10">
+                    <materialDesign:Chip.Icon>
+                        <materialDesign:PackIcon Kind="Add" Foreground="White"/>
+                    </materialDesign:Chip.Icon>
+                </materialDesign:Chip>
+            </StackPanel>
+            <Grid Grid.Row="1" HorizontalAlignment="Left" Width="402" Margin="34,10,0,10">
                 <ListView Name="lvDS_NamHoc">
-                    <!--<ListView.Resources>
+                    <ListView.Resources>
                         <Style TargetType="ListViewItem">
                             <Style.Triggers>
                                 <Trigger Property="IsKeyboardFocusWithin" Value="True">
@@ -71,65 +54,91 @@
                             </Style.Triggers>
                             <EventSetter Event="PreviewGotKeyboardFocus" Handler="SelectCurrentItem"/>
                         </Style>
-                    </ListView.Resources>-->
+                    </ListView.Resources>
                     <ListView.View>
                         <GridView>
                             <GridViewColumn Header="Mã năm" Width="150" DisplayMemberBinding="{Binding ma_NamHoc}" />
                             <GridViewColumn Header="Tên năm" Width="200" DisplayMemberBinding="{Binding ten_NamHoc}" />
+                            <GridViewColumn>
+                                <GridViewColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <Button Width="23" Height="23" x:Name="btn_Xoa" Click="Button_Click"
+                                            Style="{StaticResource MaterialDesignIconButton}" Padding="0"
+                                            ToolTip="Xóa">  
+                                            <materialDesign:PackIcon Kind="Delete" />
+                                        </Button>
+                                    </DataTemplate>
+                                </GridViewColumn.CellTemplate>
+                            </GridViewColumn>
                         </GridView>
                     </ListView.View>
                 </ListView>
             </Grid>
         </Grid>
         <Grid Grid.Column="1">
-            <Expander
-                ExpandDirection="Right" HorizontalAlignment="Left">
-                <Expander.Header>
-                    <TextBlock
-                        Text="Thêm Học Kỳ" 
-                         RenderTransformOrigin=".5,.5">
-                        <TextBlock.LayoutTransform>
-                            <RotateTransform Angle="90" />
-                        </TextBlock.LayoutTransform>
-                    </TextBlock>
-                </Expander.Header>
-                <StackPanel                    
-                    Orientation="Vertical" Margin="0,24,16,24" Width="180"
-                    TextBlock.Foreground="{DynamicResource MaterialDesignBody}">
-                    <TextBox
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <StackPanel                    
+                    Orientation="Horizontal">
+                <TextBox Margin="50,0,0,0"
                         Style="{StaticResource MaterialDesignFloatingHintTextBox}"  
                         VerticalAlignment="Center"
                         materialDesign:TextFieldAssist.HasClearButton="True"
                         materialDesign:TextFieldAssist.SuffixText=""
                         Width="180">
-                        <materialDesign:HintAssist.Hint>
-                            <StackPanel
+                    <materialDesign:HintAssist.Hint>
+                        <StackPanel
                                 Orientation="Horizontal"
                                 Margin="-2 0 0 0">
-                                <materialDesign:PackIcon
+                            <materialDesign:PackIcon
                                     Kind="TimerSand" />
-                                <TextBlock Text="Học kỳ"/>
-                            </StackPanel>
-                        </materialDesign:HintAssist.Hint>
-                    </TextBox>
-                    <materialDesign:Chip Width="112" Margin="30,20,0,0"
-                    Content="Thêm" x:Name="btn_ThemHocKy" Click="btn_Event_Click"
+                            <TextBlock Text="Học kỳ"/>
+                        </StackPanel>
+                    </materialDesign:HintAssist.Hint>
+                </TextBox>
+                <materialDesign:Chip Width="112" Margin="30,0,0,0"
+                    Content="Thêm" x:Name="btn_ThemHocKy" Click="btn_ThemNamHoc_Click"
                     IconBackground="{DynamicResource PrimaryHueDarkBrush}"
                     IconForeground="{DynamicResource PrimaryHueDarkForegroundBrush}">
-                        <materialDesign:Chip.Icon>
-                            <materialDesign:PackIcon Kind="Add" Foreground="White"/>
-                        </materialDesign:Chip.Icon>
-                    </materialDesign:Chip>
-                </StackPanel>
-            </Expander>
-            <materialDesign:Chip Width="112" VerticalAlignment="Top" HorizontalAlignment="Right"
-                    Content="Xóa" x:Name="btn_XoaHocKy" Click="btn_Event_Click"
-                    IconBackground="{DynamicResource PrimaryHueDarkBrush}"
-                    IconForeground="{DynamicResource PrimaryHueDarkForegroundBrush}" Margin="0,15,28,0">
-                <materialDesign:Chip.Icon>
-                    <materialDesign:PackIcon Kind="Add" Foreground="White"/>
-                </materialDesign:Chip.Icon>
-            </materialDesign:Chip>
+                    <materialDesign:Chip.Icon>
+                        <materialDesign:PackIcon Kind="Add" Foreground="White"/>
+                    </materialDesign:Chip.Icon>
+                </materialDesign:Chip>
+            </StackPanel>
+            <Grid Grid.Row="1" HorizontalAlignment="Left" Width="402" Margin="34,10,0,10">
+                <ListView Name="lvDS_HocKy">
+                    <ListView.Resources>
+                        <Style TargetType="ListViewItem">
+                            <Style.Triggers>
+                                <Trigger Property="IsKeyboardFocusWithin" Value="True">
+                                    <Setter Property="IsSelected" Value="True"/>
+                                </Trigger>
+                            </Style.Triggers>
+                            <EventSetter Event="PreviewGotKeyboardFocus" Handler="SelectCurrentItem"/>
+                        </Style>
+                    </ListView.Resources>
+                    <ListView.View>
+                        <GridView>
+                            <GridViewColumn Header="Mã năm" Width="80" DisplayMemberBinding="{Binding ma_HocKy}" />
+                            <GridViewColumn Header="Tên năm" Width="100" DisplayMemberBinding="{Binding ten_HocKy}" />
+                            <GridViewColumn Header="Hệ số" Width="80" DisplayMemberBinding="{Binding heSo}" />
+                            <GridViewColumn>
+                                <GridViewColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <Button Width="23" Height="23" x:Name="btn_Xoa" Click="Button_Click"
+                                            Style="{StaticResource MaterialDesignIconButton}" Padding="0"
+                                            ToolTip="Xóa">
+                                            <materialDesign:PackIcon Kind="Delete" />
+                                        </Button>
+                                    </DataTemplate>
+                                </GridViewColumn.CellTemplate>
+                            </GridViewColumn>
+                        </GridView>
+                    </ListView.View>
+                </ListView>
+            </Grid>
         </Grid>
     </Grid>
 </UserControl>

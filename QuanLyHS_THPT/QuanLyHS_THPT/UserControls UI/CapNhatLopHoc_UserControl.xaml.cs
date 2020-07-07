@@ -1,4 +1,5 @@
-﻿using System;
+﻿using QuanLyHS_THPT.View_Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,9 +21,23 @@ namespace QuanLyHS_THPT.UserControls_UI
     /// </summary>
     public partial class CapNhatLopHoc_UserControl : UserControl
     {
+        VM_CapNhatLopHoc vM_CapNhatLopHoc;
         public CapNhatLopHoc_UserControl()
         {
             InitializeComponent();
+            this.vM_CapNhatLopHoc = new VM_CapNhatLopHoc();
+            Load_UI();
+        }
+
+        private void Load_UI()
+        {
+            this.lvDS_Lop.ItemsSource = this.vM_CapNhatLopHoc.DanhSach_Lop();
+            this.grp_Input.IsEnabled = false;
+        }
+
+        private void btn_Event_Click(object sender, RoutedEventArgs e)
+        {
+            this.grp_Input.IsEnabled = true;
         }
     }
 }

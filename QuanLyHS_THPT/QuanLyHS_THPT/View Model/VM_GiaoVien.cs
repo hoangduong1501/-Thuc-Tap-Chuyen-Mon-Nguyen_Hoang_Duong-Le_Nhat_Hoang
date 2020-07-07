@@ -155,5 +155,37 @@ namespace QuanLyHS_THPT.View_Model
 
             return Exec_Class.GetData(sqlCommand);
         }
+
+        public List<GiaoVien_Class> DanhSach_TimGiaoVien(string value)
+        {
+            DataTable dataTable = new DataTable();
+            dataTable = LayDS_TimGiaoVien(value);
+
+            List<GiaoVien_Class> lst = new List<GiaoVien_Class>();
+
+            foreach (DataRow dataRow in dataTable.Rows)
+            {
+                lst.Add(new GiaoVien_Class()
+                {
+                    ma_GiaoVien = dataRow[0].ToString().Trim(),
+                    ten_GiaoVien = dataRow[1].ToString().Trim(),
+                    diachi_GiaoVien = dataRow[2].ToString().Trim(),
+                    dienthoai_GiaoVien = dataRow[3].ToString().Trim(),
+                    ten_MonHoc = dataRow[4].ToString().Trim()
+                });
+            }
+
+            return lst;
+        }
+
+        private DataTable LayDS_TimGiaoVien(string value)
+        {
+            string query = @"EXEC dbo.Tim_GiaoVien @value";
+            SqlCommand sqlCommand = new SqlCommand();
+            sqlCommand.Parameters.AddWithValue("@value", value);
+            sqlCommand.CommandText = query;
+
+            return Exec_Class.GetData(sqlCommand);
+        }
     }
 }

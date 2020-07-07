@@ -16,6 +16,21 @@
                 <materialDesign:PackIcon Kind="Add" Foreground="White"/>
             </materialDesign:Chip.Icon>
         </materialDesign:Chip>
+        <TextBox x:Name="txt_TimKiem"
+                Style="{StaticResource MaterialDesignFloatingHintTextBox}"  
+                VerticalAlignment="Center" KeyDown="TextBox_KeyDown"
+                materialDesign:TextFieldAssist.HasClearButton="True"
+                materialDesign:TextFieldAssist.SuffixText=""
+                Width="200" Margin="314,1,502,481">
+            <materialDesign:HintAssist.Hint>
+                <StackPanel
+                        Orientation="Horizontal"
+                        Margin="-2 0 0 0">
+                    <materialDesign:PackIcon Kind="Search" />
+                    <TextBlock Text="Tìm kiếm"/>
+                </StackPanel>
+            </materialDesign:HintAssist.Hint>
+        </TextBox>
         <Grid HorizontalAlignment="Left" Width="750" Margin="10,55,0,10">
             <ListView Name="lvDS_GiaoVien">               
                 <ListView.Resources>
@@ -38,7 +53,7 @@
                         <GridViewColumn>
                             <GridViewColumn.CellTemplate>
                                 <DataTemplate>
-                                    <Button Width="20" Height="20" Click="Button_Click" x:Name="btn_Sua"
+                                    <Button Width="23" Height="23" Click="Button_Click" x:Name="btn_Sua"
                                         Style="{StaticResource MaterialDesignIconButton}" Padding="0"
                                         ToolTip="Chỉnh sửa">
                                         <materialDesign:PackIcon Kind="Edit" />

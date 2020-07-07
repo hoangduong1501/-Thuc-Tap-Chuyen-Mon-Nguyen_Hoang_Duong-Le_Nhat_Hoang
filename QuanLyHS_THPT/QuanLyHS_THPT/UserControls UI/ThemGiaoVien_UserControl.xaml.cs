@@ -96,5 +96,13 @@ namespace QuanLyHS_THPT.UserControls_UI
                 return "";
             }
         }
+
+        private void TextBox_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Enter)
+            {
+                lvDS_GiaoVien.ItemsSource = vM_GiaoVien.DanhSach_TimGiaoVien(txt_TimKiem.Text);
+            }            
+        }
     }
 }

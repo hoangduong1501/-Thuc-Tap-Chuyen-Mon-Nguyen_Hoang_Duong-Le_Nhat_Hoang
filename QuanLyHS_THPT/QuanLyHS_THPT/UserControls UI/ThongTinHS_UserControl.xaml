@@ -67,7 +67,6 @@
                         </StackPanel>
                     </materialDesign:HintAssist.Hint>
                 </TextBox>
-
                 <ComboBox  
                 Style="{StaticResource MaterialDesignFloatingHintComboBox}"  
                 materialDesign:TextFieldAssist.HasClearButton="True" 
@@ -152,7 +151,7 @@
                         Click="Button_Click">
                         <materialDesign:PackIcon Kind="ImageEditOutline" Width="20" Height="20"/>
                     </Button>
-                    <Image Source="images.jpg" Height="128" Width="96" Margin="30,30,0,0"/>
+                    <Image Source="/QuanLyHS_THPT;component/Icons/images.jpg" Height="128" Width="96" Margin="30,30,0,0"/>
                 </StackPanel>
             </StackPanel>
             <materialDesign:Chip Width="112" VerticalAlignment="Top" Margin="161,356,0,0"
