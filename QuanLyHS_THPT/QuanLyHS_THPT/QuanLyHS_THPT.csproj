@@ -84,6 +84,7 @@
     <Compile Include="models\Lop_Class.cs" />
     <Compile Include="models\MonHoc_Class.cs" />
     <Compile Include="models\NamHoc_Class.cs" />
+    <Compile Include="models\NgheNghiep_Class.cs" />
     <Compile Include="models\NguoiDung_Class.cs" />
     <Compile Include="Static_Class\List_Source.cs" />
     <Compile Include="UserControls UI\CapNhatLopHoc_UserControl.xaml.cs">
@@ -126,6 +127,7 @@
     <Compile Include="View Model\VM_GiaoVien.cs" />
     <Compile Include="View Model\VM_NamHoc.cs" />
     <Compile Include="View Model\VM_NguoiDung.cs" />
+    <Compile Include="View Model\VM_ThongTinHS.cs" />
     <Page Include="Controls UI\AdminWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
