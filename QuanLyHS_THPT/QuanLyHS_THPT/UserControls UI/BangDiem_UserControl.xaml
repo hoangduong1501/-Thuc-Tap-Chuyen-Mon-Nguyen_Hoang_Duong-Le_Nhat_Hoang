@@ -7,7 +7,12 @@
               xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
              mc:Ignorable="d" 
              d:DesignHeight="574" d:DesignWidth="925">
-    <Grid Background="LavenderBlush">
-        
+    <Grid>
+        <DataGrid          
+          CanUserAddRows="False"
+          SelectionUnit="Cell"
+          SelectionMode="Extended">
+            
+        </DataGrid>   
     </Grid>
 </UserControl>
