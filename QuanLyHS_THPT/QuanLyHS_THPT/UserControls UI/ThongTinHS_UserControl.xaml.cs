@@ -1,4 +1,5 @@
 ﻿using Microsoft.Win32;
+using QuanLyHS_THPT.models;
 using QuanLyHS_THPT.View_Model;
 using System;
 using System.Collections.Generic;
@@ -34,12 +35,12 @@ namespace QuanLyHS_THPT.UserControls_UI
 
         private void Load_DS()
         {
-             lvDanhSachHS.ItemsSource = vM_ThongTinHS.DanhSach_HocSinh();
+            lvDanhSachHS.ItemsSource = vM_ThongTinHS.DanhSach_HocSinh();
 
         }
         private void Load_Combobox()
         {
-        
+
             this.cbb_KhoiLop.ItemsSource = this.vM_ThongTinHS.DanhSach_KhoiLop();
             this.cbb_KhoiLop.SelectedValuePath = "makhoiLop";
             this.cbb_KhoiLop.DisplayMemberPath = "ten_KhoiLop";
@@ -59,12 +60,53 @@ namespace QuanLyHS_THPT.UserControls_UI
             cbb_GioiTinh.Items.Add("Nam");
             cbb_GioiTinh.Items.Add("Nữ");
         }
-
+        private void btn_Event_Click(object sender, RoutedEventArgs e)
+        {
+            Button button = sender as Button;
+            switch (button.Name)
+            {
+                case "btn_Them":
+                    this.txt_MaHocSinh.Visibility = Visibility.Collapsed;
+                    break;
+                case "btn_Sua":
+                    this.txt_MaHocSinh.Visibility = Visibility.Visible;
+                    this.txt_MaHocSinh.IsReadOnly = true;
+                    this.txt_MaHocSinh.Text = Lay_MaHS();                   
+                    break;
+                case "btn_Xoa":
+                    Lay_MaHS();
+                    break;
+                case "btn_LamMoi":
+                    LoadDS_LopHoc();
+                    break;
+            }
+        }
+        private void LoadDS_LopHoc()
+        {
+            this.lvDanhSachHS.ItemsSource = this.vM_ThongTinHS.DanhSach_HocSinh();
+            
+        }
+        private string Lay_MaHS()
+        {
+            try
+            {
+                var item = ((HocSinh_Class)lvDanhSachHS.SelectedItem).maHocSinh;
+                if (item != null)
+                {
+                    MessageBox.Show(item.ToString());
+                    return (item.ToString());
+                }
+                return "";
+            }
+            catch (Exception)
+            {
+                return "";
+            }
+        }
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             OpenFileDialog openFileDialog = new OpenFileDialog();
             openFileDialog.ShowDialog();
         }
-
     }
 }

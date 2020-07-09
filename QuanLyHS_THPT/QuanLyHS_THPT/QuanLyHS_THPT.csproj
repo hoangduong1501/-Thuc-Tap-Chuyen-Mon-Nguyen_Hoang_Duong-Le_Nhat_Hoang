@@ -127,6 +127,7 @@
     <Compile Include="View Model\VM_GiaoVien.cs" />
     <Compile Include="View Model\VM_NamHoc.cs" />
     <Compile Include="View Model\VM_NguoiDung.cs" />
+    <Compile Include="View Model\VM_PhanLop.cs" />
     <Compile Include="View Model\VM_ThongTinHS.cs" />
     <Page Include="Controls UI\AdminWindow.xaml">
       <SubType>Designer</SubType>
