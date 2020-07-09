@@ -51,6 +51,14 @@
                 Width="200"
                 materialDesign:HintAssist.Hint="Ngày sinh"
                 Style="{StaticResource MaterialDesignFloatingHintDatePicker}" />
+                <ComboBox x:Name="cbb_GioiTinh"  
+                Style="{StaticResource MaterialDesignFloatingHintComboBox}"  
+                materialDesign:TextFieldAssist.HasClearButton="True" 
+                materialDesign:TextFieldAssist.UnderlineBrush="{DynamicResource SecondaryAccentBrush}"
+                materialDesign:ColorZoneAssist.Mode="Inverted"  
+                materialDesign:HintAssist.Hint="Giới tính" 
+                Width="200">
+                </ComboBox>
                 <TextBox
                 Style="{StaticResource MaterialDesignFloatingHintTextBox}"  
                 VerticalAlignment="Center"
@@ -67,7 +75,7 @@
                         </StackPanel>
                     </materialDesign:HintAssist.Hint>
                 </TextBox>
-                <ComboBox  
+                <ComboBox x:Name="cbb_KhoiLop"  
                 Style="{StaticResource MaterialDesignFloatingHintComboBox}"  
                 materialDesign:TextFieldAssist.HasClearButton="True" 
                 materialDesign:TextFieldAssist.UnderlineBrush="{DynamicResource SecondaryAccentBrush}"
@@ -80,7 +88,7 @@
                 materialDesign:TextFieldAssist.HasClearButton="True" 
                 materialDesign:TextFieldAssist.UnderlineBrush="{DynamicResource SecondaryAccentBrush}"
                 materialDesign:ColorZoneAssist.Mode="Inverted"  
-                materialDesign:HintAssist.Hint="Tên lớp"  
+                materialDesign:HintAssist.Hint="Tên lớp"  x:Name="cbb_TenLop"
                 Width="200">
                 </ComboBox>
                 <ComboBox  
@@ -88,7 +96,7 @@
                 materialDesign:TextFieldAssist.HasClearButton="True" 
                 materialDesign:TextFieldAssist.UnderlineBrush="{DynamicResource SecondaryAccentBrush}"
                 materialDesign:ColorZoneAssist.Mode="Inverted"  
-                materialDesign:HintAssist.Hint="Năm học"  
+                materialDesign:HintAssist.Hint="Năm học"  x:Name="cbb_NamHoc"
                 Width="200">
                 </ComboBox>
             </StackPanel>
@@ -114,7 +122,7 @@
                 materialDesign:TextFieldAssist.HasClearButton="True" 
                 materialDesign:TextFieldAssist.UnderlineBrush="{DynamicResource SecondaryAccentBrush}"
                 materialDesign:ColorZoneAssist.Mode="Inverted"  
-                materialDesign:HintAssist.Hint="Nghề nghiệp"  
+                materialDesign:HintAssist.Hint="Nghề nghiệp"  x:Name="ccb_NgheNghiepCha"
                 Width="200">
                 </ComboBox>
                 <TextBox
@@ -138,7 +146,7 @@
                     materialDesign:TextFieldAssist.HasClearButton="True" 
                     materialDesign:TextFieldAssist.UnderlineBrush="{DynamicResource SecondaryAccentBrush}"
                     materialDesign:ColorZoneAssist.Mode="Inverted"  
-                    materialDesign:HintAssist.Hint="Nghề nghiệp"  
+                    materialDesign:HintAssist.Hint="Nghề nghiệp"  x:Name="ccb_NgheNghiepMe"
                     Width="200">
                 </ComboBox>
                 <StackPanel Orientation="Horizontal">
@@ -154,7 +162,7 @@
                     <Image Source="/QuanLyHS_THPT;component/Icons/images.jpg" Height="128" Width="96" Margin="30,30,0,0"/>
                 </StackPanel>
             </StackPanel>
-            <materialDesign:Chip Width="112" VerticalAlignment="Top" Margin="161,356,0,0"
+            <materialDesign:Chip Width="112" VerticalAlignment="Top" Margin="159,412,0,0"
                 Content="Cập nhập"
                 IconBackground="{DynamicResource PrimaryHueDarkBrush}"
                 IconForeground="{DynamicResource PrimaryHueDarkForegroundBrush}" Height="Auto">
@@ -208,13 +216,13 @@
                 </TextBox>
             </Grid>
             <Grid Grid.Row="1">
-                <ListView Name="lvUsers">
+                <ListView Name="lvDanhSachHS">
                     <ListView.View>
                         <GridView>
-                            <GridViewColumn Header="Mã" Width="80" DisplayMemberBinding="{Binding Age}" />
-                            <GridViewColumn Header="Họ Tên" Width="180" DisplayMemberBinding="{Binding Name}" />
-                            <GridViewColumn Header="Ngày Sinh" Width="100" DisplayMemberBinding="{Binding Age}" />
-                            <GridViewColumn Header="Địa Chỉ" Width="100" DisplayMemberBinding="{Binding Age}" />
+                            <GridViewColumn Header="Mã" Width="80" DisplayMemberBinding="{Binding maHocSinh}" />
+                            <GridViewColumn Header="Họ Tên" Width="180" DisplayMemberBinding="{Binding tenHocSinh}" />
+                            <GridViewColumn Header="Ngày Sinh" Width="200" DisplayMemberBinding="{Binding ngaySinh}" />
+                            <GridViewColumn Header="Địa Chỉ" Width="100" DisplayMemberBinding="{Binding diaChi}" />
                         </GridView>
                     </ListView.View>
 

@@ -4,17 +4,26 @@
 winexe
 C#
 .cs
-C:\Users\Black-Sky\Documents\GitHub\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\obj\Debug\
+E:\HK6\ThucTap\Github\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\obj\Debug\
 QuanLyHS_THPT
 none
 false
 DEBUG;TRACE
+<<<<<<< HEAD
 C:\Users\Black-Sky\Documents\GitHub\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\App.xaml
 181251294965
 
 37-1277949812
 161826169111
 Controls UI\AdminWindow.xaml;Controls UI\DoiMatKhau_Window.xaml;Controls UI\SuaGiaoVien_Window.xaml;Controls UI\ThemGiaoVien_Window.xaml;UserControls UI\CapNhatLopHoc_UserControl.xaml;UserControls UI\CapNhat_UserControl.xaml;UserControls UI\GiaoVien_UserControl.xaml;Controls UI\QuyDinh_Window.xaml;LoginWindow.xaml;UserControls UI\BangDiem_UserControl.xaml;UserControls UI\NamHoc_UserControl.xaml;UserControls UI\NguoiDung_UserControl.xaml;UserControls UI\PhanLop_UserControl.xaml;UserControls UI\QuanLyHS_UserControl.xaml;UserControls UI\QuanLyLop_UserControl.xaml;UserControls UI\TaiKhoan_UserControl.xaml;UserControls UI\ThemGiaoVien_UserControl.xaml;UserControls UI\ThongTinHS_UserControl.xaml;
+=======
+E:\HK6\ThucTap\Github\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\App.xaml
+1786818712
+
+38-703664926
+162102137268
+Controls UI\AdminWindow.xaml;Controls UI\DoiMatKhau_Window.xaml;Controls UI\SuaGiaoVien_Window.xaml;Controls UI\ThemGiaoVien_Window.xaml;UserControls UI\CapNhatLopHoc_UserControl.xaml;UserControls UI\CapNhat_UserControl.xaml;UserControls UI\GiaoVien_UserControl.xaml;Controls UI\QuyDinh_Window.xaml;LoginWindow.xaml;UserControls UI\BangDiem_UserControl.xaml;UserControls UI\NamHoc_UserControl.xaml;UserControls UI\NguoiDung_UserControl.xaml;UserControls UI\PhanLop_UserControl.xaml;UserControls UI\QuanLyHS_UserControl.xaml;UserControls UI\QuanLyLop_UserControl.xaml;UserControls UI\ThemGiaoVien_UserControl.xaml;UserControls UI\ThongTinHS_UserControl.xaml;
+>>>>>>> 0c61e4ff510229aa2455854d91d71b9729a690ed
 
 False
 
