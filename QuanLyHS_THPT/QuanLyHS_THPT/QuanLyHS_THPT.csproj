@@ -116,6 +116,9 @@
     <Compile Include="UserControls UI\QuanLyLop_UserControl.xaml.cs">
       <DependentUpon>QuanLyLop_UserControl.xaml</DependentUpon>
     </Compile>
+    <Compile Include="UserControls UI\TaiKhoan_UserControl.xaml.cs">
+      <DependentUpon>TaiKhoan_UserControl.xaml</DependentUpon>
+    </Compile>
     <Compile Include="UserControls UI\ThemGiaoVien_UserControl.xaml.cs">
       <DependentUpon>ThemGiaoVien_UserControl.xaml</DependentUpon>
     </Compile>
@@ -194,6 +197,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="UserControls UI\QuanLyLop_UserControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls UI\TaiKhoan_UserControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
