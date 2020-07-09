@@ -34,8 +34,9 @@ namespace QuanLyHS_THPT.UserControls_UI
                     UserControls_UI.GiaoVien_UserControl giaoVien_UserControl = new UserControls_UI.GiaoVien_UserControl();
                     this.Grid_Person.Children.Add(giaoVien_UserControl);
                     break;
-                case "btn_TaiKhaon": 
-                    
+                case "btn_TaiKhoan":
+                    UserControls_UI.TaiKhoan_UserControl taiKhoan_UserControl = new TaiKhoan_UserControl();
+                    this.Grid_Person.Children.Add(taiKhoan_UserControl);
                     break;
             }
         }

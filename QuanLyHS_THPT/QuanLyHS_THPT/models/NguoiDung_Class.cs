@@ -11,6 +11,7 @@ namespace QuanLyHS_THPT.models
 {
     class NguoiDung_Class
     {
+        public string maNguoiDung { get; set; }
         public string tenDangNhap { get; set; }
         public string matKhauDangNhap { get; set; }
         public string tenNguoiDung { get; set; }     
