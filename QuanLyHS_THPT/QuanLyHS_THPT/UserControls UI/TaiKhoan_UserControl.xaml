@@ -39,7 +39,7 @@
                     Orientation="Horizontal"
                     Margin="-2 0 0 0">
                         <materialDesign:PackIcon Kind="BookmarkMultipleOutline" />
-                        <TextBlock Text="Tên người dùng"/>
+                        <TextBlock Text="Họ tên"/>
                     </StackPanel>
                 </materialDesign:HintAssist.Hint>
             </TextBox>            
@@ -50,8 +50,7 @@
                 Width="200">
                 <materialDesign:HintAssist.Hint>
                     <StackPanel
-                    Orientation="Horizontal"
-                    Margin="-2 0 0 0">
+                    Orientation="Horizontal">
                         <materialDesign:PackIcon Kind="BookmarkMultipleOutline" />
                         <TextBlock Text="Tên đăng nhập"/>
                     </StackPanel>
@@ -59,13 +58,12 @@
             </TextBox>
             <PasswordBox
                 Style="{StaticResource MaterialDesignFloatingHintPasswordBox}"  
-                VerticalAlignment="Center" x:Name="txt_MatKhau"
+                VerticalAlignment="Center" x:Name="txt_MatKhau" Margin="0,10,0,0"
                 materialDesign:TextFieldAssist.HasClearButton="True"
                 Width="200">
                 <materialDesign:HintAssist.Hint>
                     <StackPanel
-                    Orientation="Horizontal"
-                    Margin="-2 0 0 0">
+                    Orientation="Horizontal">
                         <materialDesign:PackIcon Kind="BookmarkMultipleOutline" />
                         <TextBlock Text="Mật khẩu"/>
                     </StackPanel>
