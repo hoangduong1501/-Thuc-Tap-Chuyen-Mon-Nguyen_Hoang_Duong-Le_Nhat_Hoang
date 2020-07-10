@@ -28,6 +28,40 @@ namespace QuanLyHS_THPT.View_Model
             return nguoiDung.tenNguoiDung;
         }
 
+        public bool Them_NguoiDung(string tenNguoiDung, string tenDangNhap, string matKhau, string loaiNguoiDung)
+        {
+            string query = @"EXEC dbo.Them_NguoiDung @maLoai, @ten_NguoiDung, @ten_DangNhap, @matKhau";
+            SqlCommand sqlCommand = new SqlCommand();
+            sqlCommand.Parameters.AddWithValue("@maLoai", loaiNguoiDung);
+            sqlCommand.Parameters.AddWithValue("@ten_NguoiDung", tenNguoiDung);
+            sqlCommand.Parameters.AddWithValue("@ten_DangNhap", tenDangNhap);
+            sqlCommand.Parameters.AddWithValue("@matKhau", matKhau);
+            sqlCommand.CommandText = query;
+            return Data.Exec_Class.QueryData(sqlCommand);
+        }
+
+        public bool Xoa_NguoiDung(string maNguoiDung)
+        {
+            string query = @"EXEC Xoa_NguoiDung @maNguoiDung";
+            SqlCommand sqlCommand = new SqlCommand();
+            sqlCommand.CommandText = query;
+            sqlCommand.Parameters.AddWithValue("@maNguoiDung", maNguoiDung);
+            return Data.Exec_Class.QueryData(sqlCommand);
+        }
+
+        public bool CapNhat_NguoiDung(string maNguoiDung, string tenNguoiDung, string tenDangNhap, string matKhau, string loaiNguoiDung)
+        {
+            string query = @"EXEC dbo.CapNhat_NguoiDung @maNguoiDung, @maLoai, @ten_NguoiDung, @ten_DangNhap, @matKhau";
+            SqlCommand sqlCommand = new SqlCommand();
+            sqlCommand.Parameters.AddWithValue("@maNguoiDung", maNguoiDung);
+            sqlCommand.Parameters.AddWithValue("@maLoai", loaiNguoiDung);
+            sqlCommand.Parameters.AddWithValue("@ten_NguoiDung", tenNguoiDung);
+            sqlCommand.Parameters.AddWithValue("@ten_DangNhap", tenDangNhap);
+            sqlCommand.Parameters.AddWithValue("@matKhau", matKhau);
+            sqlCommand.CommandText = query;
+            return Data.Exec_Class.QueryData(sqlCommand);
+        }
+
         private void Lay_ThongTinNguoiDung(string str_TenDangNhap)
         {
             nguoiDung = new NguoiDung_Class();
@@ -80,6 +114,28 @@ namespace QuanLyHS_THPT.View_Model
                 {
                     ma_Loai = dataRow[0].ToString().Trim(),
                     ten_Loai = dataRow[1].ToString()
+                });
+            }
+
+            return lst;
+        }
+
+        public List<NguoiDung_Class> TimDanhSach_NguoiDung(string value)
+        {
+            DataTable dataTable = new DataTable();
+            dataTable = LayDS_Query(@"	EXEC dbo.Tim_NguoiDung N'" + value + "'");
+
+            List<NguoiDung_Class> lst = new List<NguoiDung_Class>();
+
+            foreach (DataRow dataRow in dataTable.Rows)
+            {
+                lst.Add(new NguoiDung_Class()
+                {
+                    maNguoiDung = dataRow[0].ToString().Trim(),
+                    loaiNguoiDung = dataRow[1].ToString(),
+                    tenNguoiDung = dataRow[2].ToString().Trim(),
+                    tenDangNhap = dataRow[3].ToString().Trim(),
+                    matKhauDangNhap = dataRow[4].ToString().Trim()
                 });
             }
 

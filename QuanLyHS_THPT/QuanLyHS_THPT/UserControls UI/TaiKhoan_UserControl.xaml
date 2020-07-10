@@ -12,12 +12,11 @@
             <TextBox
                 Style="{StaticResource MaterialDesignFloatingHintTextBox}"  
                 VerticalAlignment="Center" x:Name="txt_MaTaiKhoan"
-                materialDesign:TextFieldAssist.HasClearButton="True"
+                materialDesign:TextFieldAssist.HasClearButton="False"
                 Width="200">
                 <materialDesign:HintAssist.Hint>
                     <StackPanel
-                    Orientation="Horizontal"
-                    Margin="-2 0 0 0">
+                    Orientation="Horizontal">
                     <materialDesign:PackIcon Kind="Barcode" />
                         <TextBlock Text="Mã tài khoản"/>
                     </StackPanel>
@@ -32,7 +31,7 @@
             </ComboBox>
             <TextBox
                 Style="{StaticResource MaterialDesignFloatingHintTextBox}"  
-                VerticalAlignment="Center" x:Name="txt_TenTaiKhoan"
+                VerticalAlignment="Center" x:Name="txt_TenNguoiDung"
                 materialDesign:TextFieldAssist.HasClearButton="True"
                 Width="200">
                 <materialDesign:HintAssist.Hint>
@@ -40,7 +39,7 @@
                     Orientation="Horizontal"
                     Margin="-2 0 0 0">
                         <materialDesign:PackIcon Kind="BookmarkMultipleOutline" />
-                        <TextBlock Text="Tên lớp học"/>
+                        <TextBlock Text="Tên người dùng"/>
                     </StackPanel>
                 </materialDesign:HintAssist.Hint>
             </TextBox>            
@@ -129,11 +128,11 @@
                 <ListView Name="lvDS_TaiKhoan">                    
                     <ListView.View>
                         <GridView>
-                            <GridViewColumn Header="Mã" Width="100" DisplayMemberBinding="{Binding maNguoiDung}" />
-                            <GridViewColumn Header="Tên lớp" Width="100" DisplayMemberBinding="{Binding loaiNguoiDung}" />
-                            <GridViewColumn Header="Khối  lớp" Width="100" DisplayMemberBinding="{Binding tenNguoiDung}" />
-                            <GridViewColumn Header="năm học" Width="100" DisplayMemberBinding="{Binding tenDangNhap}" />
-                            <GridViewColumn Header="Giáo viên" Width="150" DisplayMemberBinding="{Binding matKhauDangNhap}" />
+                            <GridViewColumn Header="Mã" Width="90" DisplayMemberBinding="{Binding maNguoiDung}" />
+                            <GridViewColumn Header="Loại người dùng" Width="150" DisplayMemberBinding="{Binding loaiNguoiDung}" />
+                            <GridViewColumn Header="Họ tên" Width="150" DisplayMemberBinding="{Binding tenNguoiDung}" />
+                            <GridViewColumn Header="Tên đăng nhập" Width="150" DisplayMemberBinding="{Binding tenDangNhap}" />
+                            <GridViewColumn Header="Mật khẩu" Width="100" DisplayMemberBinding="{Binding matKhauDangNhap}" />
                         </GridView>
                     </ListView.View>
                 </ListView>

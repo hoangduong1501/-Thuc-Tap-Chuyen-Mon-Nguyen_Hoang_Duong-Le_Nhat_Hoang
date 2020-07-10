@@ -32,7 +32,7 @@
             </materialDesign:HintAssist.Hint>
         </TextBox>
         <Grid HorizontalAlignment="Left" Width="750" Margin="10,55,0,10">
-            <ListView Name="lvDS_GiaoVien">               
+            <ListView Name="lvDS_GiaoVien">
                 <ListView.Resources>
                     <Style TargetType="ListViewItem">
                         <Style.Triggers>
@@ -73,10 +73,10 @@
                             </GridViewColumn.CellTemplate>
                         </GridViewColumn>
                     </GridView>
-                </ListView.View>                
+                </ListView.View>
             </ListView>
         </Grid>
-        <Expander HorizontalAlignment="Right"
+        <Expander HorizontalAlignment="Right" Background="AliceBlue"
             ExpandDirection="Left">
             <Expander.Header>
                 <TextBlock
@@ -87,50 +87,84 @@
                     </TextBlock.LayoutTransform>
                 </TextBlock>
             </Expander.Header>
-            <StackPanel Orientation="Vertical" Margin="8,0,0,0" Width="200"
-                TextBlock.Foreground="{DynamicResource MaterialDesignBody}">
+            <StackPanel Orientation="Vertical" Margin="8,0,0,0" Width="400" 
+                TextBlock.Foreground="{DynamicResource MaterialDesignBody}" Height="514">
                 <Label Content="Phân Công Giảng Dạy" HorizontalAlignment="Center" 
                    FontSize="18" FontWeight="Bold" Margin="0,10,0,10"/>
-                <ComboBox  
+                <Grid Height="150">
+                    <ComboBox  
                     Style="{StaticResource MaterialDesignFloatingHintComboBox}"  
                     materialDesign:TextFieldAssist.HasClearButton="True" 
                     materialDesign:TextFieldAssist.UnderlineBrush="{DynamicResource SecondaryAccentBrush}"
                     materialDesign:ColorZoneAssist.Mode="Inverted"  
                     materialDesign:HintAssist.Hint="Năm học"  
-                    Width="120">
-                </ComboBox>
-                <ComboBox  
+                    Width="120" Margin="22,0,258,110">
+                    </ComboBox>
+                    <ComboBox  
                     Style="{StaticResource MaterialDesignFloatingHintComboBox}"  
                     materialDesign:TextFieldAssist.HasClearButton="True" 
                     materialDesign:TextFieldAssist.UnderlineBrush="{DynamicResource SecondaryAccentBrush}"
                     materialDesign:ColorZoneAssist.Mode="Inverted"  
                     materialDesign:HintAssist.Hint="Lớp học"  
-                    Width="120">
-                </ComboBox>
-                <ComboBox  
+                    Width="120" Margin="211,0,69,110">
+                    </ComboBox>
+                    <ComboBox  
                     Style="{StaticResource MaterialDesignFloatingHintComboBox}"  
                     materialDesign:TextFieldAssist.HasClearButton="True" 
                     materialDesign:TextFieldAssist.UnderlineBrush="{DynamicResource SecondaryAccentBrush}"
                     materialDesign:ColorZoneAssist.Mode="Inverted"  
                     materialDesign:HintAssist.Hint="Môn học"  
-                    Width="120">
-                </ComboBox>
-                <ComboBox  
+                    Width="120" Margin="22,45,258,65">
+                    </ComboBox>
+                    <ComboBox  
                     Style="{StaticResource MaterialDesignFloatingHintComboBox}"  
                     materialDesign:TextFieldAssist.HasClearButton="True" 
                     materialDesign:TextFieldAssist.UnderlineBrush="{DynamicResource SecondaryAccentBrush}"
                     materialDesign:ColorZoneAssist.Mode="Inverted"  
                     materialDesign:HintAssist.Hint="Giáo viên dạy"  
-                    Width="120">
-                </ComboBox>
-                <materialDesign:Chip Width="112" Margin="44,20,0,0"
+                    Width="120" Margin="211,45,69,65">
+                    </ComboBox>
+
+                    <materialDesign:Chip Width="112" Margin="126,108,0,10"
                     Content="Phân công"
                     IconBackground="{DynamicResource PrimaryHueDarkBrush}"
                     IconForeground="{DynamicResource PrimaryHueDarkForegroundBrush}">
-                    <materialDesign:Chip.Icon>
-                        <materialDesign:PackIcon Kind="Add" Foreground="White"/>
-                    </materialDesign:Chip.Icon>
-                </materialDesign:Chip>
+                        <materialDesign:Chip.Icon>
+                            <materialDesign:PackIcon Kind="Add" Foreground="White"/>
+                        </materialDesign:Chip.Icon>
+                    </materialDesign:Chip>
+                </Grid>
+               
+                <ListView Name="lvDS_HocKy" Margin="10,0,0,0">
+                    <ListView.Resources>
+                        <Style TargetType="ListViewItem">
+                            <Style.Triggers>
+                                <Trigger Property="IsKeyboardFocusWithin" Value="True">
+                                    <Setter Property="IsSelected" Value="True"/>
+                                </Trigger>
+                            </Style.Triggers>
+                            <EventSetter Event="PreviewGotKeyboardFocus" Handler="SelectCurrentItem"/>
+                        </Style>
+                    </ListView.Resources>
+                    <ListView.View>
+                        <GridView>
+                            <GridViewColumn Header="Mã năm" Width="80" DisplayMemberBinding="{Binding ma_HocKy}" />
+                            <GridViewColumn Header="Tên năm" Width="100" DisplayMemberBinding="{Binding ten_HocKy}" />
+                            <GridViewColumn Header="Hệ số" Width="80" DisplayMemberBinding="{Binding heSo}" />
+                            <GridViewColumn>
+                                <GridViewColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <Button Width="23" Height="23" x:Name="btn_Xoa" Click="Button_Click"
+                                            Style="{StaticResource MaterialDesignIconButton}" Padding="0"
+                                            ToolTip="Xóa">
+                                            <materialDesign:PackIcon Kind="Delete" />
+                                        </Button>
+                                    </DataTemplate>
+                                </GridViewColumn.CellTemplate>
+                            </GridViewColumn>
+                        </GridView>
+                    </ListView.View>
+                </ListView>
             </StackPanel>
         </Expander>
     </Grid>

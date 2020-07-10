@@ -86,6 +86,7 @@
     <Compile Include="models\NamHoc_Class.cs" />
     <Compile Include="models\NgheNghiep_Class.cs" />
     <Compile Include="models\NguoiDung_Class.cs" />
+    <Compile Include="models\QuyDinh_Class.cs" />
     <Compile Include="Static_Class\List_Source.cs" />
     <Compile Include="UserControls UI\CapNhatLopHoc_UserControl.xaml.cs">
       <DependentUpon>CapNhatLopHoc_UserControl.xaml</DependentUpon>
@@ -130,6 +131,7 @@
     <Compile Include="View Model\VM_GiaoVien.cs" />
     <Compile Include="View Model\VM_NamHoc.cs" />
     <Compile Include="View Model\VM_NguoiDung.cs" />
+    <Compile Include="View Model\VM_QuyDinh.cs" />
     <Compile Include="View Model\VM_ThongTinHS.cs" />
     <Page Include="Controls UI\AdminWindow.xaml">
       <SubType>Designer</SubType>

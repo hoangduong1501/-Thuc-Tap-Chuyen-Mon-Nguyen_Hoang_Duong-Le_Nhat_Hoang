@@ -28,7 +28,7 @@ namespace QuanLyHS_THPT.View_Model
                     maHocSinh = dataRow[0].ToString().Trim(),
                     tenHocSinh = dataRow[1].ToString().Trim(),
                     diaChi = dataRow[4].ToString().Trim(),
-                    ngaySinh = dataRow[3].ToString().Trim()
+                    ngaySinh = dataRow[3].ToString().Substring(0,10)
                 });
             }
 
