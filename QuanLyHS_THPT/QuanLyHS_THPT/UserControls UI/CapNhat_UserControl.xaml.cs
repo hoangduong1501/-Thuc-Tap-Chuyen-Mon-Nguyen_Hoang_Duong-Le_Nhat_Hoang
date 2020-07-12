@@ -44,7 +44,10 @@ namespace QuanLyHS_THPT.UserControls_UI
                     UserControls_UI.CapNhatLopHoc_UserControl capNhatLopHoc_UserControl = new CapNhatLopHoc_UserControl();
                     this.GridPerson.Children.Add(capNhatLopHoc_UserControl);
                     break;
-                case "btn_MonHoc": break;
+                case "btn_MonHoc":
+                    UserControls_UI.MonHoc_UserControl monHoc_UserControl = new MonHoc_UserControl();
+                    this.GridPerson.Children.Add(monHoc_UserControl);
+                    break;
                 case "btn_DanToc": break;
                 case "btn_KetQua": break;
             }

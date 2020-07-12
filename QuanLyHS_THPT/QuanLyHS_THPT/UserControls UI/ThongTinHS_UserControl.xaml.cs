@@ -14,6 +14,7 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Media.TextFormatting;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
@@ -25,6 +26,8 @@ namespace QuanLyHS_THPT.UserControls_UI
     public partial class ThongTinHS_UserControl : UserControl
     {
         private VM_ThongTinHS vM_ThongTinHS;
+
+
         public ThongTinHS_UserControl()
         {
             InitializeComponent();
@@ -66,21 +69,34 @@ namespace QuanLyHS_THPT.UserControls_UI
             switch (button.Name)
             {
                 case "btn_Them":
-                    this.txt_MaHocSinh.Visibility = Visibility.Collapsed;
+                    Them_HocSinh();
                     break;
                 case "btn_Sua":
-                    this.txt_MaHocSinh.Visibility = Visibility.Visible;
-                    this.txt_MaHocSinh.IsReadOnly = true;
-                    this.txt_MaHocSinh.Text = Lay_MaHS();                   
+                    Sua_HocSinh();                
                     break;
                 case "btn_Xoa":
                     Lay_MaHS();
                     break;
                 case "btn_LamMoi":
+                    grp_Input.Width = 0;
                     LoadDS_LopHoc();
                     break;
             }
         }
+
+        private void Sua_HocSinh()
+        {
+            this.txt_MaHocSinh.Visibility = Visibility.Visible;
+            this.txt_MaHocSinh.IsReadOnly = true;            
+            this.txt_MaHocSinh.Text = Lay_MaHS();
+        }
+
+        private void Them_HocSinh()
+        {
+            this.txt_MaHocSinh.Visibility = Visibility.Collapsed;
+            grp_Input.Width = 370;
+        }
+
         private void LoadDS_LopHoc()
         {
             this.lvDanhSachHS.ItemsSource = this.vM_ThongTinHS.DanhSach_HocSinh();

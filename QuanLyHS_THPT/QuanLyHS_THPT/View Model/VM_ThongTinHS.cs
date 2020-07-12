@@ -17,18 +17,23 @@ namespace QuanLyHS_THPT.View_Model
         public List<HocSinh_Class> DanhSach_HocSinh()
         {
             DataTable dataTable = new DataTable();
-            dataTable = LayDS_Query(@"select * from HOCSINH");
+            dataTable = LayDS_Query(@"EXEC dbo.LayDS_HocSinh");
 
             List<HocSinh_Class> lst = new List<HocSinh_Class>();
 
             foreach (DataRow dataRow in dataTable.Rows)
             {
+                var gt = "";
+                if (dataRow[2].ToString() == "True")
+                    gt = "Nam";
+                else gt = "Nữ";
                 lst.Add(new HocSinh_Class()
                 {
                     maHocSinh = dataRow[0].ToString().Trim(),
                     tenHocSinh = dataRow[1].ToString().Trim(),
-                    diaChi = dataRow[4].ToString().Trim(),
-                    ngaySinh = dataRow[3].ToString().Substring(0,10)
+                    gioiTinh = gt,          
+                    ngaySinh = dataRow[3].ToString().Substring(0,10),
+                    diaChi = dataRow[11].ToString().Trim(),
                 });
             }
 

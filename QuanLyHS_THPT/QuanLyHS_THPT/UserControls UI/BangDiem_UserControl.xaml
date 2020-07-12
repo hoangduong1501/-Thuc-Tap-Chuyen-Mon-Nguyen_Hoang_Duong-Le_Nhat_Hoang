@@ -6,13 +6,39 @@
              xmlns:local="clr-namespace:QuanLyHS_THPT.UserControls_UI"
               xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
              mc:Ignorable="d" 
-             d:DesignHeight="574" d:DesignWidth="925">
-    <Grid>
-        <DataGrid          
-          CanUserAddRows="False"
-          SelectionUnit="Cell"
-          SelectionMode="Extended">
+             d:DesignHeight="574" d:DesignWidth="1030">
+    <Grid Background="White">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="150"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid>
             
-        </DataGrid>   
+        </Grid>
+        <Grid Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid></Grid>
+            <Grid Grid.Row="1">
+                <ListView>
+                    <ListView.View>
+                        <GridView>
+                            <GridViewColumn Header="Mã"/>
+                            <GridViewColumn Header="Họ tên" Width="150"/>
+                            <GridViewColumn Header="diem mieng"/>
+                            <GridViewColumn Header="Điểm 15 phút"/>
+                            <GridViewColumn Header="Điểm 15 phút"/>
+                            <GridViewColumn Header="Điểm 15 phút"/>
+                            <GridViewColumn Header="Điểm 1 tiết"/>
+                            <GridViewColumn Header="Điểm 1 tiết "/>
+                            <GridViewColumn Header="Điểm thi"/>
+                            <GridViewColumn Header="DTB"/>
+                        </GridView>
+                    </ListView.View>
+                </ListView>
+            </Grid>
+        </Grid>
     </Grid>
 </UserControl>

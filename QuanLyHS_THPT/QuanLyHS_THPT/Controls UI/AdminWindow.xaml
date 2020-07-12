@@ -107,7 +107,7 @@
                     <ListViewItem Padding="1" Name="btn_QuyDinh">
                         <StackPanel Orientation="Horizontal">
                             <materialDesign:PackIcon Kind="CogSyncOutline" Margin="10" Width="25" Height="25"/>
-                            <TextBlock Text="Thay Đổi Quy Định" VerticalAlignment="Center"/>
+                            <TextBlock Text="Sao Lưu Câp Nhật" VerticalAlignment="Center"/>
                         </StackPanel>
                     </ListViewItem>
                     <ListViewItem Padding="1" Name="btn_GiaoVien">

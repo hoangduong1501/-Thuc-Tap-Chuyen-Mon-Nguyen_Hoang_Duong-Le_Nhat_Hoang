@@ -104,11 +104,17 @@
     <Compile Include="UserControls UI\BangDiem_UserControl.xaml.cs">
       <DependentUpon>BangDiem_UserControl.xaml</DependentUpon>
     </Compile>
+    <Compile Include="UserControls UI\MonHoc_UserControl.xaml.cs">
+      <DependentUpon>MonHoc_UserControl.xaml</DependentUpon>
+    </Compile>
     <Compile Include="UserControls UI\NamHoc_UserControl.xaml.cs">
       <DependentUpon>NamHoc_UserControl.xaml</DependentUpon>
     </Compile>
     <Compile Include="UserControls UI\NguoiDung_UserControl.xaml.cs">
       <DependentUpon>NguoiDung_UserControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls UI\NhapDiem_UserControl.xaml.cs">
+      <DependentUpon>NhapDiem_UserControl.xaml</DependentUpon>
     </Compile>
     <Compile Include="UserControls UI\PhanLop_UserControl.xaml.cs">
       <DependentUpon>PhanLop_UserControl.xaml</DependentUpon>
@@ -130,6 +136,7 @@
     </Compile>
     <Compile Include="View Model\VM_CapNhatLopHoc.cs" />
     <Compile Include="View Model\VM_GiaoVien.cs" />
+    <Compile Include="View Model\VM_MonHoc.cs" />
     <Compile Include="View Model\VM_NamHoc.cs" />
     <Compile Include="View Model\VM_NguoiDung.cs" />
     <Compile Include="View Model\VM_PhanCong.cs" />
@@ -187,11 +194,19 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="UserControls UI\MonHoc_UserControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="UserControls UI\NamHoc_UserControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="UserControls UI\NguoiDung_UserControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls UI\NhapDiem_UserControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

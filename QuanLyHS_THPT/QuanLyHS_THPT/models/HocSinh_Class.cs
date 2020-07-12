@@ -19,6 +19,7 @@ namespace QuanLyHS_THPT.models
         public string hoTenCha { get; set; }
         public string hoTenMe { get; set; }
         public string ngheNghiep { get; set; }
+        public string image { get; set; }
 
     }
 }
