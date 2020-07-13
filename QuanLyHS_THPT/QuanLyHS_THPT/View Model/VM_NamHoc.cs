@@ -26,7 +26,7 @@ namespace QuanLyHS_THPT.View_Model
                     ma_HocKy = dataRow[0].ToString().Trim(),
                     ten_HocKy = dataRow[1].ToString().Trim(),
                     heSo = int.Parse(dataRow[2].ToString().Trim())
-                }); ;
+                });
             }
 
             return lst;
@@ -34,7 +34,7 @@ namespace QuanLyHS_THPT.View_Model
 
         private DataTable LayDS_HocKy()
         {
-            string query = @"EXEC dbo.Lay_HocKy";
+            string query = @"EXEC dbo.LayDS_HocKy";
             SqlCommand sqlCommand = new SqlCommand();
             sqlCommand.CommandText = query;
 

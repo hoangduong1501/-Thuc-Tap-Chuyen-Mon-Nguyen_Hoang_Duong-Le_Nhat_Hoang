@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Media.Imaging;
 
 namespace QuanLyHS_THPT.models
 {
@@ -18,8 +19,9 @@ namespace QuanLyHS_THPT.models
         public string namHoc { get; set; }
         public string hoTenCha { get; set; }
         public string hoTenMe { get; set; }
-        public string ngheNghiep { get; set; }
-        public string image { get; set; }
+        public string danToc { get; set; }
+        public string tonGiao { get; set; }
+        public byte[] image { get; set; }
 
     }
 }

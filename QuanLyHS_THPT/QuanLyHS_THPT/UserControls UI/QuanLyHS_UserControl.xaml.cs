@@ -34,6 +34,10 @@ namespace QuanLyHS_THPT.UserControls_UI
                     UserControls_UI.ThongTinHS_UserControl thongTinHS_UserControl = new ThongTinHS_UserControl();
                     this.Grid_Person.Children.Add(thongTinHS_UserControl);
                     break;
+                case "btn_TraCuu":
+                    UserControls_UI.TraCuu_UserControl traCuu_UserControl = new TraCuu_UserControl();
+                    this.Grid_Person.Children.Add(traCuu_UserControl);
+                    break;
                 case "btn_ThanhTichKiLuat": break;
             }
         }
