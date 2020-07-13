@@ -83,7 +83,7 @@
             </Button>
             <Button Margin="0,10,0,0"
                 Style="{StaticResource MaterialDesignFloatingActionMiniAccentButton}"
-                ToolTip="Xuất File Excel" x:Name="btn_Excel" Click="btn_Event_Click">
+                ToolTip="Xuất File Excel" x:Name="btn_XuatExcel" Click="btn_Event_Click">
                 <materialDesign:PackIcon Kind="MicrosoftExcel" Height="24" Width="24" />
             </Button>
         </StackPanel>

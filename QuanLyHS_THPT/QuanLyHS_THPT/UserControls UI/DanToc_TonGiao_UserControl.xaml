@@ -1,0 +1,145 @@
+﻿<UserControl x:Class="QuanLyHS_THPT.UserControls_UI.DanToc_TonGiao_UserControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:QuanLyHS_THPT.UserControls_UI"
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             mc:Ignorable="d" 
+             d:DesignHeight="574" d:DesignWidth="925">
+    <Grid Background="White">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="460"/>
+            <ColumnDefinition Width="460"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <StackPanel Orientation="Horizontal">
+                <TextBox Margin="50,0,0,0"
+                        Style="{StaticResource MaterialDesignFloatingHintTextBox}"  
+                        VerticalAlignment="Center" x:Name="txt_DanToc"
+                        materialDesign:TextFieldAssist.HasClearButton="True"
+                        materialDesign:TextFieldAssist.SuffixText=""
+                        Width="180">
+                    <materialDesign:HintAssist.Hint>
+                        <StackPanel
+                                Orientation="Horizontal"
+                                Margin="-2 0 0 0">
+                            <materialDesign:PackIcon   
+                                    Kind="TimerSand" />
+                            <TextBlock Text="Dân Tộc"/>
+                        </StackPanel>
+                    </materialDesign:HintAssist.Hint>
+                </TextBox>
+                <materialDesign:Chip Width="112" Margin="30,0,0,0"
+                    Content="Thêm" x:Name="btn_ThemDanToc"  
+                    IconBackground="{DynamicResource PrimaryHueDarkBrush}"
+                    IconForeground="{DynamicResource PrimaryHueDarkForegroundBrush}" Click="btn_ThemDanToc_Click">
+                    <materialDesign:Chip.Icon>
+                        <materialDesign:PackIcon Kind="Add" Foreground="White"/>
+                    </materialDesign:Chip.Icon>
+                </materialDesign:Chip>
+            </StackPanel>
+            <Grid Grid.Row="1" HorizontalAlignment="Left" Width="402" Margin="34,10,0,10">
+                <ListView Name="lvDS_DanToc">
+                    <ListView.Resources>
+                        <Style TargetType="ListViewItem">
+                            <Style.Triggers>
+                                <Trigger Property="IsKeyboardFocusWithin" Value="True">
+                                    <Setter Property="IsSelected" Value="True"/>
+                                </Trigger>
+                            </Style.Triggers>
+                            <EventSetter Event="PreviewGotKeyboardFocus" Handler="SelectCurrentItem"/>
+                        </Style>
+                    </ListView.Resources>
+                    <ListView.View>
+                        <GridView>
+                            <GridViewColumn Header="Mã Dân Tộc" Width="80" DisplayMemberBinding="{Binding ma_DanToc}" />
+                            <GridViewColumn Header="Tên Dân Tộc" Width="200" DisplayMemberBinding="{Binding ten_DanToc}" />
+                            <GridViewColumn>
+                                <GridViewColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <Button Width="23" Height="23" x:Name="btn_Xoa_DanToc" 
+                                            Style="{StaticResource MaterialDesignIconButton}" Padding="0"
+                                            ToolTip="Xóa" Click="btn_XoaDanToc_Click">
+                                            <materialDesign:PackIcon Kind="Delete" />
+                                        </Button>
+                                    </DataTemplate>
+                                </GridViewColumn.CellTemplate>
+                            </GridViewColumn>
+                        </GridView>
+                    </ListView.View>
+                </ListView>
+            </Grid>
+        </Grid>
+        <Grid Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <StackPanel                    
+                    Orientation="Horizontal">
+                <TextBox x:Name="txt_TonGiao" Margin="50,0,0,0"
+                        Style="{StaticResource MaterialDesignFloatingHintTextBox}"  
+                        VerticalAlignment="Center"
+                        materialDesign:TextFieldAssist.HasClearButton="True"
+                        materialDesign:TextFieldAssist.SuffixText=""
+                        Width="180">
+                    <materialDesign:HintAssist.Hint>
+                        <StackPanel
+                                Orientation="Horizontal"
+                                Margin="-2 0 0 0">
+                            <materialDesign:PackIcon
+                                    Kind="TimerSand" />
+                            <TextBlock Text="Tôn Giáo"/>
+                        </StackPanel>
+                    </materialDesign:HintAssist.Hint>
+                </TextBox>
+                <materialDesign:Chip Width="112" Margin="30,0,0,0"
+                    Content="Thêm" x:Name="btn_ThemTonGiao" 
+                    IconBackground="{DynamicResource PrimaryHueDarkBrush}"
+                    IconForeground="{DynamicResource PrimaryHueDarkForegroundBrush}" Click="btn_ThemTonGiao_Click_1">
+                    <materialDesign:Chip.Icon>
+                        <materialDesign:PackIcon Kind="Add" Foreground="White"/>
+                    </materialDesign:Chip.Icon>
+                </materialDesign:Chip>
+            </StackPanel>
+            <Grid Grid.Row="1" HorizontalAlignment="Left" Width="402" Margin="34,10,0,10">
+                <ListView Name="lvDS_TonGiao">
+                    <ListView.Resources>
+                        <Style TargetType="ListViewItem">
+                            <Style.Triggers>
+                                <Trigger Property="IsKeyboardFocusWithin" Value="True">
+                                    <Setter Property="IsSelected" Value="True"/>
+                                </Trigger>
+                            </Style.Triggers>
+                            <EventSetter Event="PreviewGotKeyboardFocus" Handler="SelectCurrentItem"/>
+                        </Style>
+                    </ListView.Resources>
+                    <ListView.View>
+                        <GridView>
+                            <GridViewColumn Header="Mã Tôn Giáo" Width="80" DisplayMemberBinding="{Binding ma_TonGiao}" />
+                            <GridViewColumn Header="Tên Tôn Giáo" Width="200" DisplayMemberBinding="{Binding ten_TonGiao}" />
+                            
+                            <GridViewColumn>
+                                <GridViewColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <Button Width="23" Height="23" x:Name="btn_Xoa_TonGiao" 
+                                            Style="{StaticResource MaterialDesignIconButton}" Padding="0"
+                                            ToolTip="Xóa" Click="btn_XoaTonGiao_Click">
+                                            <materialDesign:PackIcon Kind="Delete" />
+                                        </Button>
+                                    </DataTemplate>
+                                </GridViewColumn.CellTemplate>
+                            </GridViewColumn>
+                        </GridView>
+                    </ListView.View>
+                </ListView>
+            </Grid>
+        </Grid>
+    </Grid>
+</UserControl>
