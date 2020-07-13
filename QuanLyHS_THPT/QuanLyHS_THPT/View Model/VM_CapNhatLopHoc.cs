@@ -47,22 +47,6 @@ namespace QuanLyHS_THPT.View_Model
             catch (Exception) { return false; }
         }
 
-        public bool Xoa_Lop(string maLop)
-        {
-            try
-            {
-                string query = @"EXEC Xoa_Lop @maLop";
-                SqlCommand sqlCommand = new SqlCommand();
-                sqlCommand.CommandText = query;
-                sqlCommand.Parameters.AddWithValue("@maLop", maLop);
-                return Data.Exec_Class.QueryData(sqlCommand);
-            }
-            catch (Exception)
-            {
-                return false;
-            }
-        }
-
         public List<Lop_Class> DanhSach_Lop()
         {
             DataTable dataTable = new DataTable();

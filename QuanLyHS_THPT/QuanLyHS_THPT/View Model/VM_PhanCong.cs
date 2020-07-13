@@ -129,7 +129,7 @@ namespace QuanLyHS_THPT.View_Model
         public List<NamHoc_Class> DanhSach_NamHoc()
         {
             DataTable dataTable = new DataTable();
-            dataTable = LayDS_Query(@"EXEC dbo.LayDS_NamHoc");
+            dataTable = LayDS_Query(@"EXEC dbo.Lay_NamHoc");
 
             List<NamHoc_Class> lst = new List<NamHoc_Class>();
 
