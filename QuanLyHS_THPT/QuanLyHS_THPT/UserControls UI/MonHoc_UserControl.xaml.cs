@@ -41,7 +41,7 @@ namespace QuanLyHS_THPT.UserControls_UI
 
         private void LoadDS_MonHoc()
         {
-            lvDS_MonHoc.ItemsSource = vM_MonHoc.DanhSach_NamHoc();
+            lvDS_MonHoc.ItemsSource = vM_MonHoc.DanhSach_MonHoc();
             this.grp_Input.Width = 0;
         }
 
@@ -64,6 +64,9 @@ namespace QuanLyHS_THPT.UserControls_UI
                     break;
                 case "btn_LamMoi":
                     LoadDS_MonHoc();
+                    break;
+                case "btn_XuatExcel":
+                    vM_MonHoc.xuatExcel();
                     break;
             }
         }

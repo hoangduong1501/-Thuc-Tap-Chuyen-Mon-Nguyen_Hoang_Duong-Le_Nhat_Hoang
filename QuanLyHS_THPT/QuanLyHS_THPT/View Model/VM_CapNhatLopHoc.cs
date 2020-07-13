@@ -47,6 +47,22 @@ namespace QuanLyHS_THPT.View_Model
             catch (Exception) { return false; }
         }
 
+        public bool Xoa_Lop(string maLop)
+        {
+            try
+            {
+                string query = @"EXEC Xoa_Lop @maLop";
+                SqlCommand sqlCommand = new SqlCommand();
+                sqlCommand.CommandText = query;
+                sqlCommand.Parameters.AddWithValue("@maLop", maLop);
+                return Data.Exec_Class.QueryData(sqlCommand);
+            }
+            catch (Exception)
+            {
+                return false;
+            }
+        }
+
         public List<Lop_Class> DanhSach_Lop()
         {
             DataTable dataTable = new DataTable();
@@ -73,7 +89,7 @@ namespace QuanLyHS_THPT.View_Model
         public List<NamHoc_Class> DanhSach_NamHoc()
         {
             DataTable dataTable = new DataTable();
-            dataTable = LayDS_Query(@"EXEC dbo.Lay_NamHoc");
+            dataTable = LayDS_Query(@"EXEC dbo.LayDS_NamHoc");
 
             List<NamHoc_Class> lst = new List<NamHoc_Class>();
 
@@ -92,7 +108,7 @@ namespace QuanLyHS_THPT.View_Model
         public List<KhoiLop_Class> DanhSach_KhoiLop()
         {
             DataTable dataTable = new DataTable();
-            dataTable = LayDS_Query(@"EXEC dbo.Lay_KhoiLop");
+            dataTable = LayDS_Query(@"EXEC dbo.LayDS_KhoiLop");
 
             List<KhoiLop_Class> lst = new List<KhoiLop_Class>();
 

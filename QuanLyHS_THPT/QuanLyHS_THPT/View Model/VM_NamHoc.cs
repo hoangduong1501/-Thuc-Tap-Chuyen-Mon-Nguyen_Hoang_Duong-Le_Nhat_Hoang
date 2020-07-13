@@ -93,7 +93,7 @@ namespace QuanLyHS_THPT.View_Model
 
         private DataTable LayDS_NamHoc()
         {
-            string query = @"EXEC dbo.Lay_NamHoc";
+            string query = @"EXEC dbo.LayDS_NamHoc";
             SqlCommand sqlCommand = new SqlCommand();
             sqlCommand.CommandText = query;
 

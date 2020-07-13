@@ -77,7 +77,9 @@ namespace QuanLyHS_THPT.UserControls_UI
                     this.status = false;
                     break;
                 case "btn_Xoa":
-                    Lay_MaLop();
+                    if (vM_CapNhatLopHoc.Xoa_Lop(Lay_MaLop()))
+                        MessageBox.Show("Xóa thành công", "Thông báo", MessageBoxButton.OK, MessageBoxImage.Warning);
+                    else MessageBox.Show("Xóa thất bại", "Chú ý", MessageBoxButton.OK, MessageBoxImage.Warning);
                     break;
                 case "btn_LamMoi":
                     LoadDS_LopHoc();
@@ -99,7 +101,7 @@ namespace QuanLyHS_THPT.UserControls_UI
             {
                 if(vM_CapNhatLopHoc.Them_Lop(txt_TenLopHoc.Text, cbb_KhoiLop.SelectedValue.ToString(), cbb_NamHoc.SelectedValue.ToString(),
                         int.Parse(cbb_SiSo.Text.Trim()), cbb_GiaoVien.SelectedValue.ToString()))
-                    MessageBox.Show("Thêm thành công thành công", "Thông báo", MessageBoxButton.OK, MessageBoxImage.Warning);
+                    MessageBox.Show("Thêm thành công", "Thông báo", MessageBoxButton.OK, MessageBoxImage.Warning);
                 else MessageBox.Show("Thêm thất bại", "Chú ý", MessageBoxButton.OK, MessageBoxImage.Warning);
                 LoadDS_LopHoc();
             }
@@ -107,7 +109,7 @@ namespace QuanLyHS_THPT.UserControls_UI
             {
                 if (vM_CapNhatLopHoc.CapNhat_Lop(txt_MaLopHoc.Text, txt_TenLopHoc.Text, cbb_KhoiLop.SelectedValue.ToString(), cbb_NamHoc.SelectedValue.ToString(),
                         int.Parse(cbb_SiSo.Text.Trim()), cbb_GiaoVien.SelectedValue.ToString()))
-                    MessageBox.Show("Sửa thành công thành công", "Thông báo", MessageBoxButton.OK, MessageBoxImage.Warning);
+                    MessageBox.Show("Sửa thành công", "Thông báo", MessageBoxButton.OK, MessageBoxImage.Warning);
                 else MessageBox.Show("Sửa thất bại", "Chú ý", MessageBoxButton.OK, MessageBoxImage.Warning);
                 LoadDS_LopHoc();
             }
@@ -121,7 +123,21 @@ namespace QuanLyHS_THPT.UserControls_UI
 
         private string Lay_MaLop()
         {
-            try
+            //try
+            //{
+            //    var item = ((Lop_Class)lvDS_Lop.SelectedItem).ma_Lop;
+            //    if (item != null)
+            //    {
+            //        MessageBox.Show(item.ToString());
+            //        return (item.ToString());
+            //    }
+            //    return "";
+            //}
+            //catch (Exception)
+            //{
+            //    return "";
+            //}
+            if (lvDS_Lop.SelectedIndex != -1)
             {
                 var item = ((Lop_Class)lvDS_Lop.SelectedItem).ma_Lop;
                 if (item != null)
@@ -129,12 +145,9 @@ namespace QuanLyHS_THPT.UserControls_UI
                     MessageBox.Show(item.ToString());
                     return (item.ToString());
                 }
-                return "";
             }
-            catch (Exception)
-            {
-                return "";
-            }
+
+            return null;
         }
     }
 }
