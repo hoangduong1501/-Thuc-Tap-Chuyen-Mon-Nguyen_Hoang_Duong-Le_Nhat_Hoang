@@ -76,6 +76,7 @@
       <DependentUpon>ThemGiaoVien_Window.xaml</DependentUpon>
     </Compile>
     <Compile Include="Data\Exec_Class.cs" />
+    <Compile Include="models\DanToc_Class.cs" />
     <Compile Include="models\GiaoVien_Class.cs" />
     <Compile Include="models\HocKy_Class.cs" />
     <Compile Include="models\HocSinh_Class.cs" />
@@ -88,6 +89,7 @@
     <Compile Include="models\NguoiDung_Class.cs" />
     <Compile Include="models\PhanCong_Class.cs" />
     <Compile Include="models\QuyDinh_Class.cs" />
+    <Compile Include="models\TongGiao_Class.cs" />
     <Compile Include="Static_Class\List_Source.cs" />
     <Compile Include="UserControls UI\CapNhatLopHoc_UserControl.xaml.cs">
       <DependentUpon>CapNhatLopHoc_UserControl.xaml</DependentUpon>
@@ -133,6 +135,9 @@
     </Compile>
     <Compile Include="UserControls UI\ThongTinHS_UserControl.xaml.cs">
       <DependentUpon>ThongTinHS_UserControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls UI\TraCuu_UserControl.xaml.cs">
+      <DependentUpon>TraCuu_UserControl.xaml</DependentUpon>
     </Compile>
     <Compile Include="View Model\VM_CapNhatLopHoc.cs" />
     <Compile Include="View Model\VM_GiaoVien.cs" />
@@ -231,6 +236,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="UserControls UI\ThongTinHS_UserControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls UI\TraCuu_UserControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
