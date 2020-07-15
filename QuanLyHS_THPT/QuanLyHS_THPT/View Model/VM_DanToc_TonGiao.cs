@@ -74,16 +74,16 @@ namespace QuanLyHS_THPT.View_Model
         }
 
         //Ton Giao
-        public List<TonGiao_Class> DanhSach_TonGiao()
+        public List<TongGiao_Class> DanhSach_TonGiao()
         {
             DataTable dataTable = new DataTable();
             dataTable = LayDS_TonGiao();
 
-            List<TonGiao_Class> lst = new List<TonGiao_Class>();
+            List<TongGiao_Class> lst = new List<TongGiao_Class>();
 
             foreach (DataRow dataRow in dataTable.Rows)
             {
-                lst.Add(new TonGiao_Class()
+                lst.Add(new TongGiao_Class()
                 {
                     ma_TonGiao = dataRow[0].ToString().Trim(),
                     ten_TonGiao = dataRow[1].ToString().Trim()

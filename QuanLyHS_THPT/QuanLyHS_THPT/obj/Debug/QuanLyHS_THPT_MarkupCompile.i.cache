@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\Black-Sky\Documents\GitHub\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\obj\Debug\
+E:\HK6\ThucTap\Github\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\obj\Debug\
 QuanLyHS_THPT
 none
 false
 DEBUG;TRACE
-C:\Users\Black-Sky\Documents\GitHub\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\App.xaml
-23933957813
+E:\HK6\ThucTap\Github\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\App.xaml
+23546959363
 
-531180674650
-161826169111
-Controls UI\AdminWindow.xaml;Controls UI\DoiMatKhau_Window.xaml;Controls UI\SuaGiaoVien_Window.xaml;Controls UI\ThemGiaoVien_Window.xaml;UserControls UI\CapNhatLopHoc_UserControl.xaml;UserControls UI\CapNhat_UserControl.xaml;UserControls UI\GiaoVien_UserControl.xaml;Controls UI\QuyDinh_Window.xaml;LoginWindow.xaml;UserControls UI\BangDiem_UserControl.xaml;UserControls UI\ItemLopHoc_UserControl.xaml;UserControls UI\MonHoc_UserControl.xaml;UserControls UI\NamHoc_UserControl.xaml;UserControls UI\NguoiDung_UserControl.xaml;UserControls UI\NhapDiem_UserControl.xaml;UserControls UI\PhanLop_UserControl.xaml;UserControls UI\QuanLyHS_UserControl.xaml;UserControls UI\QuanLyLop_UserControl.xaml;UserControls UI\TaiKhoan_UserControl.xaml;UserControls UI\ThemGiaoVien_UserControl.xaml;UserControls UI\ThongTinHS_UserControl.xaml;UserControls UI\ThongTinLop_UserControl.xaml;UserControls UI\TraCuu_UserControl.xaml;
+561921862442
+162102137268
+Controls UI\AdminWindow.xaml;Controls UI\DoiMatKhau_Window.xaml;Controls UI\SuaGiaoVien_Window.xaml;Controls UI\ThemGiaoVien_Window.xaml;UserControls UI\CapNhatLopHoc_UserControl.xaml;UserControls UI\CapNhat_UserControl.xaml;UserControls UI\DanToc_TonGiao_UserControl.xaml;UserControls UI\GiaoVien_UserControl.xaml;Controls UI\QuyDinh_Window.xaml;LoginWindow.xaml;UserControls UI\BangDiem_UserControl.xaml;UserControls UI\MonHoc_UserControl.xaml;UserControls UI\NamHoc_UserControl.xaml;UserControls UI\NguoiDung_UserControl.xaml;UserControls UI\NhapDiem_UserControl.xaml;UserControls UI\PhanLop_UserControl.xaml;UserControls UI\QuanLyHS_UserControl.xaml;UserControls UI\QuanLyLop_UserControl.xaml;UserControls UI\TaiKhoan_UserControl.xaml;UserControls UI\ThemGiaoVien_UserControl.xaml;UserControls UI\ThongTinHS_UserControl.xaml;UserControls UI\TraCuu_UserControl.xaml;UserControls UI\ViPham_UserControl.xaml;
 
-True
+False
 

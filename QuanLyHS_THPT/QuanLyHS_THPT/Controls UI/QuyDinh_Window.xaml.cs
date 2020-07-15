@@ -80,6 +80,9 @@ namespace QuanLyHS_THPT.Controls_UI
                 case "btn_Huy":
                     this.Close();
                     break;
+                case "btn_Backup":
+                    vM_QuyDinh.Backup();
+                    break;
             }
         }
     }
