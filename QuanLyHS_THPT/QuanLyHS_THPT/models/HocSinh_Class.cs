@@ -15,7 +15,7 @@ namespace QuanLyHS_THPT.models
         public string gioiTinh { get; set; }
         public string diaChi { get; set; }
         public string makhoiLop { get; set; }
-        public string tenLop { get; set; }
+        public string maLop { get; set; }
         public string namHoc { get; set; }
         public string hoTenCha { get; set; }
         public string hoTenMe { get; set; }

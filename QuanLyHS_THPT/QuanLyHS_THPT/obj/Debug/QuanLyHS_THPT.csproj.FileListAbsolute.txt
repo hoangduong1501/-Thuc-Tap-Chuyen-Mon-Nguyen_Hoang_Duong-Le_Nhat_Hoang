@@ -124,3 +124,8 @@ C:\Users\Black-Sky\Documents\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoa
 C:\Users\Black-Sky\Documents\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang-450faf6ded9ce99e6ff4169d37be3318fd48bee2\QuanLyHS_THPT\QuanLyHS_THPT\obj\Debug\QuanLyHS_THPT.csproj.CopyComplete
 C:\Users\Black-Sky\Documents\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang-450faf6ded9ce99e6ff4169d37be3318fd48bee2\QuanLyHS_THPT\QuanLyHS_THPT\obj\Debug\QuanLyHS_THPT.exe
 C:\Users\Black-Sky\Documents\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang-450faf6ded9ce99e6ff4169d37be3318fd48bee2\QuanLyHS_THPT\QuanLyHS_THPT\obj\Debug\QuanLyHS_THPT.pdb
+C:\Users\Black-Sky\Documents\GitHub\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\obj\Debug\UserControls UI\ThongTinLop_UserControl.g.cs
+C:\Users\Black-Sky\Documents\GitHub\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\obj\Debug\UserControls UI\ThongTinLop_UserControl.baml
+C:\Users\Black-Sky\Documents\GitHub\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\obj\Debug\UserControls UI\ItemLopHoc_UserControl.g.cs
+C:\Users\Black-Sky\Documents\GitHub\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\obj\Debug\UserControls UI\ItemLopHoc_UserControl.baml
+C:\Users\Black-Sky\Documents\GitHub\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\obj\Debug\GeneratedInternalTypeHelper.g.cs

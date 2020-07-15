@@ -70,7 +70,6 @@ namespace QuanLyHS_THPT.View_Model
             //return true;
         }
 
-
         public byte[] ConvertImageToBinary(string image)
         {
             FileStream stream = File.OpenRead(image);
@@ -122,8 +121,6 @@ namespace QuanLyHS_THPT.View_Model
             dataTable = LayDS_Query(@"EXEC dbo.LayDS_HocSinh");
 
             List<HocSinh_Class> lst = new List<HocSinh_Class>();
-
-            byte[] aaa;
 
             foreach (DataRow dataRow in dataTable.Rows)
             {
