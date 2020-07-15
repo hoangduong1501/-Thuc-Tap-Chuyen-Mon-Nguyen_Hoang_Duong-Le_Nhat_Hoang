@@ -123,8 +123,6 @@ namespace QuanLyHS_THPT.View_Model
 
             List<HocSinh_Class> lst = new List<HocSinh_Class>();
 
-            byte[] aaa;
-
             foreach (DataRow dataRow in dataTable.Rows)
             {
                 var gt = "";

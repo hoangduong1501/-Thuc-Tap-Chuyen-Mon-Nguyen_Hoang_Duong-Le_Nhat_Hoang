@@ -10,8 +10,8 @@ namespace QuanLyHS_THPT.Data
 {
     public static class Exec_Class
     {
-        //private static string connect_String = @"Data Source=DESKTOP-QEN4LJI;Initial Catalog=QLHocSinhTHPT;Integrated Security=True";
-        private static string connect_String = @"Data Source=DESKTOP-RGEGQ1F\SQLEXPRESS;Initial Catalog=QLHocSinhTHPT;Integrated Security=True";
+        private static string connect_String = @"Data Source=DESKTOP-QEN4LJI;Initial Catalog=QLHocSinhTHPT;Integrated Security=True";
+        //private static string connect_String = @"Data Source=DESKTOP-RGEGQ1F\SQLEXPRESS;Initial Catalog=QLHocSinhTHPT;Integrated Security=True";
 
         //thuc hien cac cau try van insert, delete, update
         public static bool QueryData(SqlCommand sqlCommand)

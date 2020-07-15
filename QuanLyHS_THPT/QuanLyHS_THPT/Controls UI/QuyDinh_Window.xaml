@@ -9,13 +9,22 @@
         ResizeMode="NoResize"
         WindowStyle="None"
         WindowStartupLocation="CenterScreen"
-        Title="QuyDinh_Window" Height="264" Width="452">
+        Title="QuyDinh_Window" Height="308" Width="525">
     <Border BorderBrush="DodgerBlue" BorderThickness="1,1,1,1" CornerRadius="10">
         <Grid>
             <Button Width="91" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="10,10" Content="Hủy" 
                 x:Name="btn_Huy" Click="Button_Click" Background="#1976D2" BorderBrush="#1976D2"/>
-            <Button Width="91" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,120,10" Content="Thay đổi"
+            <Button Width="91" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,110,10" Content="Thay đổi"
                 x:Name="btn_ThayDoi" Click="Button_Click" Background="#1976D2" BorderBrush="#1976D2"/>
+            <Button HorizontalAlignment="Right" VerticalAlignment="Bottom"
+                Style="{StaticResource MaterialDesignFloatingActionDarkButton}"
+                ToolTip="Sao lưu dữ liệu" Margin="0,0,10,84" 
+                x:Name="btn_Backup" Click="Button_Click" Background="#1976D2">
+                <materialDesign:PackIcon
+                Kind="DatabaseExport"
+                Height="30"
+                Width="30" />
+            </Button>
             <Label Content="Số lượng tối đa" Height="21" Margin="17,20,326,223"/>
             <Label Content="Số lượng tối thiểu" Height="21" Margin="240,20,103,223"/>
 
@@ -25,7 +34,7 @@
                 x:Name="swt_HeSo"
                 Width="50"
                 Style="{StaticResource MaterialDesignSwitchToggleButton}"
-                ToolTip="Default ToggleButton Style" Margin="68,201,332,40" RenderTransformOrigin="1.18,0.143" />
+                ToolTip="Default ToggleButton Style" Margin="69,203,404.2,38.4" RenderTransformOrigin="1.18,0.143" />
             <Label Content="Hệ 10" Height="21" Margin="22,201,389,42"/>
             <Label Content="Hệ 100" Height="21" Margin="118,201,287,42" RenderTransformOrigin="0.362,1.286"/>
             <TextBox

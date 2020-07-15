@@ -100,7 +100,7 @@ namespace QuanLyHS_THPT.UserControls_UI
         {
             if (lvDS_TonGiao.SelectedIndex != -1)
             {
-                var item = ((TonGiao_Class)lvDS_TonGiao.SelectedItem).ma_TonGiao;
+                var item = ((TongGiao_Class)lvDS_TonGiao.SelectedItem).ma_TonGiao;
                 if (item != null)
                 {
                     MessageBox.Show(item.ToString());

@@ -90,12 +90,16 @@
     <Compile Include="models\PhanCong_Class.cs" />
     <Compile Include="models\QuyDinh_Class.cs" />
     <Compile Include="models\TongGiao_Class.cs" />
+    <Compile Include="models\ViPham_Class.cs" />
     <Compile Include="Static_Class\List_Source.cs" />
     <Compile Include="UserControls UI\CapNhatLopHoc_UserControl.xaml.cs">
       <DependentUpon>CapNhatLopHoc_UserControl.xaml</DependentUpon>
     </Compile>
     <Compile Include="UserControls UI\CapNhat_UserControl.xaml.cs">
       <DependentUpon>CapNhat_UserControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls UI\DanToc_TonGiao_UserControl.xaml.cs">
+      <DependentUpon>DanToc_TonGiao_UserControl.xaml</DependentUpon>
     </Compile>
     <Compile Include="UserControls UI\GiaoVien_UserControl.xaml.cs">
       <DependentUpon>GiaoVien_UserControl.xaml</DependentUpon>
@@ -139,7 +143,11 @@
     <Compile Include="UserControls UI\TraCuu_UserControl.xaml.cs">
       <DependentUpon>TraCuu_UserControl.xaml</DependentUpon>
     </Compile>
+    <Compile Include="UserControls UI\ViPham_UserControl.xaml.cs">
+      <DependentUpon>ViPham_UserControl.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View Model\VM_CapNhatLopHoc.cs" />
+    <Compile Include="View Model\VM_DanToc_TonGiao.cs" />
     <Compile Include="View Model\VM_GiaoVien.cs" />
     <Compile Include="View Model\VM_MonHoc.cs" />
     <Compile Include="View Model\VM_NamHoc.cs" />
@@ -148,6 +156,7 @@
     <Compile Include="View Model\VM_PhanLop.cs" />
     <Compile Include="View Model\VM_QuyDinh.cs" />
     <Compile Include="View Model\VM_ThongTinHS.cs" />
+    <Compile Include="View Model\VM_ViPham.cs" />
     <Page Include="Controls UI\AdminWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -171,6 +180,10 @@
     <Page Include="UserControls UI\CapNhat_UserControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls UI\DanToc_TonGiao_UserControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="UserControls UI\GiaoVien_UserControl.xaml">
       <SubType>Designer</SubType>
@@ -240,6 +253,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="UserControls UI\TraCuu_UserControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls UI\ViPham_UserControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

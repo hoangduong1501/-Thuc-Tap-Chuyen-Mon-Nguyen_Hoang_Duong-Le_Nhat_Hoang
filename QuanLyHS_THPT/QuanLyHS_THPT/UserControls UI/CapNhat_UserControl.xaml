@@ -29,7 +29,7 @@
                 x:Name="btn_MonHoc" Click="btn_NamHoc_Click"/>
             <RadioButton
                 Style="{StaticResource MaterialDesignTabRadioButton}"
-                Margin="4" IsChecked="False" Content="Dân tộc" 
+                Margin="4" IsChecked="False" Content="Dân tộc, Tôn Giáo" 
                 x:Name="btn_DanToc" Click="btn_NamHoc_Click"/>
             <RadioButton
                 Style="{StaticResource MaterialDesignTabRadioButton}"

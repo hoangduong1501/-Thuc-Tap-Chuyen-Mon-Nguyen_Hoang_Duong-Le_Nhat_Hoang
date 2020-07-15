@@ -48,7 +48,10 @@ namespace QuanLyHS_THPT.UserControls_UI
                     UserControls_UI.MonHoc_UserControl monHoc_UserControl = new MonHoc_UserControl();
                     this.GridPerson.Children.Add(monHoc_UserControl);
                     break;
-                case "btn_DanToc": break;
+                case "btn_DanToc":
+                    UserControls_UI.DanToc_TonGiao_UserControl danToc_TonGiao_UserControl = new DanToc_TonGiao_UserControl();
+                    this.GridPerson.Children.Add(danToc_TonGiao_UserControl);
+                    break;
                 case "btn_KetQua": break;
             }
         }

@@ -1,4 +1,5 @@
-﻿using QuanLyHS_THPT.models;
+﻿using QuanLyHS_THPT.Data;
+using QuanLyHS_THPT.models;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -45,6 +46,16 @@ namespace QuanLyHS_THPT.View_Model
             //sqlCommand.Parameters.AddWithValue("@diaChi", diaChi);
 
             return Data.Exec_Class.QueryData(sqlCommand);
+        }
+
+        public DataTable Backup()
+        {
+            
+            string query = @"Backup database QLHocSinhTHPT to disk ='f:\BackUp.bak'";
+            SqlCommand sqlCommand = new SqlCommand();
+            sqlCommand.CommandText = query;
+
+            return Exec_Class.GetData(sqlCommand);
         }
     }
 }
