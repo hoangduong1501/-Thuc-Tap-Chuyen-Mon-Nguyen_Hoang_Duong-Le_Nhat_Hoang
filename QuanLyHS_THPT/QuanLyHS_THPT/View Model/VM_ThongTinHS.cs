@@ -70,7 +70,6 @@ namespace QuanLyHS_THPT.View_Model
             //return true;
         }
 
-
         public byte[] ConvertImageToBinary(string image)
         {
             FileStream stream = File.OpenRead(image);

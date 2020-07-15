@@ -1,0 +1,53 @@
+﻿<UserControl x:Class="QuanLyHS_THPT.UserControls_UI.ItemLopHoc_UserControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:QuanLyHS_THPT.UserControls_UI"
+              xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             mc:Ignorable="d" 
+             d:DesignHeight="107" d:DesignWidth="180">
+    <Grid Margin="0,8,0,6">
+        <materialDesign:Card
+            Background="White"
+            Foreground="{DynamicResource PrimaryHueDarkForegroundBrush}"
+            Padding="0" x:Name="grp_UI"
+            UniformCornerRadius="6" Margin="4,0,6,0">
+            <StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="0,5,0,0" HorizontalAlignment="Center">
+                    <materialDesign:PackIcon Kind="AccountMultiple" 
+                                             Foreground="Black"
+                                             VerticalAlignment="Center" Margin="10,0,0,0"/>
+                    <TextBlock Text="Lớp: " VerticalAlignment="Center" 
+                               Foreground="Black"
+                               Margin="10,0,0,0"/>
+                    <TextBlock Text="12A1" VerticalAlignment="Center" 
+                               Foreground="Black" x:Name="txt_TenLop"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="0,5,0,0">
+                    <materialDesign:PackIcon Kind="BookmarkOutline" 
+                                             Foreground="Black"
+                                             VerticalAlignment="Center" Margin="10,0,0,0"/>
+                    <TextBlock Text="Chủ nhiệm: " VerticalAlignment="Center" 
+                               Foreground="Black"
+                               Margin="10,0,0,0"/>
+                </StackPanel>
+                <TextBlock Text="Nguyễn Hoàng Khánh Lan" VerticalAlignment="Center" HorizontalAlignment="Left"
+                               Foreground="Black" Margin="22,0,0,0" x:Name="txt_GiaoVien"/>
+                <StackPanel Orientation="Horizontal" Margin="0,5,0,10">
+                    <materialDesign:PackIcon Kind="FormatListCheckbox" 
+                                             Foreground="Black"
+                                             VerticalAlignment="Center" Margin="10,0,0,0"/>
+                    <TextBlock Text="Sỉ số: " VerticalAlignment="Center" 
+                               Foreground="Black"
+                               Margin="10,0,0,0"/>
+                    <TextBlock Text="12" VerticalAlignment="Center"
+                               Foreground="Black" x:Name="txt_SiSoLop"/>
+                    <TextBlock Text=" học sinh." VerticalAlignment="Center"
+                               Foreground="Black"/>
+                </StackPanel>
+
+            </StackPanel>
+        </materialDesign:Card>
+    </Grid>
+</UserControl>

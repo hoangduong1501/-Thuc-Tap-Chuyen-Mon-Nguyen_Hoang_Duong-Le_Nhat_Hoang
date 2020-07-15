@@ -1,0 +1,50 @@
+﻿<UserControl x:Class="QuanLyHS_THPT.UserControls_UI.ThongTinLop_UserControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:QuanLyHS_THPT.UserControls_UI"
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             mc:Ignorable="d" 
+             d:DesignHeight="477" d:DesignWidth="925">
+    <Grid Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="45"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <StackPanel Orientation="Horizontal">
+            <ComboBox Style="{StaticResource MaterialDesignFloatingHintComboBox}"
+                materialDesign:TextFieldAssist.HasClearButton="True"
+                materialDesign:TextFieldAssist.UnderlineBrush="{DynamicResource SecondaryAccentBrush}"
+                materialDesign:ColorZoneAssist.Mode="Inverted"
+                materialDesign:HintAssist.Hint="Năm Học" x:Name="cbb_NamHoc"
+                SelectionChanged="ComboBox_SelectionChanged"
+                IsEditable="True" Width="100" Margin="230,0,0,5"/>
+            <ComboBox Style="{StaticResource MaterialDesignFloatingHintComboBox}"
+                materialDesign:TextFieldAssist.HasClearButton="True"
+                materialDesign:TextFieldAssist.UnderlineBrush="{DynamicResource SecondaryAccentBrush}"
+                materialDesign:ColorZoneAssist.Mode="Inverted" 
+                materialDesign:HintAssist.Hint="Khối Lớp" x:Name="cbb_KhoiLop"
+                SelectionChanged="ComboBox_SelectionChanged"      
+                IsEditable="True" Width="100" Margin="50,0,0,5"/>
+        </StackPanel>
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="230"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid>
+                <ScrollViewer VerticalScrollBarVisibility="Auto">
+                    <StackPanel x:Name="Grid_ItemLop">
+                        
+
+                    </StackPanel>
+                </ScrollViewer>
+            </Grid>
+            <Grid Grid.Column="1">
+                
+            </Grid>
+        </Grid>
+
+    </Grid>
+</UserControl>

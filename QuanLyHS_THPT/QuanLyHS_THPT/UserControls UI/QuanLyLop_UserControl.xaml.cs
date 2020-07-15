@@ -25,10 +25,20 @@ namespace QuanLyHS_THPT.UserControls_UI
             InitializeComponent();
         }
 
-        private void btn_PhanLop_Click(object sender, RoutedEventArgs e)
+        private void btn_Event_Click(object sender, RoutedEventArgs e)
         {
-            UserControls_UI.PhanLop_UserControl phanLop_UserControl = new PhanLop_UserControl();
-            this.Grid_Person.Children.Add(phanLop_UserControl);
+            RadioButton button = sender as RadioButton;
+
+            if(button.Name == btn_PhanLop.Name)
+            {
+                UserControls_UI.PhanLop_UserControl phanLop_UserControl = new PhanLop_UserControl();
+                this.Grid_Person.Children.Add(phanLop_UserControl);
+            }
+            if(button.Name == btn_ThongTinLop.Name)
+            {
+                UserControls_UI.ThongTinLop_UserControl thongTinLop_UserControl = new ThongTinLop_UserControl();
+                this.Grid_Person.Children.Add(thongTinLop_UserControl);
+            }
         }
     }
 }

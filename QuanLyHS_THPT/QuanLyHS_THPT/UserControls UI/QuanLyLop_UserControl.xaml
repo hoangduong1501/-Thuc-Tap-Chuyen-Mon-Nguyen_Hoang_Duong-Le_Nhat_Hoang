@@ -17,16 +17,16 @@
             Margin="4">
             <RadioButton
                 Style="{StaticResource MaterialDesignTabRadioButton}"
-                Margin="4" IsChecked="True" Content="Thống Kê" 
-                x:Name="btn_ThongKeLop"/>
+                Margin="4" IsChecked="True" Content="Thông Tin Lớp" 
+                x:Name="btn_ThongTinLop" Click="btn_Event_Click"/>
             <RadioButton
                 Style="{StaticResource MaterialDesignTabRadioButton}"
                 Margin="4" IsChecked="False" Content="Phân Lớp" 
-                x:Name="btn_PhanLop" Click="btn_PhanLop_Click"/>
-            <RadioButton
+                x:Name="btn_PhanLop" Click="btn_Event_Click"/>
+            <!--<RadioButton
                 Style="{StaticResource MaterialDesignTabRadioButton}"
                 Margin="4" IsChecked="False" Content="Trạng Thái" 
-                x:Name="btn_TrangThai"/>
+                x:Name="btn_TrangThai"/>-->
         </StackPanel>
         <Grid Grid.Row="1" x:Name="Grid_Person">
 
