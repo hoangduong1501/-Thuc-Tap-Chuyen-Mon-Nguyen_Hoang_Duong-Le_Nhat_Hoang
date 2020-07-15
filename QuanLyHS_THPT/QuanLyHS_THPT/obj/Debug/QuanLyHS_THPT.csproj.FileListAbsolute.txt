@@ -191,3 +191,12 @@ E:\HK6\ThucTap\Github\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\Quan
 E:\HK6\ThucTap\Github\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\obj\Debug\UserControls UI\DanToc_TonGiao_UserControl.baml
 E:\HK6\ThucTap\Github\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\obj\Debug\UserControls UI\ViPham_UserControl.g.cs
 E:\HK6\ThucTap\Github\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\obj\Debug\UserControls UI\ViPham_UserControl.baml
+C:\Users\Black-Sky\Documents\GitHub\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\obj\Debug\UserControls UI\DanToc_TonGiao_UserControl.g.cs
+C:\Users\Black-Sky\Documents\GitHub\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\obj\Debug\UserControls UI\ItemLopHoc_UserControl.g.cs
+C:\Users\Black-Sky\Documents\GitHub\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\obj\Debug\UserControls UI\ThongTinLop_UserControl.g.cs
+C:\Users\Black-Sky\Documents\GitHub\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\obj\Debug\UserControls UI\ViPham_UserControl.g.cs
+C:\Users\Black-Sky\Documents\GitHub\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\obj\Debug\UserControls UI\DanToc_TonGiao_UserControl.baml
+C:\Users\Black-Sky\Documents\GitHub\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\obj\Debug\UserControls UI\ItemLopHoc_UserControl.baml
+C:\Users\Black-Sky\Documents\GitHub\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\obj\Debug\UserControls UI\ThongTinLop_UserControl.baml
+C:\Users\Black-Sky\Documents\GitHub\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\obj\Debug\UserControls UI\ViPham_UserControl.baml
+C:\Users\Black-Sky\Documents\GitHub\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\obj\Debug\GeneratedInternalTypeHelper.g.cs

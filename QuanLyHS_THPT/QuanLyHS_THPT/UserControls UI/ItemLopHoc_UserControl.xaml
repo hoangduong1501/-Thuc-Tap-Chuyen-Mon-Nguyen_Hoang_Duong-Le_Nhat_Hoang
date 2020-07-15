@@ -4,12 +4,12 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:QuanLyHS_THPT.UserControls_UI"
-              xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
-             mc:Ignorable="d" 
-             d:DesignHeight="107" d:DesignWidth="180">
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             mc:Ignorable="d"
+             d:DesignHeight="100" d:DesignWidth="200">
     <Grid Margin="0,8,0,6">
         <materialDesign:Card
-            Background="White"
+            Background="White" MouseEnter="grp_UI_MouseEnter" MouseLeave="grp_UI_MouseLeave"
             Foreground="{DynamicResource PrimaryHueDarkForegroundBrush}"
             Padding="0" x:Name="grp_UI"
             UniformCornerRadius="6" Margin="4,0,6,0">

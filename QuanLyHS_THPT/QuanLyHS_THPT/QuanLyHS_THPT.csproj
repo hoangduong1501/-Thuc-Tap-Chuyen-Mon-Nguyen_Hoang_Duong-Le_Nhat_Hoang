@@ -162,6 +162,7 @@
     <Compile Include="View Model\VM_PhanLop.cs" />
     <Compile Include="View Model\VM_QuyDinh.cs" />
     <Compile Include="View Model\VM_ThongTinHS.cs" />
+    <Compile Include="View Model\VM_ThongTinLop.cs" />
     <Compile Include="View Model\VM_ViPham.cs" />
     <Page Include="Controls UI\AdminWindow.xaml">
       <SubType>Designer</SubType>

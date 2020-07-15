@@ -6,7 +6,7 @@
              xmlns:local="clr-namespace:QuanLyHS_THPT.UserControls_UI"
              xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
              mc:Ignorable="d" 
-             d:DesignHeight="477" d:DesignWidth="925">
+             d:DesignHeight="477" d:DesignWidth="1030">
     <Grid Background="White">
         <Grid.RowDefinitions>
             <RowDefinition Height="45"/>
@@ -42,9 +42,30 @@
                 </ScrollViewer>
             </Grid>
             <Grid Grid.Column="1">
-                
+                <ListView Name="lvDanhSachHS">
+                    <ListView.View>
+                        <GridView>
+                            <GridViewColumn Header="Mã" Width="70" DisplayMemberBinding="{Binding maHocSinh}" />
+                            <GridViewColumn Header="Họ tên" Width="170" DisplayMemberBinding="{Binding tenHocSinh}" />
+                            <GridViewColumn Header="Giới" Width="60" DisplayMemberBinding="{Binding gioiTinh}" />
+                            <GridViewColumn Header="Ngày sinh" Width="95" DisplayMemberBinding="{Binding ngaySinh}" />
+                            <GridViewColumn Header="Địa chỉ" Width="190" DisplayMemberBinding="{Binding diaChi}" />
+                            <GridViewColumn Header="Dân tộc" Width="90" DisplayMemberBinding="{Binding danToc}" />
+                            <GridViewColumn Header="Tôn giáo" Width="90" DisplayMemberBinding="{Binding tonGiao}" />
+                        </GridView>
+                    </ListView.View>
+
+                    <ListView.GroupStyle>
+                        <GroupStyle>
+                            <GroupStyle.HeaderTemplate>
+                                <DataTemplate>
+                                    <TextBlock FontWeight="Bold" FontSize="14" Text="{Binding Name}"/>
+                                </DataTemplate>
+                            </GroupStyle.HeaderTemplate>
+                        </GroupStyle>
+                    </ListView.GroupStyle>
+                </ListView>
             </Grid>
         </Grid>
-
     </Grid>
 </UserControl>
