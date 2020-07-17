@@ -98,19 +98,15 @@ namespace QuanLyHS_THPT.UserControls_UI
 
         private string Lay_MaNamHoc()
         {
-            try
+            if (lvDS_NamHoc.SelectedIndex != -1)
             {
                 var item = ((NamHoc_Class)lvDS_NamHoc.SelectedItem).ma_NamHoc;
                 if (item != null)
                 {
                     return (item.ToString());
-                }
-                return "";
+                }                
             }
-            catch (Exception)
-            {
-                return "";
-            }
+            return "";
         }
 
         private void btn_ThemHocKy_Click(object sender, RoutedEventArgs e)

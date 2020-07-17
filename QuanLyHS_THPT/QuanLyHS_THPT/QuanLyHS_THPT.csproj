@@ -76,6 +76,7 @@
       <DependentUpon>ThemGiaoVien_Window.xaml</DependentUpon>
     </Compile>
     <Compile Include="Data\Exec_Class.cs" />
+    <Compile Include="models\BangDiem_Class.cs" />
     <Compile Include="models\DanToc_Class.cs" />
     <Compile Include="models\GiaoVien_Class.cs" />
     <Compile Include="models\HocKy_Class.cs" />
@@ -92,6 +93,9 @@
     <Compile Include="models\TongGiao_Class.cs" />
     <Compile Include="models\ViPham_Class.cs" />
     <Compile Include="Static_Class\List_Source.cs" />
+    <Compile Include="UserControls UI\BangDiem_UserControl.xaml.cs">
+      <DependentUpon>BangDiem_UserControl.xaml</DependentUpon>
+    </Compile>
     <Compile Include="UserControls UI\CapNhatLopHoc_UserControl.xaml.cs">
       <DependentUpon>CapNhatLopHoc_UserControl.xaml</DependentUpon>
     </Compile>
@@ -106,9 +110,6 @@
     </Compile>
     <Compile Include="Controls UI\QuyDinh_Window.xaml.cs">
       <DependentUpon>QuyDinh_Window.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="UserControls UI\BangDiem_UserControl.xaml.cs">
-      <DependentUpon>BangDiem_UserControl.xaml</DependentUpon>
     </Compile>
     <Compile Include="UserControls UI\ItemLopHoc_UserControl.xaml.cs">
       <DependentUpon>ItemLopHoc_UserControl.xaml</DependentUpon>
@@ -152,6 +153,7 @@
     <Compile Include="UserControls UI\ViPham_UserControl.xaml.cs">
       <DependentUpon>ViPham_UserControl.xaml</DependentUpon>
     </Compile>
+    <Compile Include="View Model\VM_BangDiem.cs" />
     <Compile Include="View Model\VM_CapNhatLopHoc.cs" />
     <Compile Include="View Model\VM_DanToc_TonGiao.cs" />
     <Compile Include="View Model\VM_GiaoVien.cs" />
@@ -177,6 +179,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Controls UI\ThemGiaoVien_Window.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls UI\BangDiem_UserControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -215,10 +221,6 @@
       <DependentUpon>LoginWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="UserControls UI\BangDiem_UserControl.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="UserControls UI\ItemLopHoc_UserControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

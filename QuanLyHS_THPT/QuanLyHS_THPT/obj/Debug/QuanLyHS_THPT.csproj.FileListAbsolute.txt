@@ -199,4 +199,3 @@ C:\Users\Black-Sky\Documents\GitHub\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_N
 C:\Users\Black-Sky\Documents\GitHub\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\obj\Debug\UserControls UI\ItemLopHoc_UserControl.baml
 C:\Users\Black-Sky\Documents\GitHub\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\obj\Debug\UserControls UI\ThongTinLop_UserControl.baml
 C:\Users\Black-Sky\Documents\GitHub\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\obj\Debug\UserControls UI\ViPham_UserControl.baml
-C:\Users\Black-Sky\Documents\GitHub\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\obj\Debug\GeneratedInternalTypeHelper.g.cs
