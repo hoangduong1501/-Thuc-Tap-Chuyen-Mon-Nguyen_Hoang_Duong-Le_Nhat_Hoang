@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MaterialDesignThemes.Wpf;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,17 +21,25 @@ namespace QuanLyHS_THPT.UserControls_UI
     /// </summary>
     public partial class ItemLopHoc_UserControl : UserControl
     {
-        public string ten_LopHoc { get; set; }
-        public string ten_GiaoVien { get; set; }
-        public string siso_LopHoc { get; set; }
+        public string ma_LopHoc { get; }
+        public string ten_LopHoc;
+        public string ten_GiaoVien;
+        public string siso_LopHoc;
 
-        public ItemLopHoc_UserControl(string tenLop, string tenGiaoVien, string sisoLop)
+        public ItemLopHoc_UserControl(string maLop, string tenLop, string tenGiaoVien, string sisoLop)
         {
             InitializeComponent();
+            this.ma_LopHoc = maLop;
             this.ten_LopHoc = tenLop;
             this.ten_GiaoVien = tenGiaoVien;
             this.siso_LopHoc = sisoLop;
             Load_UI();
+        }
+
+
+        public Card Get_CardView()
+        {
+            return this.grp_UI;
         }
 
         private void Load_UI()
@@ -39,5 +48,20 @@ namespace QuanLyHS_THPT.UserControls_UI
             txt_GiaoVien.Text = this.ten_GiaoVien;
             txt_SiSoLop.Text = this.siso_LopHoc;
         }
+
+        private void grp_UI_MouseEnter(object sender, MouseEventArgs e)
+        {
+            this.grp_UI.Background = new SolidColorBrush(Color.FromRgb(240, 248, 255));
+        }
+
+        private void grp_UI_MouseLeave(object sender, MouseEventArgs e)
+        {
+            this.grp_UI.Background = Brushes.White;
+        }
+
+        //private void UserControl_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+        //{
+        //    MessageBox.Show("AK");
+        //}
     }
 }
