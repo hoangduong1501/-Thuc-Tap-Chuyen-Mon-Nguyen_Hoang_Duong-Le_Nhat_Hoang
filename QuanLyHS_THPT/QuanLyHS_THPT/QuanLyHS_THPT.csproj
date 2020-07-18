@@ -107,7 +107,9 @@
     <Compile Include="models\HocKy_Class.cs" />
     <Compile Include="models\HocLuc_Class.cs" />
     <Compile Include="models\HocSinh_Class.cs" />
+    <Compile Include="models\KetQua_Class.cs" />
     <Compile Include="models\KhoiLop_Class.cs" />
+    <Compile Include="models\KQCN_Class.cs" />
     <Compile Include="models\KQHK_Class.cs" />
     <Compile Include="models\LoaiNguoiDung_Class.cs" />
     <Compile Include="models\Lop_Class.cs" />
@@ -129,6 +131,12 @@
     </Compile>
     <Compile Include="reports\Form_BDCaNhan.Designer.cs">
       <DependentUpon>Form_BDCaNhan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="reports\Form_DSDiemCaNam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reports\Form_DSDiemCaNam.Designer.cs">
+      <DependentUpon>Form_DSDiemCaNam.cs</DependentUpon>
     </Compile>
     <Compile Include="reports\Form_DSLop.cs">
       <SubType>Form</SubType>
@@ -215,6 +223,7 @@
     <Compile Include="View Model\VM_DanToc_TonGiao.cs" />
     <Compile Include="View Model\VM_DiemCaNhan.cs" />
     <Compile Include="View Model\VM_GiaoVien.cs" />
+    <Compile Include="View Model\VM_KQCaNam.cs" />
     <Compile Include="View Model\VM_KQHocKy.cs" />
     <Compile Include="View Model\VM_MonHoc.cs" />
     <Compile Include="View Model\VM_NamHoc.cs" />
@@ -374,9 +383,13 @@
     <EmbeddedResource Include="reports\Form_BDCaNhan.resx">
       <DependentUpon>Form_BDCaNhan.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="reports\Form_DSDiemCaNam.resx">
+      <DependentUpon>Form_DSDiemCaNam.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="reports\Form_DSLop.resx">
       <DependentUpon>Form_DSLop.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="reports\Report_BDCaNam.rdlc" />
     <EmbeddedResource Include="reports\Report_BDCaNhan.rdlc" />
     <EmbeddedResource Include="reports\Report_DSLop.rdlc" />
     <None Include="packages.config" />

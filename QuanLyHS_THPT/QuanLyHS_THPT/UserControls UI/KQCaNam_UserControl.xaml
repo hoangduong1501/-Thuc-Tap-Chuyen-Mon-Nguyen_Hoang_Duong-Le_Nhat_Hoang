@@ -85,7 +85,7 @@
                 </TextBox>
                 <TextBox x:Name="txt_DTB"
                     Style="{StaticResource MaterialDesignFloatingHintTextBox}"
-                    VerticalAlignment="Top" Width="100" 
+                    VerticalAlignment="Top" Width="100" IsReadOnly="True"
                     HorizontalAlignment="Left" Margin="302,0,0,0"
                     materialDesign:TextFieldAssist.HasClearButton="True" TabIndex="0">
                     <materialDesign:HintAssist.Hint>
@@ -98,36 +98,45 @@
                 <ComboBox x:Name="cbb_Hanhkiem" SelectionChanged="cbb_Event_SelectionChanged"
                           Style="{StaticResource MaterialDesignFloatingHintComboBox}"
                     materialDesign:HintAssist.Hint="Hạnh Kiểm" Width="90" IsEditable="True" 
-                    Margin="444,3,0,0" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+                    Margin="416,3,0,0" VerticalAlignment="Top" HorizontalAlignment="Left"/>
                 <ComboBox x:Name="cbb_HocLuc" SelectionChanged="cbb_Event_SelectionChanged"
                           Style="{StaticResource MaterialDesignFloatingHintComboBox}"
                     materialDesign:HintAssist.Hint="Học Lực" Width="90" IsEditable="True" 
-                    Margin="556,3,0,0" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+                    Margin="528,3,0,0" VerticalAlignment="Top" HorizontalAlignment="Left"/>
                 <Button x:Name="btn_Update"
                     Style="{StaticResource MaterialDesignIconButton}"
-                    Margin="0,8,134,0" Click="btn_Event_Click"
+                    Margin="0,8,100,0" Click="btn_Event_Click"
                     ToolTip="Kế tiếp" HorizontalAlignment="Right" VerticalAlignment="Top"
                     Background="{DynamicResource MaterialDesignTextFieldBoxBackground}" TabIndex="7">
                     <materialDesign:PackIcon Kind="ArrowDownBoldHexagonOutline" />
                 </Button>
                 <Button x:Name="btn_Next"
                     Style="{StaticResource MaterialDesignIconButton}"
-                    Margin="0,8,74,0" Click="btn_Event_Click"
+                    Margin="0,8,36,0" Click="btn_Event_Click"
                     ToolTip="Kế tiếp" HorizontalAlignment="Right" VerticalAlignment="Top"
                     Background="{DynamicResource MaterialDesignTextFieldBoxBackground}" TabIndex="8">
                     <materialDesign:PackIcon Kind="ChevronRight" />
                 </Button>
+                <ComboBox x:Name="cbb_KetQua" SelectionChanged="cbb_Event_SelectionChanged"
+                    Style="{StaticResource MaterialDesignFloatingHintComboBox}"
+                    materialDesign:HintAssist.Hint="Kết quả" Width="90" IsEditable="True" 
+                    Margin="634,3,0,0" VerticalAlignment="Top" HorizontalAlignment="Left"/>
             </Grid>
 
             <Grid Grid.Row="1">
                 <ListView x:Name="lv_BangDiem">
                     <ListView.View>
                         <GridView>
-                            <GridViewColumn Header="Mã" Width="70" DisplayMemberBinding="{Binding ma_HocSinh}"/>
-                            <GridViewColumn Header="Họ tên" Width="180" DisplayMemberBinding="{Binding ten_HocSinh}"/>
-                            <GridViewColumn Header="Điểm TBM" Width="120" DisplayMemberBinding="{Binding diem_TBM}"/>
-                            <GridViewColumn Header="Hạnh Kiểm" Width="120" DisplayMemberBinding="{Binding ten_HanhKiem}"/>
-                            <GridViewColumn Header="Học Lực" Width="120" DisplayMemberBinding="{Binding ten_HocLuc}"/>
+                            <GridViewColumn Header="Mã" Width="100" DisplayMemberBinding="{Binding ma_HocSinh}"/>
+                            <GridViewColumn Header="Họ tên" Width="190" DisplayMemberBinding="{Binding ten_HocSinh}"/>
+                            <!--<GridViewColumn Header="Điểm TBM" Width="120" DisplayMemberBinding="{Binding ma_LopHoc}"/>-->
+                            <GridViewColumn Header="Điểm" Width="120" DisplayMemberBinding="{Binding diem_TB}"/>
+                            <!--<GridViewColumn Header="Học Lực" Width="120" DisplayMemberBinding="{Binding ma_HanhKiem}"/>-->
+                            <GridViewColumn Header="Hạnh kiểm" Width="120" DisplayMemberBinding="{Binding ten_HanhKiem}"/>
+                            <!--<GridViewColumn Header="Họ tên" Width="180" DisplayMemberBinding="{Binding ma_HocLuc}"/>-->
+                            <GridViewColumn Header="Học lực" Width="120" DisplayMemberBinding="{Binding ten_HocLuc}"/>
+                            <!--<GridViewColumn Header="Hạnh Kiểm" Width="120" DisplayMemberBinding="{Binding ma_KetQua}"/>-->
+                            <GridViewColumn Header="Kết quả" Width="120" DisplayMemberBinding="{Binding ten_KetQua}"/>
                         </GridView>
                     </ListView.View>
                     <ListView.ItemContainerStyle>

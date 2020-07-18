@@ -25,7 +25,8 @@ namespace QuanLyHS_THPT.UserControls_UI
         private VM_BangDiem vM_BangDiem;
         private VM_KQHocKy vM_KQHocKy;
         private VM_DiemCaNhan vM_DiemCaNhan;
-        private List<KQHK_Class> lst_KQHK;
+        private VM_KQCaNam vM_KQCaNam;
+        private List<KQCN_Class> lst_KQCN;
         private List<HocSinh_Class> lst_HocSinh;
 
         public KQCaNam_UserControl()
@@ -34,7 +35,8 @@ namespace QuanLyHS_THPT.UserControls_UI
             vM_BangDiem = new VM_BangDiem();
             vM_KQHocKy = new VM_KQHocKy();
             vM_DiemCaNhan = new VM_DiemCaNhan();
-            lst_KQHK = new List<KQHK_Class>();
+            vM_KQCaNam = new VM_KQCaNam();
+            lst_KQCN = new List<KQCN_Class>();
             Load_Combobox();
         }
         
@@ -55,6 +57,10 @@ namespace QuanLyHS_THPT.UserControls_UI
             cbb_Hanhkiem.ItemsSource = vM_KQHocKy.DanhSach_HanhKiem();
             cbb_Hanhkiem.DisplayMemberPath = "ten_HanhKiem";
             cbb_Hanhkiem.SelectedValuePath = "ma_HanhKiem";
+
+            cbb_KetQua.ItemsSource = vM_KQCaNam.DanhSach_KetQua();
+            cbb_KetQua.SelectedValuePath = "ma_KetQua";
+            cbb_KetQua.DisplayMemberPath = "ten_KetQua";
 
             cbb_LopHoc.DisplayMemberPath = "ten_Lop";
             cbb_LopHoc.SelectedValuePath = "ma_Lop";
@@ -81,11 +87,12 @@ namespace QuanLyHS_THPT.UserControls_UI
 
         private void Load_TextBox()
         {
-            txt_MaHocSinh.Text = lst_KQHK[Lay_HocSinh()].ma_HocSinh;
-            txt_HoTen.Text = lst_KQHK[Lay_HocSinh()].ten_HocSinh;
-            txt_DTB.Text = lst_KQHK[Lay_HocSinh()].diem_TBM;
-            cbb_Hanhkiem.Text = lst_KQHK[Lay_HocSinh()].ten_HanhKiem;
-            cbb_HocLuc.Text = lst_KQHK[Lay_HocSinh()].ten_HocLuc;
+            txt_MaHocSinh.Text = lst_KQCN[Lay_HocSinh()].ma_HocSinh;
+            txt_HoTen.Text = lst_KQCN[Lay_HocSinh()].ten_HocSinh;
+            txt_DTB.Text = lst_KQCN[Lay_HocSinh()].diem_TB;
+            cbb_Hanhkiem.Text = lst_KQCN[Lay_HocSinh()].ten_HanhKiem;
+            cbb_HocLuc.Text = lst_KQCN[Lay_HocSinh()].ten_HocLuc;
+            cbb_KetQua.Text = lst_KQCN[Lay_HocSinh()].ten_KetQua;
         }
 
         private void cbb_Event_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -106,24 +113,25 @@ namespace QuanLyHS_THPT.UserControls_UI
             Button button = sender as Button;
             if (button.Name == btn_HienThi.Name)
             {
-                
-                if (lst_KQHK.Count == 0)
+                lv_BangDiem.ItemsSource = lst_KQCN = vM_KQCaNam.DanhSach_KQCN(cbb_NamHoc.SelectedValue.ToString(), cbb_LopHoc.SelectedValue.ToString());
+                if (lst_KQCN.Count == 0)
                 {
-                    MessageBox.Show("OK");
+                    MessageBox.Show("Bảng điểm lớp bạn chọn chưa tồn tại. \nHãy bấm tạo bảng để tiếp tục.", "Thông báo",MessageBoxButton.OK, MessageBoxImage.Information);
                     btn_ThemBang.Visibility = Visibility.Visible;
                 }
+                else btn_ThemBang.Visibility = Visibility.Collapsed;
             }
             if (button.Name == btn_ThemBang.Name)
             {
                 if (cbb_NamHoc.SelectedIndex != -1 && cbb_LopHoc.SelectedIndex != -1)
                 {
-                    ThemBang_KQHK();
+                    ThemBang_KQCN();
                     btn_ThemBang.Visibility = Visibility.Collapsed;
                 }
             }
             if (button.Name == btn_LuuBang.Name)
             {
-                CapNhat_KQHK();
+                CapNhat_KQCN();
             }
             if (button.Name == btn_Update.Name)
             {
@@ -131,7 +139,7 @@ namespace QuanLyHS_THPT.UserControls_UI
             }
             if (button.Name == btn_Next.Name)
             {
-                if (lv_BangDiem.SelectedIndex == lst_KQHK.Count - 1)
+                if (lv_BangDiem.SelectedIndex == lst_KQCN.Count - 1)
                 {
                     lv_BangDiem.SelectedIndex = 0;
                     Load_TextBox();
@@ -146,41 +154,55 @@ namespace QuanLyHS_THPT.UserControls_UI
             if (button.Name == btn_XuatReport.Name)
             {
                 //
-               
+               if(lst_KQCN.Count > 0)
+                {
+                    reports.Form_DSDiemCaNam form_DSDiemCaNam = new reports.Form_DSDiemCaNam()
+                    {
+                        maNamHoc = cbb_NamHoc.SelectedValue.ToString(),
+                        maLopHoc = cbb_LopHoc.SelectedValue.ToString(),
+                    };
+                    form_DSDiemCaNam.Show();
+                }
             }
         }
 
-        private void CapNhat_KQHK()
+        private void CapNhat_KQCN()
         {
             if (txt_MaHocSinh.Text.Trim() != "")
             {
-                //bool result = vM_KQHocKy.CapNhat_QKHK(cbb_HocKy.SelectedValue.ToString(), cbb_LopHoc.SelectedValue.ToString(), lst_KQHK);
-                //if (result) MessageBox.Show("OK");
+                bool result = vM_KQCaNam.capNhat_QKCN(cbb_LopHoc.SelectedValue.ToString(), lst_KQCN);
+                if (result) MessageBox.Show("Lưu thành công","Thông báo", MessageBoxButton.OK,MessageBoxImage.Information);
+                else MessageBox.Show("Lưu thất bại", "Thông báo", MessageBoxButton.OK, MessageBoxImage.Information);
             }
         }
 
         private void ChinhSua_HocSinh()
         {
             int index_HS = Lay_HocSinh();
-            lst_KQHK[index_HS].ma_HanhKiem = cbb_Hanhkiem.SelectedValue.ToString();
-            lst_KQHK[index_HS].ten_HanhKiem = cbb_Hanhkiem.Text;
+            lst_KQCN[index_HS].ma_HanhKiem = cbb_Hanhkiem.SelectedValue.ToString();
+            lst_KQCN[index_HS].ten_HanhKiem = cbb_Hanhkiem.Text;
 
-            lst_KQHK[index_HS].ma_HocLuc = cbb_HocLuc.SelectedValue.ToString();
-            lst_KQHK[index_HS].ten_HocLuc = cbb_HocLuc.Text;
+            lst_KQCN[index_HS].ma_HocLuc = cbb_HocLuc.SelectedValue.ToString();
+            lst_KQCN[index_HS].ten_HocLuc = cbb_HocLuc.Text;
+
+            lst_KQCN[index_HS].ma_KetQua = cbb_KetQua.SelectedValue.ToString();
+            lst_KQCN[index_HS].ten_KetQua = cbb_KetQua.Text;
 
             lv_BangDiem.ItemsSource = null;
-            lv_BangDiem.ItemsSource = lst_KQHK;
+            lv_BangDiem.ItemsSource = lst_KQCN;
             lv_BangDiem.SelectedIndex = index_HS;
         }
 
-        private void ThemBang_KQHK()
+        private void ThemBang_KQCN()
         {
             this.lst_HocSinh = new List<HocSinh_Class>();
             this.lst_HocSinh = vM_DiemCaNhan.DanhSach_HocSinh(cbb_NamHoc.SelectedValue.ToString(), cbb_KhoiLop.SelectedValue.ToString(), cbb_LopHoc.SelectedValue.ToString());
 
             if (lst_HocSinh.Count > 0)
-            { }
-                
+            {
+                vM_KQCaNam.Them_QKCN(cbb_NamHoc.SelectedValue.ToString(), cbb_LopHoc.SelectedValue.ToString(), lst_HocSinh);
+            }
+
         }
         private void LayDS_KQHK()
         {

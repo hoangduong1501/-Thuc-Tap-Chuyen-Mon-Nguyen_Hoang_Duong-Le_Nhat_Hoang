@@ -10,7 +10,10 @@
             <TextRuns>
               <TextRun>
                 <Value>mã học sinh:</Value>
-                <Style />
+                <Style>
+                  <FontSize>12pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
               </TextRun>
             </TextRuns>
             <Style>
@@ -22,7 +25,7 @@
         <Top>1.9225cm</Top>
         <Left>0.463cm</Left>
         <Height>0.6cm</Height>
-        <Width>3.02917cm</Width>
+        <Width>3.47896cm</Width>
         <Style>
           <Border>
             <Style>None</Style>
@@ -43,6 +46,8 @@
                 <Value>=First(Fields!ma_HocSinh.Value, "DataSet_BDCanNhan")</Value>
                 <Style>
                   <FontFamily />
+                  <FontSize>12pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
                 </Style>
               </TextRun>
             </TextRuns>
@@ -53,7 +58,7 @@
         </Paragraphs>
         <rd:DefaultName>Textbox99</rd:DefaultName>
         <Top>1.89604cm</Top>
-        <Left>3.73911cm</Left>
+        <Left>4.37411cm</Left>
         <Height>0.6cm</Height>
         <Width>6.41583cm</Width>
         <ZIndex>1</ZIndex>
@@ -75,7 +80,10 @@
             <TextRuns>
               <TextRun>
                 <Value>=First(Fields!HoTen.Value, "DataSet_BDCanNhan")</Value>
-                <Style />
+                <Style>
+                  <FontSize>12pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
               </TextRun>
             </TextRuns>
             <Style>
@@ -85,7 +93,7 @@
         </Paragraphs>
         <rd:DefaultName>Textbox99</rd:DefaultName>
         <Top>2.60187cm</Top>
-        <Left>3.73911cm</Left>
+        <Left>4.37411cm</Left>
         <Height>0.6cm</Height>
         <Width>6.41584cm</Width>
         <ZIndex>2</ZIndex>
@@ -107,7 +115,10 @@
             <TextRuns>
               <TextRun>
                 <Value>tên học sinh:</Value>
-                <Style />
+                <Style>
+                  <FontSize>12pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
               </TextRun>
             </TextRuns>
             <Style>
@@ -119,7 +130,7 @@
         <Top>2.62833cm</Top>
         <Left>0.463cm</Left>
         <Height>0.6cm</Height>
-        <Width>3.02917cm</Width>
+        <Width>3.47896cm</Width>
         <ZIndex>3</ZIndex>
         <Style>
           <Border>
@@ -139,7 +150,10 @@
             <TextRuns>
               <TextRun>
                 <Value>=First(Fields!TenGiaoVien.Value, "DataSet_BDCanNhan")</Value>
-                <Style />
+                <Style>
+                  <FontSize>12pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
               </TextRun>
             </TextRuns>
             <Style>
@@ -149,7 +163,7 @@
         </Paragraphs>
         <rd:DefaultName>Textbox99</rd:DefaultName>
         <Top>3.30771cm</Top>
-        <Left>3.73911cm</Left>
+        <Left>4.37411cm</Left>
         <Height>0.6cm</Height>
         <Width>6.41584cm</Width>
         <ZIndex>4</ZIndex>
@@ -171,7 +185,10 @@
             <TextRuns>
               <TextRun>
                 <Value>tên giáo viên:</Value>
-                <Style />
+                <Style>
+                  <FontSize>12pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
               </TextRun>
             </TextRuns>
             <Style>
@@ -183,7 +200,7 @@
         <Top>3.33417cm</Top>
         <Left>0.49828cm</Left>
         <Height>0.6cm</Height>
-        <Width>3.02917cm</Width>
+        <Width>3.47896cm</Width>
         <ZIndex>5</ZIndex>
         <Style>
           <Border>
@@ -203,7 +220,10 @@
             <TextRuns>
               <TextRun>
                 <Value>=First(Fields!TenLop.Value, "DataSet_BDCanNhan")</Value>
-                <Style />
+                <Style>
+                  <FontSize>12pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
               </TextRun>
             </TextRuns>
             <Style>
@@ -213,7 +233,7 @@
         </Paragraphs>
         <rd:DefaultName>Textbox99</rd:DefaultName>
         <Top>4.04cm</Top>
-        <Left>3.73911cm</Left>
+        <Left>4.37411cm</Left>
         <Height>0.6cm</Height>
         <Width>6.41583cm</Width>
         <ZIndex>6</ZIndex>
@@ -235,7 +255,10 @@
             <TextRuns>
               <TextRun>
                 <Value>tên lớp:</Value>
-                <Style />
+                <Style>
+                  <FontSize>12pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
               </TextRun>
             </TextRuns>
             <Style>
@@ -247,7 +270,7 @@
         <Top>4.04cm</Top>
         <Left>0.49828cm</Left>
         <Height>0.6cm</Height>
-        <Width>3.02917cm</Width>
+        <Width>3.47896cm</Width>
         <ZIndex>7</ZIndex>
         <Style>
           <Border>
@@ -263,28 +286,28 @@
         <TablixBody>
           <TablixColumns>
             <TablixColumn>
-              <Width>2.5cm</Width>
+              <Width>4.39555cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>2.5cm</Width>
+              <Width>1.89146cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>2.5cm</Width>
+              <Width>1.89146cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>2.5cm</Width>
+              <Width>1.97083cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>2.5cm</Width>
+              <Width>1.94438cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>2.5cm</Width>
+              <Width>1.83854cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>2.5cm</Width>
+              <Width>1.73271cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>2.5cm</Width>
+              <Width>1.5475cm</Width>
             </TablixColumn>
             <TablixColumn>
               <Width>2.5cm</Width>
@@ -316,6 +339,7 @@
                           <Color>LightGrey</Color>
                           <Style>Solid</Style>
                         </Border>
+                        <BackgroundColor>LightBlue</BackgroundColor>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -346,6 +370,7 @@
                           <Color>LightGrey</Color>
                           <Style>Solid</Style>
                         </Border>
+                        <BackgroundColor>LightBlue</BackgroundColor>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -376,6 +401,7 @@
                           <Color>LightGrey</Color>
                           <Style>Solid</Style>
                         </Border>
+                        <BackgroundColor>LightBlue</BackgroundColor>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -393,7 +419,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>15 phút L</Value>
+                              <Value>15 phút L2</Value>
                               <Style />
                             </TextRun>
                           </TextRuns>
@@ -406,6 +432,7 @@
                           <Color>LightGrey</Color>
                           <Style>Solid</Style>
                         </Border>
+                        <BackgroundColor>LightBlue</BackgroundColor>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -436,6 +463,7 @@
                           <Color>LightGrey</Color>
                           <Style>Solid</Style>
                         </Border>
+                        <BackgroundColor>LightBlue</BackgroundColor>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -466,6 +494,7 @@
                           <Color>LightGrey</Color>
                           <Style>Solid</Style>
                         </Border>
+                        <BackgroundColor>LightBlue</BackgroundColor>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -496,6 +525,7 @@
                           <Color>LightGrey</Color>
                           <Style>Solid</Style>
                         </Border>
+                        <BackgroundColor>LightBlue</BackgroundColor>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -526,6 +556,7 @@
                           <Color>LightGrey</Color>
                           <Style>Solid</Style>
                         </Border>
+                        <BackgroundColor>LightBlue</BackgroundColor>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -556,6 +587,7 @@
                           <Color>LightGrey</Color>
                           <Style>Solid</Style>
                         </Border>
+                        <BackgroundColor>LightBlue</BackgroundColor>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -870,7 +902,7 @@
         <Top>5.57953cm</Top>
         <Left>0.30078cm</Left>
         <Height>1.2cm</Height>
-        <Width>22.5cm</Width>
+        <Width>19.71243cm</Width>
         <ZIndex>8</ZIndex>
         <Style>
           <Border>
@@ -918,7 +950,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>="Time" + format(CDate(today), "dd MMM yyyy")</Value>
+                <Value>="Ngày xuất: " + format(CDate(today), "dd MMM yyyy")</Value>
                 <Style />
               </TextRun>
             </TextRuns>
@@ -926,7 +958,7 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox126</rd:DefaultName>
-        <Top>7.16703cm</Top>
+        <Top>7.80203cm</Top>
         <Left>0.463cm</Left>
         <Height>0.6cm</Height>
         <Width>6.12479cm</Width>
@@ -949,7 +981,10 @@
             <TextRuns>
               <TextRun>
                 <Value>điểm trung bình:</Value>
-                <Style />
+                <Style>
+                  <FontSize>12pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
               </TextRun>
             </TextRuns>
             <Style>
@@ -961,7 +996,7 @@
         <Top>4.74583cm</Top>
         <Left>0.463cm</Left>
         <Height>0.6cm</Height>
-        <Width>3.02917cm</Width>
+        <Width>3.47896cm</Width>
         <ZIndex>11</ZIndex>
         <Style>
           <Border>
@@ -981,7 +1016,10 @@
             <TextRuns>
               <TextRun>
                 <Value>=ROUND(AVG(Fields!diem_TBM.Value, "DataSet_BDCanNhan"),2)</Value>
-                <Style />
+                <Style>
+                  <FontSize>12pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
               </TextRun>
             </TextRuns>
             <Style>
@@ -991,7 +1029,7 @@
         </Paragraphs>
         <rd:DefaultName>Textbox99</rd:DefaultName>
         <Top>4.74583cm</Top>
-        <Left>3.73911cm</Left>
+        <Left>4.37411cm</Left>
         <Height>0.6cm</Height>
         <Width>6.41583cm</Width>
         <ZIndex>12</ZIndex>
@@ -1006,10 +1044,10 @@
         </Style>
       </Textbox>
     </ReportItems>
-    <Height>3.20563in</Height>
+    <Height>3.47646in</Height>
     <Style />
   </Body>
-  <Width>9.12377in</Width>
+  <Width>8.02319in</Width>
   <Page>
     <PageHeight>29.7cm</PageHeight>
     <PageWidth>21cm</PageWidth>

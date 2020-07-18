@@ -113,9 +113,10 @@ namespace QuanLyHS_THPT.UserControls_UI
                 LayDS_KQHK();
                 if(lst_KQHK.Count == 0)
                 {
-                    MessageBox.Show("OK");
+                    MessageBox.Show("Bảng điểm lớp bạn chọn chưa tồn tại. \nHãy bấm tạo bảng để tiếp tục.", "Thông báo",MessageBoxButton.OK, MessageBoxImage.Information);
                     btn_ThemBang.Visibility = Visibility.Visible;
                 }
+                else btn_ThemBang.Visibility = Visibility.Collapsed;
             }
             if(button.Name == btn_ThemBang.Name)
             {
@@ -150,13 +151,16 @@ namespace QuanLyHS_THPT.UserControls_UI
             if(button.Name == btn_XuatReport.Name)
             {
                 //
-                reports.Form_DSLop form_DSLop = new reports.Form_DSLop()
+                if(lst_KQHK.Count != 0)
                 {
-                    maHocKy = cbb_HocKy.SelectedValue.ToString(),
-                    maNamHoc = cbb_NamHoc.SelectedValue.ToString(),
-                    maLopHoc = cbb_LopHoc.SelectedValue.ToString()
-                };
-                form_DSLop.Show();
+                    reports.Form_DSLop form_DSLop = new reports.Form_DSLop()
+                    {
+                        maHocKy = cbb_HocKy.SelectedValue.ToString(),
+                        maNamHoc = cbb_NamHoc.SelectedValue.ToString(),
+                        maLopHoc = cbb_LopHoc.SelectedValue.ToString()
+                    };
+                    form_DSLop.Show();
+                }
             }
         }
 
@@ -165,7 +169,8 @@ namespace QuanLyHS_THPT.UserControls_UI
             if(txt_MaHocSinh.Text.Trim() != "")
             {
                 bool result = vM_KQHocKy.CapNhat_QKHK(cbb_HocKy.SelectedValue.ToString(), cbb_LopHoc.SelectedValue.ToString(), lst_KQHK);
-                if (result) MessageBox.Show("OK");
+                if (result) MessageBox.Show("Cập nhật thành công", "Thông báo", MessageBoxButton.OK, MessageBoxImage.Information);
+                else MessageBox.Show("Cập nhật không thành công", "Thông báo", MessageBoxButton.OK, MessageBoxImage.Information);
             }
         }
 
