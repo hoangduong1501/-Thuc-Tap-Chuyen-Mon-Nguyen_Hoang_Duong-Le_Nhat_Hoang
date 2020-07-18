@@ -82,6 +82,7 @@ namespace QuanLyHS_THPT.Controls_UI
                     break;
                 case "btn_Backup":
                     vM_QuyDinh.Backup();
+                    MessageBox.Show("Sao lưu dữ liệu thành công!", "Thông Báo", MessageBoxButton.OK, MessageBoxImage.Information);
                     break;
             }
         }
