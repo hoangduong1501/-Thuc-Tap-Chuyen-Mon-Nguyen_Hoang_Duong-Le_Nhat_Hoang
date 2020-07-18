@@ -88,6 +88,9 @@ namespace QuanLyHS_THPT.UserControls_UI
                 case "btn_LamMoi":
                     LoadDS_HocSinh();
                     break;
+                case "btn_XuatBangTraCuu":
+                    vM_ThongTinHS.xuatExcelTraCuu();
+                    break;
             }
         }
 

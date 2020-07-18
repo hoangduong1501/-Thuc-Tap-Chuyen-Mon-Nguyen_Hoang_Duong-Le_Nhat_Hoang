@@ -281,5 +281,64 @@ namespace QuanLyHS_THPT.View_Model
 
             return Exec_Class.GetData(sqlCommand);
         }
+        public void xuatExcelTraCuu()
+        {
+            List<HocSinh_Class> lst = DanhSach_HocSinh();
+            Microsoft.Office.Interop.Excel._Application app = new Microsoft.Office.Interop.Excel.Application();
+            Microsoft.Office.Interop.Excel._Workbook workbook = app.Workbooks.Add(Type.Missing);
+            Microsoft.Office.Interop.Excel._Worksheet worksheet = null;
+            worksheet = workbook.Sheets["Sheet1"];
+            worksheet = workbook.ActiveSheet;
+            app.Visible = true;
+            worksheet.Cells[1, 1] = "DANH SÁCH HỌC SINH";
+            worksheet.Cells[3, 1] = "STT";
+            worksheet.Cells[3, 2] = "Mã";
+            worksheet.Cells[3, 3] = "Họ Tên";
+            worksheet.Cells[3, 4] = "Giới";
+            worksheet.Cells[3, 5] = "Ngày Sinh";
+            worksheet.Cells[3, 6] = "Địa Chỉ";
+            worksheet.Cells[3, 7] = "Dân Tộc";
+            worksheet.Cells[3, 8] = "Tôn Giáo";
+
+            for (int i = 0; i < lst.Count; i++)
+            {
+                worksheet.Cells[i + 4, 1] = i + 1;
+                worksheet.Cells[i + 4, 2] = lst[i].maHocSinh;
+                worksheet.Cells[i + 4, 3] = lst[i].tenHocSinh;
+                worksheet.Cells[i + 4, 4] = lst[i].gioiTinh;
+                worksheet.Cells[i + 4, 5] = lst[i].ngaySinh;
+                worksheet.Cells[i + 4, 6] = lst[i].diaChi;
+                worksheet.Cells[i + 4, 7] = lst[i].danToc;
+                worksheet.Cells[i + 4, 8] = lst[i].tonGiao;
+            }
+        }
+
+        public void xuatExcelHoSo()
+        {
+            List<HocSinh_Class> lst = DanhSach_HocSinh();
+            Microsoft.Office.Interop.Excel._Application app = new Microsoft.Office.Interop.Excel.Application();
+            Microsoft.Office.Interop.Excel._Workbook workbook = app.Workbooks.Add(Type.Missing);
+            Microsoft.Office.Interop.Excel._Worksheet worksheet = null;
+            worksheet = workbook.Sheets["Sheet1"];
+            worksheet = workbook.ActiveSheet;
+            app.Visible = true;
+            worksheet.Cells[1, 1] = "DANH SÁCH HỌC SINH";
+            worksheet.Cells[3, 1] = "STT";
+            worksheet.Cells[3, 2] = "Mã";
+            worksheet.Cells[3, 3] = "Họ Tên";
+            worksheet.Cells[3, 4] = "Giới";
+            worksheet.Cells[3, 5] = "Ngày Sinh";
+            worksheet.Cells[3, 6] = "Địa Chỉ";
+
+            for (int i = 0; i < lst.Count; i++)
+            {
+                worksheet.Cells[i + 4, 1] = i + 1;
+                worksheet.Cells[i + 4, 2] = lst[i].maHocSinh;
+                worksheet.Cells[i + 4, 3] = lst[i].tenHocSinh;
+                worksheet.Cells[i + 4, 4] = lst[i].gioiTinh;
+                worksheet.Cells[i + 4, 5] = lst[i].ngaySinh;
+                worksheet.Cells[i + 4, 6] = lst[i].diaChi;
+            }
+        }
     }
 }

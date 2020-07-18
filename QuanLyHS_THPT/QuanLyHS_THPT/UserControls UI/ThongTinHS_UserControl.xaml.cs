@@ -83,6 +83,9 @@ namespace QuanLyHS_THPT.UserControls_UI
                     grp_Input.Width = 0;
                     LoadDS_HocSinh();
                     break;
+                case "btn_XuatBangHoSo":
+                    vM_ThongTinHS.xuatExcelHoSo();
+                    break;
             }
         }
 
