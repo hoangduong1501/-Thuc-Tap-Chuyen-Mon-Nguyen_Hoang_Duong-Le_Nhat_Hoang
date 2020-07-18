@@ -96,8 +96,7 @@ namespace QuanLyHS_THPT.UserControls_UI
                 lst = vM_BangDiem.DanhSach_HocSinh(cbb_NamHoc.SelectedValue.ToString(), cbb_KhoiLop.SelectedValue.ToString(), cbb_LopHoc.SelectedValue.ToString());
                 bool result = vM_BangDiem.Tao_BangDiem(cbb_NamHoc.SelectedValue.ToString(), cbb_HocKy.SelectedValue.ToString(),
                     cbb_LopHoc.SelectedValue.ToString(), cbb_MonHoc.SelectedValue.ToString(), lst);
-                if (result) MessageBox.Show("Ngon");
-                else MessageBox.Show("Ngu roi");
+           
             }
             if(button.Name == btn_Next.Name)
             {
@@ -149,7 +148,7 @@ namespace QuanLyHS_THPT.UserControls_UI
             lst_BangDiem[Lay_HocSinh()].diem_ThiHK = float.Parse(txt_Thi.Text.Trim());
             lst_BangDiem[Lay_HocSinh()].diem_TBM = (float)Math.Round((DTB / 11),2);
 
-            MessageBox.Show(lst_BangDiem[Lay_HocSinh()].diem_TBM.ToString());
+            //MessageBox.Show(lst_BangDiem[Lay_HocSinh()].diem_TBM.ToString());
         }
 
         private int Lay_HocSinh()

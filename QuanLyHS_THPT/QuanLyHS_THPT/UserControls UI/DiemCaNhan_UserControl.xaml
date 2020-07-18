@@ -1,0 +1,70 @@
+﻿<UserControl x:Class="QuanLyHS_THPT.UserControls_UI.DiemCaNhan_UserControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:QuanLyHS_THPT.UserControls_UI"
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             mc:Ignorable="d" 
+             d:DesignHeight="574" d:DesignWidth="1030">
+    <Grid Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="70"/>
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <StackPanel Orientation="Horizontal">
+            <ComboBox x:Name="cbb_NamHoc" SelectionChanged="cbb_NamHoc_SelectionChanged"
+                materialDesign:HintAssist.Hint="Năm Học" Width="90"
+                IsEditable="True" Margin="20,0,0,0"/>
+            <ComboBox x:Name="cbb_KhoiLop" SelectionChanged="cbb_NamHoc_SelectionChanged"
+                materialDesign:HintAssist.Hint="Khối Lớp" Width="90"
+                IsEditable="True" Margin="20,0,0,0"/>
+            <ComboBox x:Name="cbb_HocKy" SelectionChanged="cbb_NamHoc_SelectionChanged"
+                materialDesign:HintAssist.Hint="Học Kỳ" Width="90"
+                IsEditable="True" Margin="20,0,0,0"/>
+            <ComboBox x:Name="cbb_LopHoc" SelectionChanged="cbb_NamHoc_SelectionChanged"
+                materialDesign:HintAssist.Hint="Lớp Học" Width="90"
+                IsEditable="True" Margin="20,0,0,0"/>
+            <ComboBox x:Name="cbb_HocSinh" SelectionChanged="cbb_NamHoc_SelectionChanged"
+                materialDesign:HintAssist.Hint="Học Sinh" Width="200"
+                IsEditable="True" Margin="20,0,0,0"/>
+            <Button x:Name="btn_HienThi" Margin="40,0,0,0"
+                Style="{StaticResource MaterialDesignFloatingActionMiniAccentButton}"
+                ToolTip="Mở Bảng Điểm" Click="btn_Event_Click">
+                <materialDesign:PackIcon Kind="CardSearchOutline" Height="24" Width="24" />
+            </Button>
+            <Button x:Name="btn_XuatExcel" Margin="20,0,0,0"
+                Style="{StaticResource MaterialDesignFloatingActionMiniAccentButton}"
+                ToolTip="Mở Bảng Điểm" Click="btn_Event_Click">
+                <materialDesign:PackIcon Kind="MicrosoftExcel" Height="24" Width="24" />
+            </Button>
+            <Button x:Name="btn_XuatReport" Margin="20,0,0,0"
+                Style="{StaticResource MaterialDesignFloatingActionMiniAccentButton}"
+                ToolTip="Mở Bảng Điểm" Click="btn_Event_Click">
+                <materialDesign:PackIcon Kind="FileChart" Height="24" Width="24" />
+            </Button>
+        </StackPanel>
+        <Grid Grid.Row="1">
+            <ListView x:Name="lv_BangDiem">
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn Header="Môn học" Width="200" DisplayMemberBinding="{Binding ten_Mon}"/>
+                        <GridViewColumn Header="Điểm miệng" Width="120" DisplayMemberBinding="{Binding diem_Mieng}"/>
+                        <GridViewColumn Header="15p L1" Width="100" DisplayMemberBinding="{Binding diem_151}"/>
+                        <GridViewColumn Header="15p L2" Width="100" DisplayMemberBinding="{Binding diem_152}"/>
+                        <GridViewColumn Header="15p L3" Width="100" DisplayMemberBinding="{Binding diem_153}"/>
+                        <GridViewColumn Header="45p L1" Width="100" DisplayMemberBinding="{Binding diem_451}"/>
+                        <GridViewColumn Header="45p L2" Width="100" DisplayMemberBinding="{Binding diem_452}"/>
+                        <GridViewColumn Header="Thi HK" Width="100" DisplayMemberBinding="{Binding diem_Thi}"/>
+                        <GridViewColumn Header="TB Môn" Width="100" DisplayMemberBinding="{Binding diem_TBM}"/>
+                    </GridView>
+                </ListView.View>
+                <!--<ListView.ItemContainerStyle>
+                    <Style TargetType="ListViewItem">
+                        <EventSetter Event="PreviewMouseLeftButtonDown" Handler="ListViewItem_PreviewMouseLeftButtonDown" />
+                    </Style>
+                </ListView.ItemContainerStyle>-->
+            </ListView>
+        </Grid>
+    </Grid>
+</UserControl>

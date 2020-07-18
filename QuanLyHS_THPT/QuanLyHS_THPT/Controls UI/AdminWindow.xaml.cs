@@ -93,7 +93,7 @@ namespace QuanLyHS_THPT.Controls_UI
                     this.Grid_PersonControls.Children.Add(quanLyHS_UserControl);
                     break;
                 case "btn_NhapDiem":
-                    UserControls_UI.BangDiem_UserControl bangDiem_UserControl = new BangDiem_UserControl();
+                    UserControls_UI.QuanLyDiem_UserControl bangDiem_UserControl = new QuanLyDiem_UserControl();
                     this.Grid_PersonControls.Children.Add(bangDiem_UserControl);
                     break;
                 case "btn_CapNhatThongTin":
