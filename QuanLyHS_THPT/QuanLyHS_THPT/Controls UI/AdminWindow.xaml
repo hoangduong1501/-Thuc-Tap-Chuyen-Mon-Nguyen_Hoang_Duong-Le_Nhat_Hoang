@@ -64,7 +64,7 @@
                         <TextBlock Text="Home" VerticalAlignment="Center"/>
                     </StackPanel>
                 </ListViewItem>
-                <TextBlock Text="Nhân Viên" Margin="45,5,0,5" FontWeight="DemiBold"/>
+                <TextBlock x:Name="tbk_NhanVien" Text="Nhân Viên" Margin="45,5,0,5" FontWeight="DemiBold"/>
                 <ListView FontSize="15" ScrollViewer.HorizontalScrollBarVisibility="Disabled" SelectionChanged="ListView_SelectionChanged">
                     <ListViewItem Padding="1" Name="btn_ThongTinHS">
                         <StackPanel Orientation="Horizontal">
@@ -102,7 +102,7 @@
                     </ListViewItem>
                 </ListView>
                 
-                <TextBlock Text="Quản Trị Viên" Margin="45,5,0,5" FontWeight="DemiBold"/>
+                <TextBlock x:Name="tbk_QuanTriVien" Text="Quản Trị Viên" Margin="45,5,0,5" FontWeight="DemiBold"/>
                 <ListView FontSize="15" ScrollViewer.HorizontalScrollBarVisibility="Disabled" SelectionChanged="ListView_SelectionChanged">
                     <ListViewItem Padding="1" Name="btn_QuyDinh">
                         <StackPanel Orientation="Horizontal">

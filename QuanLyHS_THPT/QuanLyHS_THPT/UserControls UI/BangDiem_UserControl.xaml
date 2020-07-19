@@ -51,7 +51,7 @@
             </Button>
             <Button x:Name="btn_Xuat" Margin="0,10,0,0"
                 Style="{StaticResource MaterialDesignFloatingActionMiniAccentButton}"
-                ToolTip="Làm Mới" Click="btn_Event_Click">
+                ToolTip="Excel" Click="btn_Event_Click">
                 <materialDesign:PackIcon Kind="MicrosoftExcel" Height="24" Width="24" />
             </Button>
             

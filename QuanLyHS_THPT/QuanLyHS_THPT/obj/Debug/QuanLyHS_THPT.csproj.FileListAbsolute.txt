@@ -353,3 +353,78 @@ C:\Users\Black-Sky\Desktop\QuanLyHS_THPT\QuanLyHS_THPT\obj\Debug\QuanLyHS_THPT.r
 C:\Users\Black-Sky\Desktop\QuanLyHS_THPT\QuanLyHS_THPT\obj\Debug\UserControls UI\KQCaNam_UserControl.g.cs
 C:\Users\Black-Sky\Desktop\QuanLyHS_THPT\QuanLyHS_THPT\obj\Debug\UserControls UI\KQCaNam_UserControl.baml
 C:\Users\Black-Sky\Desktop\QuanLyHS_THPT\QuanLyHS_THPT\obj\Debug\QuanLyHS_THPT.reports.Form_DSDiemCaNam.resources
+E:\HK6\ThucTap\Github\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\obj\Debug\UserControls UI\DiemCaNhan_UserControl.g.cs
+E:\HK6\ThucTap\Github\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\obj\Debug\UserControls UI\ItemLopHoc_UserControl.g.cs
+E:\HK6\ThucTap\Github\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\obj\Debug\UserControls UI\KQCaNam_UserControl.g.cs
+E:\HK6\ThucTap\Github\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\obj\Debug\UserControls UI\KQHocKy_UserControl.g.cs
+E:\HK6\ThucTap\Github\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\obj\Debug\UserControls UI\QuanLyDiem_UserControl.g.cs
+E:\HK6\ThucTap\Github\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\obj\Debug\UserControls UI\ThongTinLop_UserControl.g.cs
+E:\HK6\ThucTap\Github\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\obj\Debug\QuanLyHS_THPT_Content.g.cs
+E:\HK6\ThucTap\Github\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\bin\Debug\SqlServerTypes\x64\msvcr120.dll
+E:\HK6\ThucTap\Github\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
+E:\HK6\ThucTap\Github\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\bin\Debug\SqlServerTypes\x86\msvcr120.dll
+E:\HK6\ThucTap\Github\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\bin\Debug\SqlServerTypes\x86\SqlServerSpatial140.dll
+E:\HK6\ThucTap\Github\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\bin\Debug\Microsoft.ReportViewer.Common.dll
+E:\HK6\ThucTap\Github\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
+E:\HK6\ThucTap\Github\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\bin\Debug\Microsoft.ReportViewer.Design.dll
+E:\HK6\ThucTap\Github\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
+E:\HK6\ThucTap\Github\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+E:\HK6\ThucTap\Github\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\bin\Debug\Microsoft.SqlServer.Types.dll
+E:\HK6\ThucTap\Github\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\bin\Debug\EnvDTE.dll
+E:\HK6\ThucTap\Github\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\bin\Debug\Microsoft.VisualStudio.Shell.Interop.dll
+E:\HK6\ThucTap\Github\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\bin\Debug\Microsoft.VisualStudio.Shell.Interop.8.0.dll
+E:\HK6\ThucTap\Github\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\bin\Debug\stdole.dll
+E:\HK6\ThucTap\Github\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\bin\Debug\Microsoft.VisualStudio.OLE.Interop.dll
+E:\HK6\ThucTap\Github\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.dll
+E:\HK6\ThucTap\Github\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.8.0.dll
+E:\HK6\ThucTap\Github\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\bin\Debug\Microsoft.MSXML.dll
+E:\HK6\ThucTap\Github\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\bin\Debug\de\Microsoft.ReportViewer.Common.resources.dll
+E:\HK6\ThucTap\Github\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\bin\Debug\es\Microsoft.ReportViewer.Common.resources.dll
+E:\HK6\ThucTap\Github\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\bin\Debug\fr\Microsoft.ReportViewer.Common.resources.dll
+E:\HK6\ThucTap\Github\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\bin\Debug\it\Microsoft.ReportViewer.Common.resources.dll
+E:\HK6\ThucTap\Github\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\bin\Debug\ja\Microsoft.ReportViewer.Common.resources.dll
+E:\HK6\ThucTap\Github\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\bin\Debug\ko\Microsoft.ReportViewer.Common.resources.dll
+E:\HK6\ThucTap\Github\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\bin\Debug\pt\Microsoft.ReportViewer.Common.resources.dll
+E:\HK6\ThucTap\Github\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\bin\Debug\ru\Microsoft.ReportViewer.Common.resources.dll
+E:\HK6\ThucTap\Github\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\bin\Debug\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+E:\HK6\ThucTap\Github\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\bin\Debug\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+E:\HK6\ThucTap\Github\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\bin\Debug\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\HK6\ThucTap\Github\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\bin\Debug\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\HK6\ThucTap\Github\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\bin\Debug\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\HK6\ThucTap\Github\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\bin\Debug\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\HK6\ThucTap\Github\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\bin\Debug\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\HK6\ThucTap\Github\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\bin\Debug\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\HK6\ThucTap\Github\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\bin\Debug\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\HK6\ThucTap\Github\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\bin\Debug\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\HK6\ThucTap\Github\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\bin\Debug\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\HK6\ThucTap\Github\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\bin\Debug\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\HK6\ThucTap\Github\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\bin\Debug\de\Microsoft.ReportViewer.Design.resources.dll
+E:\HK6\ThucTap\Github\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\bin\Debug\es\Microsoft.ReportViewer.Design.resources.dll
+E:\HK6\ThucTap\Github\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\bin\Debug\fr\Microsoft.ReportViewer.Design.resources.dll
+E:\HK6\ThucTap\Github\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\bin\Debug\it\Microsoft.ReportViewer.Design.resources.dll
+E:\HK6\ThucTap\Github\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\bin\Debug\ja\Microsoft.ReportViewer.Design.resources.dll
+E:\HK6\ThucTap\Github\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\bin\Debug\ko\Microsoft.ReportViewer.Design.resources.dll
+E:\HK6\ThucTap\Github\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\bin\Debug\pt\Microsoft.ReportViewer.Design.resources.dll
+E:\HK6\ThucTap\Github\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\bin\Debug\ru\Microsoft.ReportViewer.Design.resources.dll
+E:\HK6\ThucTap\Github\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\bin\Debug\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+E:\HK6\ThucTap\Github\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\bin\Debug\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+E:\HK6\ThucTap\Github\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\bin\Debug\de\Microsoft.ReportViewer.WinForms.resources.dll
+E:\HK6\ThucTap\Github\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
+E:\HK6\ThucTap\Github\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\bin\Debug\fr\Microsoft.ReportViewer.WinForms.resources.dll
+E:\HK6\ThucTap\Github\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\bin\Debug\it\Microsoft.ReportViewer.WinForms.resources.dll
+E:\HK6\ThucTap\Github\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\bin\Debug\ja\Microsoft.ReportViewer.WinForms.resources.dll
+E:\HK6\ThucTap\Github\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\bin\Debug\ko\Microsoft.ReportViewer.WinForms.resources.dll
+E:\HK6\ThucTap\Github\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\bin\Debug\pt\Microsoft.ReportViewer.WinForms.resources.dll
+E:\HK6\ThucTap\Github\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
+E:\HK6\ThucTap\Github\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+E:\HK6\ThucTap\Github\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+E:\HK6\ThucTap\Github\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\obj\Debug\QuanLyHS_THPT.csproj.ResolveComReference.cache
+E:\HK6\ThucTap\Github\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\obj\Debug\UserControls UI\DiemCaNhan_UserControl.baml
+E:\HK6\ThucTap\Github\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\obj\Debug\UserControls UI\ItemLopHoc_UserControl.baml
+E:\HK6\ThucTap\Github\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\obj\Debug\UserControls UI\KQCaNam_UserControl.baml
+E:\HK6\ThucTap\Github\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\obj\Debug\UserControls UI\KQHocKy_UserControl.baml
+E:\HK6\ThucTap\Github\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\obj\Debug\UserControls UI\QuanLyDiem_UserControl.baml
+E:\HK6\ThucTap\Github\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\obj\Debug\UserControls UI\ThongTinLop_UserControl.baml
+E:\HK6\ThucTap\Github\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\obj\Debug\QuanLyHS_THPT.reports.Form_BDCaNhan.resources
+E:\HK6\ThucTap\Github\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\obj\Debug\QuanLyHS_THPT.reports.Form_DSDiemCaNam.resources
+E:\HK6\ThucTap\Github\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\obj\Debug\QuanLyHS_THPT.reports.Form_DSLop.resources

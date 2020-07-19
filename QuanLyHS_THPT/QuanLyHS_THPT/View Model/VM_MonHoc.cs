@@ -73,5 +73,31 @@ namespace QuanLyHS_THPT.View_Model
 
             return Exec_Class.GetData(sqlCommand);
         }
+
+        public void xuatExcel()
+        {
+            List<MonHoc_Class> lst = DanhSach_NamHoc();
+            Microsoft.Office.Interop.Excel._Application app = new Microsoft.Office.Interop.Excel.Application();
+            Microsoft.Office.Interop.Excel._Workbook workbook = app.Workbooks.Add(Type.Missing);
+            Microsoft.Office.Interop.Excel._Worksheet worksheet = null;
+            worksheet = workbook.Sheets["Sheet1"];
+            worksheet = workbook.ActiveSheet;
+            app.Visible = true;
+            worksheet.Cells[1, 1] = "DANH SÁCH MÔN HỌC";
+            worksheet.Cells[3, 1] = "STT";
+            worksheet.Cells[3, 2] = "Mã";
+            worksheet.Cells[3, 3] = "Tên Môn";
+            worksheet.Cells[3, 4] = "Hệ Số";
+            worksheet.Cells[3, 5] = "Số Tiết";
+
+            for (int i = 0; i < lst.Count; i++)
+            {
+                worksheet.Cells[i + 4, 1] = i + 1;
+                worksheet.Cells[i + 4, 2] = lst[i].ma_MonHoc;
+                worksheet.Cells[i + 4, 3] = lst[i].ten_MonHoc;
+                worksheet.Cells[i + 4, 4] = lst[i].heSo_MonHoc;
+                worksheet.Cells[i + 4, 5] = lst[i].so_TietHoc;
+            }
+        }
     }
 }

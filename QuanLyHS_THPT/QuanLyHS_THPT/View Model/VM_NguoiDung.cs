@@ -28,6 +28,10 @@ namespace QuanLyHS_THPT.View_Model
             return nguoiDung.tenNguoiDung;
         }
 
+        public string Lay_LoaiND()
+        {
+            return nguoiDung.loaiNguoiDung;
+        }
         public bool Them_NguoiDung(string tenNguoiDung, string tenDangNhap, string matKhau, string loaiNguoiDung)
         {
             string query = @"EXEC dbo.Them_NguoiDung @maLoai, @ten_NguoiDung, @ten_DangNhap, @matKhau";
