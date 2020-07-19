@@ -66,7 +66,40 @@ namespace QuanLyHS_THPT
                         str_TenNguoiDung = vM_NguoiDung.Lay_TenNguoiDung(),
                         str_TenDangNhap = txt_TenDangNhap.Text.Trim()
                     };
+                    //MessageBox.Show("ID  " + vM_NguoiDung.Lay_LoaiND());
                     this.Visibility = Visibility.Collapsed;
+                    if (vM_NguoiDung.Lay_LoaiND() != "Ban giám hiệu")
+                    {
+                        if (vM_NguoiDung.Lay_LoaiND() != "Giáo viên")
+                        {
+                            //adminWindow.btn_ThongTinHS.Visibility = Visibility.Visible;
+                            adminWindow.btn_NhapDiem.Visibility = Visibility.Collapsed;
+                            adminWindow.btn_TaoHoSo.Visibility = Visibility.Collapsed;
+                            //adminWindow.btn_PhanLopHoc.Visibility = Visibility.Visible;
+                            adminWindow.btn_CapNhatThongTin.Visibility = Visibility.Collapsed;
+                            adminWindow.btn_QuyDinh.Visibility = Visibility.Collapsed;
+                            adminWindow.btn_GiaoVien.Visibility = Visibility.Collapsed;
+                            adminWindow.btn_BaoCao.Visibility = Visibility.Collapsed;
+                            adminWindow.tbk_QuanTriVien.Visibility = Visibility.Collapsed;
+                        }
+                        else
+                        {                     
+
+                            adminWindow.btn_ThongTinHS.Visibility = Visibility.Collapsed;
+                            //adminWindow.btn_NhapDiem.Visibility = Visibility.Visible;
+                            //adminWindow.btn_TaoHoSo.Visibility = Visibility.Visible;
+                            adminWindow.btn_PhanLopHoc.Visibility = Visibility.Collapsed;
+                            adminWindow.btn_CapNhatThongTin.Visibility = Visibility.Collapsed;
+                            adminWindow.btn_QuyDinh.Visibility = Visibility.Collapsed;
+                            adminWindow.btn_GiaoVien.Visibility = Visibility.Collapsed;
+                            //adminWindow.btn_BaoCao.Visibility = Visibility.Visible;
+                            adminWindow.tbk_QuanTriVien.Visibility = Visibility.Collapsed;
+                        }
+                    }
+                    else
+                    {
+                        adminWindow.Visibility = Visibility.Visible;
+                    }
                     adminWindow.ShowDialog();
                     this.Visibility = Visibility.Visible;
                 }

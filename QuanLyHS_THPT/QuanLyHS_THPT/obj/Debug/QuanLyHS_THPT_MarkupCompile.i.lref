@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿C:\Users\Black-Sky\Documents\GitHub\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\obj\Debug\GeneratedInternalTypeHelper.g.i.cs
 FC:\Users\Black-Sky\Documents\GitHub\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\App.xaml;;
 FC:\Users\Black-Sky\Documents\GitHub\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\Controls UI\AdminWindow.xaml;;
@@ -32,4 +33,37 @@ FC:\Users\Black-Sky\Documents\GitHub\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_
 FC:\Users\Black-Sky\Documents\GitHub\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\UserControls UI\ThongTinLop_UserControl.xaml;;
 FC:\Users\Black-Sky\Documents\GitHub\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\UserControls UI\TraCuu_UserControl.xaml;;
 FC:\Users\Black-Sky\Documents\GitHub\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\UserControls UI\ViPham_UserControl.xaml;;
+=======
+﻿E:\HK6\ThucTap\Github\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\obj\Debug\GeneratedInternalTypeHelper.g.i.cs
+FE:\HK6\ThucTap\Github\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\App.xaml;;
+FE:\HK6\ThucTap\Github\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\Controls UI\AdminWindow.xaml;;
+FE:\HK6\ThucTap\Github\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\Controls UI\DoiMatKhau_Window.xaml;;
+FE:\HK6\ThucTap\Github\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\Controls UI\SuaGiaoVien_Window.xaml;;
+FE:\HK6\ThucTap\Github\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\Controls UI\ThemGiaoVien_Window.xaml;;
+FE:\HK6\ThucTap\Github\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\UserControls UI\BangDiem_UserControl.xaml;;
+FE:\HK6\ThucTap\Github\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\UserControls UI\CapNhatLopHoc_UserControl.xaml;;
+FE:\HK6\ThucTap\Github\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\UserControls UI\CapNhat_UserControl.xaml;;
+FE:\HK6\ThucTap\Github\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\UserControls UI\DanToc_TonGiao_UserControl.xaml;;
+FE:\HK6\ThucTap\Github\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\UserControls UI\DiemCaNhan_UserControl.xaml;;
+FE:\HK6\ThucTap\Github\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\UserControls UI\GiaoVien_UserControl.xaml;;
+FE:\HK6\ThucTap\Github\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\Controls UI\QuyDinh_Window.xaml;;
+FE:\HK6\ThucTap\Github\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\LoginWindow.xaml;;
+FE:\HK6\ThucTap\Github\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\UserControls UI\ItemLopHoc_UserControl.xaml;;
+FE:\HK6\ThucTap\Github\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\UserControls UI\KQCaNam_UserControl.xaml;;
+FE:\HK6\ThucTap\Github\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\UserControls UI\KQHocKy_UserControl.xaml;;
+FE:\HK6\ThucTap\Github\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\UserControls UI\MonHoc_UserControl.xaml;;
+FE:\HK6\ThucTap\Github\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\UserControls UI\NamHoc_UserControl.xaml;;
+FE:\HK6\ThucTap\Github\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\UserControls UI\NguoiDung_UserControl.xaml;;
+FE:\HK6\ThucTap\Github\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\UserControls UI\NhapDiem_UserControl.xaml;;
+FE:\HK6\ThucTap\Github\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\UserControls UI\PhanLop_UserControl.xaml;;
+FE:\HK6\ThucTap\Github\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\UserControls UI\QuanLyDiem_UserControl.xaml;;
+FE:\HK6\ThucTap\Github\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\UserControls UI\QuanLyHS_UserControl.xaml;;
+FE:\HK6\ThucTap\Github\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\UserControls UI\QuanLyLop_UserControl.xaml;;
+FE:\HK6\ThucTap\Github\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\UserControls UI\TaiKhoan_UserControl.xaml;;
+FE:\HK6\ThucTap\Github\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\UserControls UI\ThemGiaoVien_UserControl.xaml;;
+FE:\HK6\ThucTap\Github\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\UserControls UI\ThongTinHS_UserControl.xaml;;
+FE:\HK6\ThucTap\Github\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\UserControls UI\ThongTinLop_UserControl.xaml;;
+FE:\HK6\ThucTap\Github\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\UserControls UI\TraCuu_UserControl.xaml;;
+FE:\HK6\ThucTap\Github\-Thuc-Tap-Chuyen-Mon-Nguyen_Hoang_Duong-Le_Nhat_Hoang\QuanLyHS_THPT\QuanLyHS_THPT\UserControls UI\ViPham_UserControl.xaml;;
+>>>>>>> 8a38a237c906d31af0b8ac8622d1d66a3c5e6694
 

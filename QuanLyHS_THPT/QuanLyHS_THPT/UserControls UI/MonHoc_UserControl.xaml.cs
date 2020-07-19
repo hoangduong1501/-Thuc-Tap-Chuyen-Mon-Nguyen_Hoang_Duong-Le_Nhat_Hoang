@@ -65,6 +65,9 @@ namespace QuanLyHS_THPT.UserControls_UI
                 case "btn_LamMoi":
                     LoadDS_MonHoc();
                     break;
+                case "btn_Excel":
+                    vM_MonHoc.xuatExcel();
+                    break;
             }
         }
 
