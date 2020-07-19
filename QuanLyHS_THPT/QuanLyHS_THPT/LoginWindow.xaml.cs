@@ -67,5 +67,13 @@ namespace QuanLyHS_THPT
                 this.status.Text = "Hãy nhập tài khoản!";
             }
         }
+
+        private void btn_QLCSDL(object sender, RoutedEventArgs e)
+        {
+            Controls_UI.CSDL_Window cSDL_Window = new Controls_UI.CSDL_Window();
+            this.Visibility = Visibility.Collapsed;
+            cSDL_Window.ShowDialog();
+            this.Visibility = Visibility.Visible;
+        }
     }
 }

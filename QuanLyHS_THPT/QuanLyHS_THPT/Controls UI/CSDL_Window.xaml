@@ -1,0 +1,39 @@
+﻿<Window x:Class="QuanLyHS_THPT.Controls_UI.CSDL_Window"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:QuanLyHS_THPT.Controls_UI"
+        WindowStartupLocation="CenterScreen"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        mc:Ignorable="d"
+        Title="CSDL" Height="168" Width="231">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid>
+            <TextBlock Text="QUẢN LÝ CƠ SỞ DỮ LIỆU"  Foreground="Red"
+                       VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        </Grid>
+        <Grid Grid.Row="1">
+            <Button
+                Style="{StaticResource MaterialDesignFloatingActionButton}"
+                materialDesign:ButtonProgressAssist.IsIndicatorVisible="True"
+                materialDesign:ButtonProgressAssist.IsIndeterminate="True"
+                Width="35" Height="35" ToolTip="Tạo Cơ Sở Dữ Liệu" Name="btn_TaoCSDL"
+                Margin="59,10,118,25" Padding="0" Click="Button_Click">
+                <materialDesign:PackIcon Kind="DatabasePlus"/>
+            </Button>
+            <Button
+                Style="{StaticResource MaterialDesignFloatingActionButton}"
+                materialDesign:ButtonProgressAssist.IsIndicatorVisible="True"
+                materialDesign:ButtonProgressAssist.IsIndeterminate="True"
+                Width="35" Height="35" ToolTip="Kết Nối Cơ Sở Dữ Liệu" x:Name="btn_TaoKetNoi"
+                Margin="120,10,57,25" Padding="0" Click="Button_Click">
+                <materialDesign:PackIcon Kind="CableData"/>
+            </Button>
+        </Grid>
+    </Grid>
+</Window>

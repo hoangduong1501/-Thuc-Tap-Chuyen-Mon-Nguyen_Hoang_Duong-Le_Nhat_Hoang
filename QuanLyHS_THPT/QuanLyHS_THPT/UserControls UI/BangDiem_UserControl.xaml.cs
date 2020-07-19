@@ -79,7 +79,7 @@ namespace QuanLyHS_THPT.UserControls_UI
                         cbb_HocKy.SelectedValue.ToString(), cbb_MonHoc.SelectedValue.ToString());
                     if (lst_BangDiem.Count == 0)
                     {
-                        MessageBox.Show("Table Score is null, Click create a new Table Score, please!");
+                        MessageBox.Show("Bảng điểm không tồn tại,\n Hãy bấm tạo bảng điểm.","Chú ý", MessageBoxButton.OK, MessageBoxImage.Information);
                         this.btn_ThemBang.Visibility = Visibility.Visible;
                     }
                     else this.btn_ThemBang.Visibility = Visibility.Collapsed;
