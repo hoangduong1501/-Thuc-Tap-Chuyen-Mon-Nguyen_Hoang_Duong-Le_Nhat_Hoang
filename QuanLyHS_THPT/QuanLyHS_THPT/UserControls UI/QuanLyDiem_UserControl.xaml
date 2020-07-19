@@ -18,10 +18,10 @@
                 Style="{StaticResource MaterialDesignTabRadioButton}"
                 Margin="4" IsChecked="True" Content="Nhập Điểm" 
                 x:Name="btn_NhapDiem" Click="btn_PhanLop_Click"/>
-            <RadioButton
+            <!--<RadioButton
                 Style="{StaticResource MaterialDesignTabRadioButton}"
                 Margin="4" IsChecked="False" Content="Điểm Theo Lớp" 
-                x:Name="btn_Lop" Click="btn_PhanLop_Click"/>
+                x:Name="btn_Lop" Click="btn_PhanLop_Click"/>-->
             <RadioButton
                 Style="{StaticResource MaterialDesignTabRadioButton}"
                 Margin="4" IsChecked="False" Content="Điểm Cá Nhân" 

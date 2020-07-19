@@ -7,33 +7,18 @@
         WindowStartupLocation="CenterScreen"
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         mc:Ignorable="d"
-        Title="CSDL" Height="168" Width="231">
+        Title="CSDL" Height="270" Width="350">
     <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="50" />
-            <RowDefinition Height="*" />
-        </Grid.RowDefinitions>
-        <Grid>
-            <TextBlock Text="QUẢN LÝ CƠ SỞ DỮ LIỆU"  Foreground="Red"
-                       VerticalAlignment="Center" HorizontalAlignment="Center"/>
-        </Grid>
-        <Grid Grid.Row="1">
-            <Button
-                Style="{StaticResource MaterialDesignFloatingActionButton}"
-                materialDesign:ButtonProgressAssist.IsIndicatorVisible="True"
-                materialDesign:ButtonProgressAssist.IsIndeterminate="True"
-                Width="35" Height="35" ToolTip="Tạo Cơ Sở Dữ Liệu" Name="btn_TaoCSDL"
-                Margin="59,10,118,25" Padding="0" Click="Button_Click">
-                <materialDesign:PackIcon Kind="DatabasePlus"/>
-            </Button>
-            <Button
-                Style="{StaticResource MaterialDesignFloatingActionButton}"
-                materialDesign:ButtonProgressAssist.IsIndicatorVisible="True"
-                materialDesign:ButtonProgressAssist.IsIndeterminate="True"
-                Width="35" Height="35" ToolTip="Kết Nối Cơ Sở Dữ Liệu" x:Name="btn_TaoKetNoi"
-                Margin="120,10,57,25" Padding="0" Click="Button_Click">
-                <materialDesign:PackIcon Kind="CableData"/>
-            </Button>
-        </Grid>
+        <ComboBox x:Name="cbb_SeverName"
+                    Style="{StaticResource MaterialDesignFloatingHintComboBox}"
+                    materialDesign:HintAssist.Hint="Kết quả" Width="200" IsEditable="True"
+                    VerticalAlignment="Top" HorizontalAlignment="Center" Margin="50,18,92,0"/>
+        <Button x:Name="btn_Update"
+                    Style="{StaticResource MaterialDesignIconButton}"
+                    Margin="0,18,39,0" Click="Chip_Click"
+                    ToolTip="Kế tiếp" HorizontalAlignment="Right" VerticalAlignment="Top"
+                    Background="{DynamicResource MaterialDesignTextFieldBoxBackground}" TabIndex="7">
+            <materialDesign:PackIcon Kind="Refresh" />
+        </Button>
     </Grid>
 </Window>

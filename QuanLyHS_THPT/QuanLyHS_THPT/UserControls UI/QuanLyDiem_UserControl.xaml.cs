@@ -34,10 +34,6 @@ namespace QuanLyHS_THPT.UserControls_UI
                 UserControls_UI.DiemCaNhan_UserControl bangDiem_UserControl = new DiemCaNhan_UserControl();
                 this.Grid_Person.Children.Add(bangDiem_UserControl);
             }
-            if(radioButton.Name == btn_Lop.Name)
-            {
-
-            }
             if(radioButton.Name == btn_NhapDiem.Name)
             {
                 UserControls_UI.BangDiem_UserControl bangDiem_UserControl = new BangDiem_UserControl();

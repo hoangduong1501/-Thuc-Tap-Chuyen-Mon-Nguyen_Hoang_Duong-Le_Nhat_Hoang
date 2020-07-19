@@ -32,6 +32,8 @@ namespace QuanLyHS_THPT.Controls_UI
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
             this.box_TenNguoiDung.Text = "Xin chào: " + this.str_TenNguoiDung;
+            UserControls_UI.QuanLyHS_UserControl quanLyHS_UserControl = new QuanLyHS_UserControl();
+            this.Grid_PersonControls.Children.Add(quanLyHS_UserControl);
         }
 
         private void ButtonOpenMenu_Click(object sender, RoutedEventArgs e)
@@ -115,8 +117,9 @@ namespace QuanLyHS_THPT.Controls_UI
                     NguoiDung_UserControl nguoiDung_UserControl = new NguoiDung_UserControl();
                     this.Grid_PersonControls.Children.Add(nguoiDung_UserControl);
                     break;
-                case "btn_BaoCao":
-                    MessageBox.Show("BaoCao");
+                case "btn_ThongKe":
+                    ThongKeHK_UserControl thongKeHK_UserControl = new ThongKeHK_UserControl();
+                    this.Grid_PersonControls.Children.Add(thongKeHK_UserControl);
                     break;
                     
             }
@@ -124,7 +127,9 @@ namespace QuanLyHS_THPT.Controls_UI
 
         private void btn_HuongDan_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            MessageBox.Show("HuongDan");
+            Controls_UI.Infor_Form infor_Form = new Infor_Form();
+            infor_Form.ShowDialog();
+            
         }
 
         private void ListBoxItem_MouseDown(object sender, MouseButtonEventArgs e)

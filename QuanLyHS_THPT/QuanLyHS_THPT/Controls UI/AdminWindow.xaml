@@ -58,12 +58,12 @@
                         <materialDesign:PackIcon Kind="ArrowLeft" Width="25" Height="25" Foreground="Black"/>
                     </Button>
                 </Grid>
-                <ListViewItem Padding="0">
+                <!--<ListViewItem Padding="0">
                     <StackPanel Orientation="Horizontal">
                         <materialDesign:PackIcon Kind="Home" Margin="10" Width="25" Height="25"/>
                         <TextBlock Text="Home" VerticalAlignment="Center"/>
                     </StackPanel>
-                </ListViewItem>
+                </ListViewItem>-->
                 <TextBlock Text="Nhân Viên" Margin="45,5,0,5" FontWeight="DemiBold"/>
                 <ListView FontSize="15" ScrollViewer.HorizontalScrollBarVisibility="Disabled" SelectionChanged="ListView_SelectionChanged">
                     <ListViewItem Padding="1" Name="btn_ThongTinHS">
@@ -82,7 +82,7 @@
                 
                 <!--<TextBlock Text="Giáo Vụ" Margin="45,5,0,5" FontWeight="DemiBold"/>-->
                 <ListView FontSize="15" ScrollViewer.HorizontalScrollBarVisibility="Disabled" SelectionChanged="ListView_SelectionChanged">
-                    <ListViewItem Padding="1" Name="btn_TaoHoSo">
+                    <ListViewItem Padding="1" Name="btn_ThongKe">
                         <StackPanel Orientation="Horizontal">
                             <materialDesign:PackIcon Kind="ChartBar" Margin="10" Width="25" Height="25"/>
                             <TextBlock Text="Thống Kê" VerticalAlignment="Center"/>
@@ -116,12 +116,12 @@
                             <TextBlock Text="Giáo Viên" VerticalAlignment="Center"/>
                         </StackPanel>
                     </ListViewItem>
-                    <ListViewItem Padding="1" Name="btn_BaoCao">
+                    <!--<ListViewItem Padding="1" Name="btn_BaoCao">
                         <StackPanel Orientation="Horizontal">
                             <materialDesign:PackIcon Kind="FileChart" Margin="10" Width="25" Height="25"/>
                             <TextBlock Text="Báo Cáo" VerticalAlignment="Center"/>
                         </StackPanel>
-                    </ListViewItem>                   
+                    </ListViewItem>-->                   
                 </ListView>
                 <ListViewItem Padding="0" Name="btn_HuongDan">
                     <StackPanel Orientation="Horizontal" MouseDown="btn_HuongDan_MouseDown">

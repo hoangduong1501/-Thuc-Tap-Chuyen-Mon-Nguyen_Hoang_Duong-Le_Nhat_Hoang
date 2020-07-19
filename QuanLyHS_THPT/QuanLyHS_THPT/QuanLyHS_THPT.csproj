@@ -74,6 +74,9 @@
     <Reference Include="System.DirectoryServices" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Controls.DataVisualization.Toolkit">
+      <HintPath>..\..\..\..\..\source\repos\WpfApp1\WpfApp1\bin\Debug\System.Windows.Controls.DataVisualization.Toolkit.dll</HintPath>
+    </Reference>
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
@@ -87,6 +90,9 @@
     <Reference Include="WindowsBase" />
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
+    <Reference Include="WPFToolkit">
+      <HintPath>..\..\..\..\..\source\repos\WpfApp1\WpfApp1\bin\Debug\WPFToolkit.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">
@@ -98,6 +104,15 @@
     </Compile>
     <Compile Include="Controls UI\DoiMatKhau_Window.xaml.cs">
       <DependentUpon>DoiMatKhau_Window.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls UI\Infor_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls UI\Infor_Form.Designer.cs">
+      <DependentUpon>Infor_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls UI\QLCSDL_Window.xaml.cs">
+      <DependentUpon>QLCSDL_Window.xaml</DependentUpon>
     </Compile>
     <Compile Include="Controls UI\SuaGiaoVien_Window.xaml.cs">
       <DependentUpon>SuaGiaoVien_Window.xaml</DependentUpon>
@@ -126,6 +141,7 @@
     <Compile Include="models\NguoiDung_Class.cs" />
     <Compile Include="models\PhanCong_Class.cs" />
     <Compile Include="models\QuyDinh_Class.cs" />
+    <Compile Include="models\ThongKeHK_Class.cs" />
     <Compile Include="models\TongGiao_Class.cs" />
     <Compile Include="models\ViPham_Class.cs" />
     <Compile Include="QLHocSinhTHPTDataSet.Designer.cs">
@@ -213,6 +229,9 @@
     <Compile Include="UserControls UI\ThemGiaoVien_UserControl.xaml.cs">
       <DependentUpon>ThemGiaoVien_UserControl.xaml</DependentUpon>
     </Compile>
+    <Compile Include="UserControls UI\ThongKeHK_UserControl.xaml.cs">
+      <DependentUpon>ThongKeHK_UserControl.xaml</DependentUpon>
+    </Compile>
     <Compile Include="UserControls UI\ThongTinHS_UserControl.xaml.cs">
       <DependentUpon>ThongTinHS_UserControl.xaml</DependentUpon>
     </Compile>
@@ -238,6 +257,7 @@
     <Compile Include="View Model\VM_PhanCong.cs" />
     <Compile Include="View Model\VM_PhanLop.cs" />
     <Compile Include="View Model\VM_QuyDinh.cs" />
+    <Compile Include="View Model\VM_ThongKe_HocKy.cs" />
     <Compile Include="View Model\VM_ThongTinHS.cs" />
     <Compile Include="View Model\VM_ThongTinLop.cs" />
     <Compile Include="View Model\VM_ViPham.cs" />
@@ -250,6 +270,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Controls UI\DoiMatKhau_Window.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls UI\QLCSDL_Window.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -356,6 +380,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="UserControls UI\ThongKeHK_UserControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="UserControls UI\ThongTinHS_UserControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -387,6 +415,9 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <EmbeddedResource Include="Controls UI\Infor_Form.resx">
+      <DependentUpon>Infor_Form.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -403,6 +434,7 @@
     <EmbeddedResource Include="reports\Report_BDCaNam.rdlc" />
     <EmbeddedResource Include="reports\Report_BDCaNhan.rdlc" />
     <EmbeddedResource Include="reports\Report_DSLop.rdlc" />
+    <None Include="Controls UI\database-128.webp" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -433,6 +465,7 @@
     <Resource Include="Icons\images.jpg" />
   </ItemGroup>
   <ItemGroup>
+    <Resource Include="Controls UI\iconfinder_database_4417104.png" />
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

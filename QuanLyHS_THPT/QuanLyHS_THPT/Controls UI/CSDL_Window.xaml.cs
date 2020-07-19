@@ -31,42 +31,60 @@ namespace QuanLyHS_THPT.Controls_UI
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             Button button = sender as Button;
-            if(button.Name == btn_TaoCSDL.Name)
+            //if(button.Name == btn_TaoCSDL.Name)
+            //{
+            //    Process proc = null;
+            //    try
+            //    {
+            //        //string batDir = string.Format(@"D:\");
+            //        proc = new Process();
+            //        //proc.StartInfo.WorkingDirectory = batDir;
+            //        proc.StartInfo.FileName = "a.bat";
+            //        proc.StartInfo.CreateNoWindow = false;
+            //        proc.Start();
+            //        proc.WaitForExit();
+            //        MessageBox.Show("Tạo Dữ Liệu Thành Công !!");
+            //    }
+            //    catch (Exception ex)
+            //    {
+            //        Console.WriteLine(ex.StackTrace.ToString());
+            //    }
+            //}
+            //if(button.Name == btn_TaoKetNoi.Name)
+            //{
+            //    SqlDataSourceEnumerator instance = SqlDataSourceEnumerator.Instance;
+            //    DataTable table = instance.GetDataSources();
+
+            //    string severName = "" + table.Rows[0][0].ToString() + "\\" + table.Rows[0][0].ToString();
+            //    string connect = "Data Source="+severName+";Initial Catalog=QLHocSinhTHPT;Integrated Security=True";
+
+            //    using (StreamWriter sw = new StreamWriter("textfile.txt"))
+            //    {
+            //        sw.WriteLine(connect);
+            //    }
+
+
+            //    MessageBox.Show(connect);
+
+            //}
+        }
+
+        private void Chip_Click(object sender, RoutedEventArgs e)
+        {
+            List<string> lst_NameSever = new List<string>();
+
+            SqlDataSourceEnumerator instance = SqlDataSourceEnumerator.Instance;
+            DataTable table = instance.GetDataSources();
+
+            MessageBox.Show(table.Rows[0]["ServerName"].ToString() + "**" + table.Rows[0]["InstanceName"].ToString());
+
+            foreach (DataRow dataRow in table.Rows)
             {
-                Process proc = null;
-                try
-                {
-                    //string batDir = string.Format(@"D:\");
-                    proc = new Process();
-                    //proc.StartInfo.WorkingDirectory = batDir;
-                    proc.StartInfo.FileName = "a.bat";
-                    proc.StartInfo.CreateNoWindow = false;
-                    proc.Start();
-                    proc.WaitForExit();
-                    MessageBox.Show("Tạo Dữ Liệu Thành Công !!");
-                }
-                catch (Exception ex)
-                {
-                    Console.WriteLine(ex.StackTrace.ToString());
-                }
+                lst_NameSever.Add(dataRow[0].ToString() + "\\" + dataRow[1].ToString());
             }
-            if(button.Name == btn_TaoKetNoi.Name)
-            {
-                SqlDataSourceEnumerator instance = SqlDataSourceEnumerator.Instance;
-                DataTable table = instance.GetDataSources();
 
-                string severName = "" + table.Rows[0][0].ToString() + "\\" + table.Rows[0][0].ToString();
-                string connect = "Data Source="+severName+";Initial Catalog=QLHocSinhTHPT;Integrated Security=True";
-
-                using (StreamWriter sw = new StreamWriter("textfile.txt"))
-                {
-                    sw.WriteLine(connect);
-                }
-
-
-                MessageBox.Show(connect);
-
-            }
+            cbb_SeverName.ItemsSource = lst_NameSever;
+            cbb_SeverName.SelectedIndex = 0;
         }
     }
 }

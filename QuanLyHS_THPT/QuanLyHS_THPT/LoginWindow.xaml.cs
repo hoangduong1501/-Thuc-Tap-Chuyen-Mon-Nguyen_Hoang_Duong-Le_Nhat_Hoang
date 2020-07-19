@@ -24,6 +24,19 @@ namespace QuanLyHS_THPT
         public MainWindow()
         {
             InitializeComponent();
+            Tao_ConString();
+        }
+
+        private void Tao_ConString()
+        {
+            if (!Data.Exec_Class.Get_ConnectionString())
+            {
+                MessageBox.Show("Chào mừng bạn đến với chương trình. \nVui lòng tạo CSDL và tạo kết nối" , "Thông báo", MessageBoxButton.OK, MessageBoxImage.Warning);
+                Controls_UI.QLCSDL_Window cSDL_Window = new Controls_UI.QLCSDL_Window();
+                this.Visibility = Visibility.Collapsed;
+                cSDL_Window.ShowDialog();
+                this.Visibility = Visibility.Visible;
+            }
         }
 
         private void Rectangle_MouseDown(object sender, MouseButtonEventArgs e)
@@ -70,7 +83,7 @@ namespace QuanLyHS_THPT
 
         private void btn_QLCSDL(object sender, RoutedEventArgs e)
         {
-            Controls_UI.CSDL_Window cSDL_Window = new Controls_UI.CSDL_Window();
+            Controls_UI.QLCSDL_Window cSDL_Window = new Controls_UI.QLCSDL_Window();
             this.Visibility = Visibility.Collapsed;
             cSDL_Window.ShowDialog();
             this.Visibility = Visibility.Visible;
