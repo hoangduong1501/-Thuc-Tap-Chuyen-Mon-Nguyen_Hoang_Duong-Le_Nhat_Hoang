@@ -22,7 +22,7 @@ Lớp: Công nghệ thông tin - K58
 2. xyz
 ...
 ## Hướng dẫn sử dụng
-- 
+- Chạy file cài đặt QLHocSinhTHPT-NhatHoang_HoangDuong.exe
 -
 
 Xin cám ơn!
