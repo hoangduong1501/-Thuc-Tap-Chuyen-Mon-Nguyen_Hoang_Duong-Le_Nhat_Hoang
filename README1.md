@@ -24,7 +24,7 @@ Lớp: Công nghệ thông tin - K58
 ## Hướng dẫn sử dụng
 - Chạy file cài đặt QLHocSinhTHPT-NhatHoang_HoangDuong.exe để thực hiện cài đặt.
 - Sau khi quá trình cài đặt hoàn tất. Truy cập đường dẫn C:\Program Files (x86)\NhatHoang&HoangDuong\QLHocSinhTHPT.
-- Chạy File CreateSQL.exe, Click 'Tạo cơ sở dữ liệu' để tạo cở sở dữ liệu mới.
+- Chạy File CreateSQL.exe(quyền ), Click 'Tạo cơ sở dữ liệu' để tạo cở sở dữ liệu mới.
 - Sau đó click Tạo kết nối cơ sở dữ liệu. Hoàn tất tạo kết nối. Đóng chương trình.
 - Mở chương trình trên màn hình: đăng nhập với tk: admmin(tk+mk) hoangduong, giaovien(tk+mk)hongnhung, giavu(tk+mk)trungtoan+toantrung.
 
